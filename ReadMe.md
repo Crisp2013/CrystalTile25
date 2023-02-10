@@ -1,4 +1,4 @@
-# CrystalTile2,5
+# CrystalTile2.5
 크리스탈타일2 개선판
 
 소스코드를 구할수 있는 가장 최근 버전인 크리스탈 타일2 2007.09.12 판에서 일부 문제점을 해결한 버전입니다.
@@ -7,10 +7,10 @@
 
 # TODO
  * MFC 관련 설정 (삽질로 구현하느라 일부 설정이 로컬에 맞춰진 부분이 많음)
- * 한국어 번역 완료
+ * 한국어 번역
  * 그래픽 모드 추가
   ```
-  - 크리스탈타일2 2011버전에서 지원하는 모드	\
+  - 크리스탈타일2 2011버전에서 지원하는 모드
   16색 BGRa
   32색 aBGR
   3BPP 3색
@@ -21,10 +21,13 @@
   2BPP MSX Screen 2 (16색 모드)
   3BPP 8x8 (2bpp NES의 확장)
   3BPP SNES (2bpp NES + 1bpp 단색)
-  4BPP PCE(SG)
-  4BPP MSX
+  4BPP PCE(SG) (16x16)
+  4BPP MSX/MD/WSC (4BPP GBA의 변종)
   4BPP 8x8 (2bpp NES의 확장)
   8BPP SNES(128x128) (4bpp SNES의 확장)
+  
+  - 기타
+  [4BPP MD/x68k](https://mrclick.zophar.net/TilEd/download/consolegfx.txt) (2BPP VB/NGP의 4BPP 확장, 위의 4BPP MSX/MD/WSC와 동일한지 확인 필요)
    ```
  * 이외 기존 크리스탈 타일의 업데이트
 ```
