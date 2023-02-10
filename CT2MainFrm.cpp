@@ -110,10 +110,16 @@ int CT2MainFrm::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_TreeBar.EnableDocking(CBRS_ALIGN_LEFT|CBRS_ALIGN_RIGHT);
 	m_TreeBar.SetWindowText(LoadStr(IDS_OPTIONTREE));
 
+	CImageList img; // ??????
+	img.Create(IDR_MAINFRAME, 16, 0, RGB(192, 192, 192));
+	m_wndToolBar.GetToolBarCtrl().SetImageList(&img);
+	img.Detach();
+	
 	EnableDocking(CBRS_ALIGN_ANY);
 	DockControlBar(&m_wndToolBar);
 	DockControlBar(&m_TreeBar);
 
+	
 	LoadToolList();
 
 	LoadBarState(_T("CT2_BAR"));
