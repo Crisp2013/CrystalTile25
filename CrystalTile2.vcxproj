@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release4dll|Win32">
+      <Configuration>Release4dll</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{BA206AFF-4AB5-4BBB-BFBF-6768DB80209A}</ProjectGuid>
+    <RootNamespace>CrystalTile2</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4dll|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release4dll|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>17.0.32819.101</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release4dll|Win32'">
+    <OutDir>$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\src\mfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\src\mfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release4dll|Win32'">
+    <ClCompile>
+      <Optimization>Full</Optimization>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <AdditionalIncludeDirectories>C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.33.31629\atlmfc\src\mfc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AssemblyDebug>false</AssemblyDebug>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Asm.cpp" />
+    <ClCompile Include="AsmDlg.cpp" />
+    <ClCompile Include="Common.cpp" />
+    <ClCompile Include="CrystalMemory.cpp" />
+    <ClCompile Include="CrystalPlayer.cpp" />
+    <ClCompile Include="CrystalTile2.cpp" />
+    <ClCompile Include="CrystalTree\CrystalTreeCtrl.cpp" />
+    <ClCompile Include="CT2AsmView.cpp" />
+    <ClCompile Include="CT2CheatsSearch.cpp" />
+    <ClCompile Include="CT2ChildFrm.cpp" />
+    <ClCompile Include="CT2Doc.cpp" />
+    <ClCompile Include="CT2Favorite.cpp" />
+    <ClCompile Include="CT2HexView.cpp" />
+    <ClCompile Include="CT2InputDlg.cpp" />
+    <ClCompile Include="CT2MainFrm.cpp" />
+    <ClCompile Include="CT2NormalDlg.cpp" />
+    <ClCompile Include="CT2Palette.cpp" />
+    <ClCompile Include="CT2ScriptView.cpp" />
+    <ClCompile Include="CT2StatusBar.cpp" />
+    <ClCompile Include="CT2TileEditorView.cpp" />
+    <ClCompile Include="CT2TileView.cpp" />
+    <ClCompile Include="CT2TreeBar.cpp" />
+    <ClCompile Include="CT2View.cpp" />
+    <ClCompile Include="CTMacro.cpp" />
+    <ClCompile Include="DSFirmWareSettings.cpp" />
+    <ClCompile Include="FileCompDlg.cpp" />
+    <ClCompile Include="LZ77Search.cpp" />
+    <ClCompile Include="NARCFileInfo.cpp" />
+    <ClCompile Include="NdsFileSystemInfo.cpp" />
+    <ClCompile Include="NdsInfo.cpp" />
+    <ClCompile Include="OpenFileDialog.cpp" />
+    <ClCompile Include="PacFileInfo.cpp" />
+    <ClCompile Include="RecentStatList.cpp" />
+    <ClCompile Include="RelativeDlg.cpp" />
+    <ClCompile Include="SDatInfo.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release4dll|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SubFileInfo.cpp" />
+    <ClCompile Include="TextFileDialog.cpp" />
+    <ClCompile Include="ToolBarEx.cpp" />
+    <ClCompile Include="ToolsDlg.cpp" />
+    <ClCompile Include="UtilityFileInfo.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asm.h" />
+    <ClInclude Include="AsmDlg.h" />
+    <ClInclude Include="Common.h" />
+    <ClInclude Include="CrystalMemory.h" />
+    <ClInclude Include="CrystalPlayer.h" />
+    <ClInclude Include="CrystalTile2.h" />
+    <ClInclude Include="CrystalTree\CrystalTreeCtrl.h" />
+    <ClInclude Include="CT2AsmView.h" />
+    <ClInclude Include="CT2CheatsSearch.h" />
+    <ClInclude Include="CT2ChildFrm.h" />
+    <ClInclude Include="CT2Doc.h" />
+    <ClInclude Include="CT2Favorite.h" />
+    <ClInclude Include="CT2HexView.h" />
+    <ClInclude Include="CT2InputDlg.h" />
+    <ClInclude Include="CT2MainFrm.h" />
+    <ClInclude Include="CT2NormalDlg.h" />
+    <ClInclude Include="CT2Palette.h" />
+    <ClInclude Include="CT2ScriptView.h" />
+    <ClInclude Include="CT2StatusBar.h" />
+    <ClInclude Include="CT2TileEditorView.h" />
+    <ClInclude Include="CT2TileView.h" />
+    <ClInclude Include="CT2TreeBar.h" />
+    <ClInclude Include="CT2View.h" />
+    <ClInclude Include="CTMacro.h" />
+    <ClInclude Include="DSFirmWareSettings.h" />
+    <ClInclude Include="FileCompDlg.h" />
+    <ClInclude Include="LZ77Search.h" />
+    <ClInclude Include="NARCFileInfo.h" />
+    <ClInclude Include="NdsFileSystemInfo.h" />
+    <ClInclude Include="NdsInfo.h" />
+    <ClInclude Include="OpenFileDialog.h" />
+    <ClInclude Include="PacFileInfo.h" />
+    <ClInclude Include="RecentStatList.h" />
+    <ClInclude Include="RelativeDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="SDatInfo.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="SubFileInfo.h" />
+    <ClInclude Include="TextFileDialog.h" />
+    <ClInclude Include="ToolBarEx.h" />
+    <ClInclude Include="ToolsDlg.h" />
+    <ClInclude Include="UtilityFileInfo.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\agbcomp.bin" />
+    <None Include="res\Bk1.bin" />
+    <None Include="res\Bk2.bin" />
+    <None Include="res\Bk3.bin" />
+    <None Include="res\Bk4.bin" />
+    <None Include="res\Bk5.bin" />
+    <None Include="res\Bk6.bin" />
+    <None Include="res\Bk7.bin" />
+    <None Include="res\CrystalTile2.rc2" />
+    <None Include="res\CT2_AsmView.ctr" />
+    <None Include="res\CT2_EditorView.ctr" />
+    <None Include="res\CT2_HexView.ctr" />
+    <None Include="res\CT2_ScriptView.ctr" />
+    <None Include="res\CT2_TileView.ctr" />
+    <None Include="res\DsEmuMenuRes.bin" />
+    <None Include="res\NdsFsi.bin" />
+    <None Include="res\NintendoLogo.bin" />
+    <None Include="res\Palette.bin" />
+    <None Include="res\Palette2.bin" />
+    <None Include="res\Palette3.bin" />
+    <None Include="res\Palette4.bin" />
+    <None Include="res\Palette5.bin" />
+    <None Include="res\Palette6.bin" />
+    <None Include="res\Palette7.bin" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\angellogo.jpg" />
+    <Image Include="res\CrystalTile2.ico" />
+    <Image Include="res\CrystalTile2Doc.ico" />
+    <Image Include="res\Toolbar.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\CrystalTile2.manifest" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrystalTile2.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BBSInfo.txt" />
+    <Text Include="ReadMe.txt" />
+    <Text Include="WhatsNew.txt" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="CrystalTile2.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

@@ -1,0 +1,245 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// ñéÙþ(ñé?ìÑÚÅÍìûú?) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\CrystalTree.rc2""  // Þª Microsoft Visual C++ ???îÜ?ê¹\r\n"
+    "#include ""afxres.rc""         // ?ñ×?Ëì\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CrystalTree.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "CrystalTree Á¤º¸"
+FONT 8, "±¼¸²", 0, 0, 0x2
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CrystalTree Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2007",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "È®ÀÎ",IDOK,178,7,50,16,WS_GROUP
+END
+
+IDD_CRYSTALTREE_DIALOG DIALOGEX 0, 0, 214, 231
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CrystalTree"
+FONT 8, "±¼¸²", 0, 0, 0x1
+BEGIN
+    LTEXT           "ÀÌ¸§(&N)",IDC_STATIC,0,170,24,8
+    LTEXT           "ÈùÆ®(&H)",IDC_STATIC,0,185,24,8
+    EDITTEXT        IDC_EDIT_LEFTNAME,28,168,80,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_HINT,28,182,186,12,ES_AUTOHSCROLL
+    CONTROL         "ÀÐ±âÀü¿ë(&R)",IDC_CHECK_READONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,0,198,34,8
+    CONTROL         "16Áø¹ý(&H)",IDC_CHECK_HEXMODE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,0,208,48,8
+    CONTROL         "ÅØ½ºÆ® °¡Á®¿À±â(&X)",IDC_CHECK_GETTXT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,52,208,42,8
+    LTEXT           "ÄÁÆ®·Ñ Á¾·ù(&T)",IDC_STATIC,96,208,39,8
+    COMBOBOX        IDC_COMBO_CTRLTYPE,134,206,80,74,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Á¦¾î µ¥ÀÌÅÍ(&B)",IDC_STATIC,0,218,38,8
+    EDITTEXT        IDC_EDIT_DATA,40,218,174,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "·Îµå(&L)",IDC_BUTTON_LOAD,34,196,34,10
+    PUSHBUTTON      "±âº» Å° Ãß°¡(&K)",IDC_BUTTON_ADDPARENT,68,196,42,10
+    PUSHBUTTON      "Ãß°¡(&A)",IDC_BUTTON_ADD,110,196,34,10
+    PUSHBUTTON      "»èÁ¦(&D)",IDC_BUTTON_DEL,144,196,34,10
+    PUSHBUTTON      "ÀúÀå(&S)",IDC_BUTTON_SAVE,178,196,34,10
+    PUSHBUTTON      "±³Ã¼(&C)",IDC_BUTTON_CHANGE,108,156,34,10
+    PUSHBUTTON      "»ó´Ü(&U)",IDC_BUTTON_UP,144,156,34,10
+    PUSHBUTTON      "ÇÏ´Ü(&N)",IDC_BUTTON_DWON,180,156,34,10
+    PUSHBUTTON      "C&TR µ¥ÀÌÅÍ Ãß°¡",IDC_BUTTON_APPEND,60,156,48,10
+    CONTROL         "¹üÀ§ ¸í·É(&M)",IDC_CHECK_CMDRANGE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,162,171,48,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "TODO: <ÍëÞÉÙ£>"
+            VALUE "FileDescription", "TODO: <ÙþËì?Ù¥>"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "CrystalTree.exe"
+            VALUE "LegalCopyright", "TODO: (C) <ÍëÞÉÙ£>¡£ÜÁ×ºá¶êó?××¡£"
+            VALUE "OriginalFilename", "CrystalTree.exe"
+            VALUE "ProductName", "TODO: <?ù¡Ù£>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "??", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CRYSTALTREE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 207
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 224
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CRYSTALTREE_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_CTRLTYPE, 0x403, 10, 0
+0x5443, 0x5343, 0x455f, 0x4944, 0x0054, 
+    IDC_COMBO_CTRLTYPE, 0x403, 14, 0
+0x5443, 0x5343, 0x435f, 0x4d4f, 0x4f42, 0x4f42, 0x0058, 
+    IDC_COMBO_CTRLTYPE, 0x403, 19, 0
+0x5443, 0x5343, 0x435f, 0x4d4f, 0x4f42, 0x4f42, 0x2058, 0x694c, 0x7473, 
+"\000" 
+    IDC_COMBO_CTRLTYPE, 0x403, 13, 0
+0x5443, 0x5343, 0x505f, 0x5441, 0x4248, 0x584f, "\000" 
+    IDC_COMBO_CTRLTYPE, 0x403, 10, 0
+0x5443, 0x5343, 0x4c5f, 0x4e49, 0x004b, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "?éÍ CrystalTree(&A)..."
+END
+
+#endif    // ñéÙþ(ñé?ìÑÚÅÍìûú?) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(949)
+#include "res\CrystalTree.rc2"  // Þª Microsoft Visual C++ ???îÜ?ê¹
+#include "afxres.rc"         // ?ñ×?Ëì
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

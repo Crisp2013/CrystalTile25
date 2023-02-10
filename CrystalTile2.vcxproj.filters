@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Asm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="AsmDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Common.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrystalMemory.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrystalPlayer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrystalTile2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CrystalTree\CrystalTreeCtrl.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2AsmView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2CheatsSearch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2Doc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2Favorite.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2HexView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2InputDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2NormalDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2Palette.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2ScriptView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2StatusBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2TileEditorView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2TileView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2TreeBar.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CT2View.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="CTMacro.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DSFirmWareSettings.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="FileCompDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="LZ77Search.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NARCFileInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NdsFileSystemInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="NdsInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OpenFileDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PacFileInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RecentStatList.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RelativeDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SDatInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SubFileInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFileDialog.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolBarEx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ToolsDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="UtilityFileInfo.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Asm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="AsmDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Common.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrystalMemory.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrystalPlayer.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrystalTile2.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CrystalTree\CrystalTreeCtrl.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2AsmView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2CheatsSearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2Doc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2Favorite.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2HexView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2InputDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2NormalDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2Palette.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2ScriptView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2StatusBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2TileEditorView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2TileView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2TreeBar.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CT2View.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CTMacro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DSFirmWareSettings.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="FileCompDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LZ77Search.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NARCFileInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NdsFileSystemInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="NdsInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OpenFileDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PacFileInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RecentStatList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RelativeDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SDatInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SubFileInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFileDialog.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolBarEx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ToolsDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UtilityFileInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\agbcomp.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk1.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk2.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk3.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk4.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk5.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk6.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Bk7.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CrystalTile2.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CT2_AsmView.ctr">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CT2_EditorView.ctr">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CT2_HexView.ctr">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CT2_ScriptView.ctr">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\CT2_TileView.ctr">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\DsEmuMenuRes.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NdsFsi.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\NintendoLogo.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette2.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette3.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette4.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette5.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette6.bin">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\Palette7.bin">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\angellogo.jpg">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\CrystalTile2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\CrystalTile2Doc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Manifest Include="res\CrystalTile2.manifest">
+      <Filter>资源文件</Filter>
+    </Manifest>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrystalTile2.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="BBSInfo.txt" />
+    <Text Include="ReadMe.txt" />
+    <Text Include="WhatsNew.txt" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,88 @@
+====最近更新， 详细的更新以及帮助请查看WhatsNew.txt文档====
+------------2007.09.12------------
+1.添加NARC、NTFP、CHAR、PLT、NTFT、NBFC、NBFP、NBFS文件格式支持
+  NBFC(手动选择GBA4BPP/GBA8BPP)、NBFP、NBFS请按顺序加载
+  上面的图形格式由于没用文件头所以无法设置各种参数
+  可能需要用户自行调整GBA4BPP/GBA8BPP、宽高
+  SDAT文件格式得到修正(还是不完整，不知道怎么列目录)
+  NANR、NCER以及其他格式资料不全暂时不加(不知道谁有官方文档？)
+  测试ROM：1158-塞尔达传说-Mugen no Sunadokei(J)
+  PS:谢谢毛毛(yeyezai)提供部分文件格式资料
+
+------------2007.09.02------------
+1.将CT2的强制中断键Ctrl改为Pause/Break键(翻页键上面那个)
+  以防止和Ctrl组合快捷键冲突
+  (ProteinPig)
+
+2.修正无法导出导入文件
+
+3.可拖放导入调色板
+  (dclixun)
+
+4.修正创建DSROM的缺陷
+
+5.可导入导出Utility.bin/*.pac文件
+  PAC文件在游戏王DS里面发现，不知道是否是标准文件
+
+6.修正导入GBA4BPP MAP图片不能的BUG
+
+7.修正属性面板改变大小为边框位置
+
+8.修正Banner.bin在修改后未更新Crc16的漏洞
+  (DSROM所有CRC检查都在[NDS文件系统信息]的编辑菜单里面)  
+
+9.十六进制模式可对选区进行CRC16计算
+
+10.工具菜单添加DS固件用户信息编辑器
+  对于使用模拟器的玩家，固件中的昵称、生日等信息就可以编辑了
+  IQUE固件没测试过（小白没有），估计也没问题
+
+11.[NDS文件系统信息]文件菜单添加瘦身功能
+  大小设置为文件头Application_End_Offset
+
+------------2007.08.11------------
+1.修改CT2的界面
+  添加了一个资源面板
+  改变了修改属性面板
+  下面有较为详细的提示信息，类似VS的属性面板-v-
+  PS1：调整面板的大小为右下角的天使LOGO
+
+2.修正十六进制编辑器下导入系统编码文本的BUG
+
+3.修正映射模式下的处理地址的问题
+
+------------2007.07.20------------
+1.添加对.PAC、.SDAT、UTILITY.BIN的文件系统支持
+  单独打开时选择工具菜单的 某扩展名 文件信息
+  NDS的文件系统在编辑以及右键菜单选择 某扩展名 文件信息
+
+2.文本搜索指针添加相对搜索指针
+  如NDS的 0904-游戏王 文本 bin.pac中的dlg_text_j.bin/dlg_indx_j.bin：
+  002CEE04,84,この@3モンスター@0を@3召喚@0するには@3生け贄@0が@2１体@0必要です。@3召喚@0しますか？
+  002CEE5C,84,この@3モンスター@0を@3召喚@0するには@3生け贄@0が@2%d体@0必要です。@3召喚@0しますか？
+  002CEEB4,40,@2１体目@0の@3生け贄@0を選んでください。
+  此文本的起始基址是002CEE00，所以在基址填写002CEE00
+  勾选文本面板的相对指针按钮
+  这样搜索到的指针将减去基址002CEE00
+  002CEE04-002CEE00=04
+  002CEE5C-002CEE00=5C
+  002CEEB4-002CEE00=B4
+  指针范围002B3600-(+2384)搜索差值作为指针
+  导入时也要勾选相对指针，这样更新指针时也会更新为差值
+  (yeyezai)
+
+------------软件------------
+主要用途：生成、查看以及编辑字库
+更新日期：二零零七年九月十二日
+论坛连接：[color=bule][url=http://www.angeleden.net/forums/read.php?tid=1048]有关 CrystalTile2 更详细的更新信息及其下载[/url][/color]
+天使论坛：[color=bule]http://www.angeleden.net[/color]
+下载连接：[color=bule][url=http://www.angeleden.net/Crystal/CrystalTile2.zip]CrystalTile2 (外壳：upx 2.93w)[/url][/color]
+开源代码：[color=bule][url=http://www.angeleden.net/Crystal/CrystalTile2(src).zip]CrystalTile2 ver:2007.07.15(vs2003.net/mfc)[/url][/color]
+解压密码：www.angeleden.net[color=red]
+作者留言：用户有什么意见或建议请跟贴提出
+          MFC71U.dll(7.10.3077.0)+MSVCR71.dll(7.10.3052.4)
+          本软件没写帮助文件，更新信息中包含部分功能的说明
+          没问题，请不要灌水，免得帖子被删除；谢谢合作。
+[/color]
+----------------图片(实际以最新版本为准)------------
+[img]http://www.angeleden.net/Crystal/Pic/CrystalTile2.PNG[/img]
