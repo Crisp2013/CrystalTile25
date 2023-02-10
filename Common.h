@@ -15,7 +15,12 @@
 #define GCL_HMODULE GCLP_HMODULE
 #define GCL_WNDPROC GCLP_WNDPROC
 #define GCL_HICONSM GCLP_HICONSM
+//#define GetClassLong GetClassLongPtr
+//#define GetWindowLong GetWindowLongPtr
+//#define SetClassLong SetClassLongPtr
+//#define SetWindowLong SetWindowLongPtr
 #endif
+
 
 
 // ±‰¡ø

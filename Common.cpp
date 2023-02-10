@@ -96,9 +96,9 @@ void CHyperlink::PreSubclassWindow()
 	CStatic::PreSubclassWindow();
 
 	DWORD dwStyle = GetStyle();
-	::SetWindowLong(GetSafeHwnd(), GWL_STYLE, dwStyle | SS_NOTIFY);
+	::SetWindowLongPtr(GetSafeHwnd(), GWL_STYLE, dwStyle | SS_NOTIFY);
 
-	SetClassLong(GetSafeHwnd(), GCL_HCURSOR, (LONG)(INT_PTR)m_hCursor);
+	SetClassLongPtr(GetSafeHwnd(), GCL_HCURSOR, (LONG)(INT_PTR)m_hCursor);
 
 	CFont *pFont = GetFont();
 	LOGFONT lg;

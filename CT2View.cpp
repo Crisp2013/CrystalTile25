@@ -84,7 +84,7 @@ void CT2View::OnInitialUpdate()
 	CScrollView::OnInitialUpdate();
 
 	// È¥µô±³¾°Ë¢
-	SetClassLong(m_hWnd,GCL_HBRBACKGROUND, (LONG)(INT_PTR)::GetStockObject(NULL_BRUSH));
+	SetClassLongPtr(m_hWnd,GCL_HBRBACKGROUND, (LONG)(INT_PTR)::GetStockObject(NULL_BRUSH));
 
 	CRect rc;	GetClientRect(&rc);
 	memset(&m_biPaintPanel, 0, sizeof(m_biPaintPanel));

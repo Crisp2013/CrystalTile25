@@ -106,7 +106,7 @@ BOOL CT2TreeBar::Create(CWnd* pParentWnd, UINT nStyle, UINT nID)
 		return FALSE;
 
 	m_hBrush = CreateSolidBrush(GetSysColor(COLOR_BTNFACE));
-	SetClassLong(m_hWnd, GCL_HBRBACKGROUND, (LONG)(UINT_PTR)m_hBrush);
+	SetClassLongPtr(m_hWnd, GCL_HBRBACKGROUND, (LONG)(UINT_PTR)m_hBrush);
 
 	SetDlgCtrlID(nID);
 
@@ -159,7 +159,7 @@ BOOL CT2TreeBar::Create(CWnd* pParentWnd, UINT nStyle, UINT nID)
 	menu.LoadMenu(IDR_CT2POPMENU);
 	CMenu *pSub = menu.GetSubMenu(1);
 	CString cp;
-	for(UINT i=0; i<pSub->GetMenuItemCount(); i++)
+	for(UINT i=0; i<(UINT)(pSub->GetMenuItemCount()); i++)
 	{
 		pSub->GetMenuString(i, cp, MF_BYPOSITION);
 		pCB->InsertString(i, cp);
@@ -171,7 +171,7 @@ BOOL CT2TreeBar::Create(CWnd* pParentWnd, UINT nStyle, UINT nID)
 	int nIndex = GetMenuItemIndex(menu.GetSubMenu(2)->GetSafeHmenu(), ID_VIEW_AUTOFITCOL)+2;
 	pSub = menu.GetSubMenu(2)->GetSubMenu(nIndex);
 	pCB = (CComboBox*)m_wndDefOption.GetDlgItem(IDC_OPTION_BKLIST);
-	for(UINT i=0; i<pSub->GetMenuItemCount(); i++)
+	for(UINT i=0; i<(UINT)(pSub->GetMenuItemCount()); i++)
 	{
 		pSub->GetMenuString(i, cp, MF_BYPOSITION);
 		pCB->InsertString(i, cp);

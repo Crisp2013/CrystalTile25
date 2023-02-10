@@ -599,7 +599,7 @@ BOOL CALLBACK DsEmu(HWND hWnd, LPARAM lParam)
 
 	#define DSSTYLE (WS_VISIBLE|WS_SYSMENU|WS_OVERLAPPED|WS_CAPTION)
 	if( !GetParent(hWnd) && theApp.GetMainWnd()->m_hWnd!=hWnd &&
-        (GetWindowLong(hWnd, GWL_STYLE)&DSSTYLE)==DSSTYLE &&
+        (GetWindowLongPtr(hWnd, GWL_STYLE)&DSSTYLE)==DSSTYLE &&
 		lstrcmp(g_szBuffer, _T("cabinetwclass"))!=0 &&
 		lstrcmp(g_szBuffer, _T("explorewclass"))!=0 /*&&
 		(sFindStr(g_szBuffer, _T("ds")) || sFindStr(g_szBuffer, _T("no$")) || sFindStr(g_szBuffer, _T("desmume")))*/

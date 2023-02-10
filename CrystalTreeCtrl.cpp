@@ -375,7 +375,7 @@ int CCrystalTreeCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	RECT rc={0};
 	m_Edit.Create(WS_CHILD|CBS_DROPDOWN|CBS_AUTOHSCROLL|WS_TABSTOP|WS_CLIPCHILDREN|WS_CLIPSIBLINGS, rc, this, IDC_CTC_EDIT);
 	m_hEditBtn = CreateWindow(_T("BUTTON"), NULL, WS_CHILD|WS_TABSTOP|WS_CLIPCHILDREN|WS_CLIPSIBLINGS, 0, 0, 0, 0, m_hWnd, (HMENU)(UINT_PTR)IDC_CTC_EDITBTN, AfxGetInstanceHandle(), NULL);
-	::SetClassLong(m_hEditBtn, GCLP_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
+	::SetClassLongPtr(m_hEditBtn, GCLP_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
 
 	m_Edit.SetRedraw(FALSE);
 	COMBOBOXINFO cbi;
@@ -385,8 +385,8 @@ int CCrystalTreeCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	m_hwndList=cbi.hwndList;
 	::SendMessage(m_hwndItem, WM_SETREDRAW, TRUE, 0);
 	::SendMessage(m_hwndList, WM_SETREDRAW, TRUE, 0);
-	::SetClassLong(m_hwndItem, GCLP_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
-	::SetClassLong(m_hwndList, GCLP_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
+	::SetClassLongPtr(m_hwndItem, GCLP_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
+	::SetClassLongPtr(m_hwndList, GCLP_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
 
 	HRGN r=CreateRectRgn(0,0,0xFFFF,GetItemHeight()-2);
 	m_Edit.SetWindowRgn(r, FALSE);
@@ -408,7 +408,7 @@ int CCrystalTreeCtrl::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	SetItemHeight(GetItemHeight()+3);
 
-	SetClassLong(m_hWnd, GCL_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
+	SetClassLongPtr(m_hWnd, GCL_HBRBACKGROUND, (LONG)(UINT_PTR)GetStockObject(NULL_BRUSH));
 
 	return 0;
 }
@@ -454,9 +454,9 @@ void CCrystalTreeCtrl::OnMouseMove(UINT nFlags, CPoint point)
 		HINSTANCE hInst = AfxFindResourceHandle(
 			MAKEINTRESOURCE(AFX_IDC_HSPLITBAR), RT_GROUP_CURSOR);
 		HCURSOR h=LoadCursor(hInst, MAKEINTRESOURCE(AFX_IDC_HSPLITBAR));
-		SetClassLong(m_hWnd, GCL_HCURSOR, (LONG)(UINT_PTR)h);
+		SetClassLongPtr(m_hWnd, GCL_HCURSOR, (LONG)(UINT_PTR)h);
 	}else
-		SetClassLong(m_hWnd, GCL_HCURSOR, (LONG)(UINT_PTR)LoadCursor(NULL, MAKEINTRESOURCE(IDC_ARROW)));
+		SetClassLongPtr(m_hWnd, GCL_HCURSOR, (LONG)(UINT_PTR)LoadCursor(NULL, MAKEINTRESOURCE(IDC_ARROW)));
 
 	CTreeCtrl::OnMouseMove(nFlags, point);
 }
