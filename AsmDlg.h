@@ -13,21 +13,21 @@ public:
 };
 
 
-// CAsmDlg ¶Ô»°¿ò
+// CAsmDlg ëŒ€í™” ìƒì
 
 class CAsmDlg : public CDialog
 {
 	DECLARE_DYNAMIC(CAsmDlg)
 
 public:
-	CAsmDlg(CWnd* pParent = NULL);   // ±ê×¼¹¹Ôìº¯Êı
+	CAsmDlg(CWnd* pParent = NULL);   // í‘œì¤€ ìƒì„±ì
 	virtual ~CAsmDlg();
 
-// ¶Ô»°¿òÊı¾İ
+// ë‹¤ì´ì–¼ë¡œê·¸ ë°ì´í„°
 	enum { IDD = IDD_ASMDLG };
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV ì§€ì›
 
 	DECLARE_MESSAGE_MAP()
 public:

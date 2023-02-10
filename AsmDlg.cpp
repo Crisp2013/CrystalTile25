@@ -1,4 +1,4 @@
-// AsmDlg.cpp : ÊµÏÖÎÄ¼ş
+ï»¿// AsmDlg.cpp : êµ¬í˜„ íŒŒì¼
 //
 
 #include "stdafx.h"
@@ -22,13 +22,13 @@ void CAsmHint::DrawItem(LPDRAWITEMSTRUCT lpDIS)
 	dc.Attach(lpDIS->hDC);
 	dc.FillRect(&lpDIS->rcItem, &CBrush(::GetSysColor(COLOR_BTNFACE)));
 
-	int x=lpDIS->rcItem.left;
-	int y=lpDIS->rcItem.top;
+	int x = lpDIS->rcItem.left;
+	int y = lpDIS->rcItem.top;
 	int nLen = m_strCompSrc.GetLength();
 
 	CString strSrc;
 	int nPos = m_strCompSrc.Find(_T(' '));
-	if(nPos!=-1)
+	if (nPos != -1)
 		strSrc = m_strCompSrc.Left(nPos);
 	else
 		strSrc = m_strCompSrc;
@@ -37,35 +37,35 @@ void CAsmHint::DrawItem(LPDRAWITEMSTRUCT lpDIS)
 
 	nPos = 0;
 	CSize sz = dc.GetTextExtent(_T(" "));
-	int nTab = 10*sz.cx;
-	while(TRUE)
+	int nTab = 10 * sz.cx;
+	while (TRUE)
 	{
-		if(x>=lpDIS->rcItem.right)
+		if (x >= lpDIS->rcItem.right)
 		{
 			x = lpDIS->rcItem.left;
 			y += sz.cy;
 		}
 
 		AfxExtractSubString(strText, strHint, nPos++);
-		if(strText.IsEmpty()) break;
+		if (strText.IsEmpty()) break;
 
 		CString str = strText.Left(nLen);
 
-		if(lstrcmp(str, strSrc)==0)
+		if (lstrcmp(str, strSrc) == 0)
 			dc.SetTextColor(0xFF0000);
 		else
 			dc.SetTextColor(0x00);
 
 		dc.TextOut(x, y, strText);
 		sz = dc.GetTextExtent(strText);
-		x += sz.cx + nTab-sz.cx;
+		x += sz.cx + nTab - sz.cx;
 	}
 
 	dc.Detach();
 }
 
 
-// CAsmDlg ¶Ô»°¿ò
+// CAsmDlg ëŒ€í™” ìƒì
 
 IMPLEMENT_DYNAMIC(CAsmDlg, CDialog)
 CAsmDlg::CAsmDlg(CWnd* pParent /*=NULL*/)
@@ -97,27 +97,28 @@ BEGIN_MESSAGE_MAP(CAsmDlg, CDialog)
 	ON_CBN_EDITCHANGE(IDC_ASMCB, OnCbnEditchangeAsmcb)
 END_MESSAGE_MAP()
 
-// CAsmDlg ÏûÏ¢´¦Àí³ÌĞò
+// CAsmDlg ë©”ì‹œì§€ í•¸ë“¤ëŸ¬
 
 void CAsmDlg::OnBnClickedOk()
 {
 	UpdateData();
 
-	BYTE nThumb = m_nType&1;
+	BYTE nThumb = m_nType & 1;
 	m_nType = GetAsmCode(m_strAsm, m_nCurOffset, m_nSize, nThumb);
 
-	if(m_strAsmList.Find(m_strAsm, 0)==-1)
+	if (m_strAsmList.Find(m_strAsm, 0) == -1)
 	{
 		CString sasm;
 		sasm.Format(_T("\n%s"), m_strAsm);
 		m_strAsmList.Insert(0, sasm);
 	}
 
-	if(!m_nSize)
+	if (!m_nSize)
 	{
-		Hint(IDS_ASMERROR, MB_OK|MB_ICONERROR);
+		Hint(IDS_ASMERROR, MB_OK | MB_ICONERROR);
 		OnCancel();
-	}else
+	}
+	else
 		OnOK();
 }
 
@@ -129,7 +130,7 @@ void CAsmDlg::OnCbnEditchangeAsmcb()
 	CString strAsm = m_strAsm;
 	strAsm.MakeLower();
 	strAsm.TrimLeft();
-	switch(strAsm.GetAt(0))
+	switch (strAsm.GetAt(0))
 	{
 	case 'a':
 		m_strAsmHint = _T("adc\tadd\tand\tasr");
@@ -197,18 +198,18 @@ BOOL CAsmDlg::OnInitDialog()
 
 	m_AsmCB.ResetContent();
 	CString t;
-	int i=1;
-	while(TRUE)
+	int i = 1;
+	while (TRUE)
 	{
 		AfxExtractSubString(t, m_strAsmList, i++);
-		if(t.IsEmpty()) break;
+		if (t.IsEmpty()) break;
 		m_AsmCB.AddString(t);
 	}
 
 	UpdateData(FALSE);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
-	// Òì³£: OCX ÊôĞÔÒ³Ó¦·µ»Ø FALSE
+	// ì˜ˆì™¸: OCX ì†ì„± í˜ì´ì§€ëŠ” FALSEë¥¼ ë°˜í™˜í•´ì•¼ í•©ë‹ˆë‹¤.
 }
 
 struct ASMDESC
@@ -217,26 +218,26 @@ struct ASMDESC
 	char* lpDesc;
 };
 
-// »ã±àÖ¸Áî¸ñÊ½°ïÖú
+// ì–´ì…ˆë¸”ë¦¬ ëª…ë ¹ì–´ í¬ë§· ë„ì›€ë§
 ASMDESC g_AsmDesc[] =
 {
-	{ "adc", "adc{cond}{s} Rd, Rn\nadc{cond}{s} Rd, Rn, Op2\nadc Rd,Rs\n´ø½øÎ»µÄ¼Ó·¨" },
+	{ "adc", "adc{cond}{s} Rd, Rn\nadc{cond}{s} Rd, Rn, Op2\nadc Rd,Rs\nAdd with Carry" },
 	{ "add", "add{cond}{s} Rd, Rn\tadd{cond}{s} Rd, Rn, Op2\nadd Rd,Rs,Imm3bit\tadd Rd,Imm8bit\nadd Rd,Rs,Rn\t\tadd R0-14,R8-15\nadd R8-14,R0-15\tadd R15,R0-15\nadd Rd,PC,Imm8bit*4\tadd Rd,SP,Imm8bit*4\nadd Rd,SP,Imm7bit*4\tadd Rd,SP,-Imm7bit*4" },
 	{ "and", "and{cond}{s} Rd, Rn\nand{cond}{s} Rd, Rn, Op2\nand Rd,Rs" },
-	{ "asr", "asr Rd, Rs\nasr Rd, Rs, shift\nRd/Rs = R0-R7\nshift = 0-31\nËãÊõÓÒÒÆ" },
+	{ "asr", "asr Rd, Rs\nasr Rd, Rs, shift\nRd/Rs = R0-R7\nshift = 0-31\nìš°ì¸¡ìœ¼ë¡œ ì‚°ìˆ  ì‹œí”„íŠ¸ ì—°ì‚°" },
 	{ "b", "b{cond} offset\nAsm\toffset = -32M..+32M (step:4)\nThumb\toffset = $+4-256..$+4+254 (step:2)" },
-	{ "bls", "ÎŞ·ûºÅĞ¡ÓÚ" },
-	{ "ble", "ÓĞ·ûºÅĞ¡ÓÚµÈÓÚ" },
-	{ "blt", "ÓĞ·ûºÅĞ¡ÓÚ" },
-	{ "beq", "µÈÓÚ" },
-	{ "bge", "ÓĞ·ûºÅ´óÓÚµÈÓÚ" },
-	{ "bgt", "ÓĞ·ûºÅ´óÓÚ" },
-	{ "bhi", "ÎŞ·ûºÅ´óÓÚ" },
-	{ "bcs", "ÎŞ·ûºÏ´óÓÚµÈÓÚ" },
-	{ "bcc", "ÎŞ·ûºÏĞ¡ÓÚ" },
-	{ "bmi", "ÎŞ·ûºÏĞ¡ÓÚ" },
-	{ "bpl", "ÎŞ·ûºÏ´óÓÚµÈÓÚ" },
-	{ "bne", "²»µÈ" },
+	{ "bls", "ë¶€í˜¸ ì—†ëŠ” ì‘ê±°ë‚˜ ê°™ìŒ" },
+	{ "ble", "ë¶€í˜¸ ìˆëŠ” ì‘ê±°ë‚˜ ê°™ìŒ" },
+	{ "blt", "ë¶€í˜¸ ìˆëŠ” ì‘ìŒ" },
+	{ "beq", "ê°™ìŒ" },
+	{ "bge", "ë¶€í˜¸ ìˆëŠ” í¬ê¸°ë‚˜ ê°™ìŒ" },
+	{ "bgt", "ë¶€í˜¸ ìˆëŠ” í¼" },
+	{ "bhi", "ë¶€í˜¸ ì—†ëŠ” í¼" },
+	{ "bcs", "ë¬´ë¶€í˜¸ í¬ê±°ë‚˜ ê°™ìŒ" },
+	{ "bcc", "ë¬´ë¶€í˜¸ ì‘ìŒ" },
+	{ "bmi", "ë¬´ë¶€í˜¸ ì‘ìŒ" },
+	{ "bpl", "ë¬´ë¶€í˜¸ í¬ê±°ë‚˜ ê°™ìŒ" },
+	{ "bne", "ê°™ì§€ ì•ŠìŒ" },
 	{ "bic", "bic{cond}{s} Rd, Rn, Op2\nbic Rd,Rs" },
 	{ "bl", "bl{cond} offset\nAsm\toffset = -32M..+32M (step:4)\nThumb\toffset = (PC+4)-400000h..+3FFFFEh (step:2)" },
 	{ "bx", "bx{cond} Rs" },
@@ -250,8 +251,8 @@ ASMDESC g_AsmDesc[] =
 	{ "ldrh", "ldrh Rd,[Rb,5bit*2]\nldrh Rd,[Rb,Ro]" },
 	{ "ldsb", "ldsb Rd,[Rb,Ro]" },
 	{ "ldsh", "ldsh Rd,[Rb,Ro]" },
-	{ "lsl", "lsl Rd, Rs\nlsl Rd, Rs, Imm5bit\nÂß¼­×óÒÆ" },
-	{ "lsr", "lsr Rd, Rs\nlsr Rd, Rs, Imm5bit\nÂß¼­ÓÒÒÆ" },
+	{ "lsl", "lsl Rd, Rs\nlsl Rd, Rs, Imm5bit\nì¢Œì¸¡ìœ¼ë¡œ ë…¼ë¦¬ ì‹œí”„íŠ¸ ì—°ì‚°" },
+	{ "lsr", "lsr Rd, Rs\nlsr Rd, Rs, Imm5bit\nìš°ì¸¡ìœ¼ë¡œ ë…¼ë¦¬ ì‹œí”„íŠ¸ ì—°ì‚°" },
 	{ "mcr", "mcr{cond} p#,<cpopc>,Rd,cn,cm{,<cp>}" },
 	{ "mla", "mla{cond}{s} Rd,Rm,Rs,Rn" },
 	{ "mov", "mov{cond}{s} Rd,Op2\nmov Rd,Imm8bit\nmov Rd,Rs\nmov R0-14,R8-15\nmov R8-14,R0-15\nmov R15,R0-15" },
@@ -261,12 +262,12 @@ ASMDESC g_AsmDesc[] =
 	{ "mul", "mul{cond}{s} Rd,Rm,Rs\nmul Rd,Rs" },
 	{ "mvn", "mvn{cond}{s} Rd,Op2\nmvn Rd,Rs" },
 	{ "neg", "neg Rd,Rs" },
-	{ "nop", "nop\n¿ÕÖ¸Áî" },
+	{ "nop", "nop\në¹ˆ ëª…ë ¹" },
 	{ "orr", "orr{cond}{s} Rd,Rn,Op2\norr Rd,Rs" },
-	{ "ror", "ror Rd,Rs\nÑ­»·ÓÒÒÆ" },
-	{ "rsb", "rsb{cond}{s} Rd,Rn,Op2\n·´Ïò¼õ·¨" },
-	{ "rsc", "rsc{cond}{s} Rd,Rn,Op2\n´ø½èÎ»µÄ·´Ïò¼õ·¨" },
-	{ "sbc", "sbc{cond}{s} Rd,Rn,Op2\nsbc Rd,Rs\n´ø½èÎ»µÄ¼õ·¨" },
+	{ "ror", "ror Rd,Rs\nì˜¤ë¥¸ìª½ìœ¼ë¡œ ë¡œí…Œì´ì…˜" },
+	{ "rsb", "rsb{cond}{s} Rd,Rn,Op2\nRevers Subtract" },
+	{ "rsc", "rsc{cond}{s} Rd,Rn,Op2\nRevers Subtract with Carry" },
+	{ "sbc", "sbc{cond}{s} Rd,Rn,Op2\nsbc Rd,Rs\nSubtract with Carry" },
 	{ "smlal", "smlal{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ "smull", "smull{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ "stc", "stc{cond}{l} p#,cd,<Rs>" },
@@ -275,8 +276,8 @@ ASMDESC g_AsmDesc[] =
 	{ "sub", "sub{cond}{s} Rd,Rn,Op2\nsub Rd,Rs,Imm3Bit\nsub Rd,Imm8bit\nsub Rd,Rs,Rn" },
 	{ "swi", "swi{cond} Imm24bit\nswi Imm8bit" },
 	{ "swp", "swp{cond}{b} Rd,Rm,[Rn]" },
-	{ "teq", "teq{cond} Rn,Op2\n²âÊÔµÈ¼Û" },
-	{ "tst", "tst{cond} Rn,Op2\ntst Rd,Rs\n²âÊÔÎ»" },
+	{ "teq", "teq{cond} Rn,Op2\në™ë“±ì„± í…ŒìŠ¤íŠ¸" },
+	{ "tst", "tst{cond} Rn,Op2\ntst Rd,Rs\në¹„íŠ¸ í…ŒìŠ¤íŠ¸" },
 	{ "umlal", "umlal{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ "umull", "umull{cond}{s} RdLo,RdHi,Rm,Rs" },
 	{ NULL, NULL }
@@ -288,26 +289,26 @@ void CAsmDlg::UpdateAsmDesc()
 	strHint.Replace(_T("\t"), _T("\n"));
 
 	int i = strSrc.Find(_T(' '));
-	if(i!=-1)
+	if (i != -1)
 		strSrc = strSrc.Left(i);
 	i = 0;
 	CString strAsm;
 	m_strAsmDesc.Empty();
-	while(TRUE)
+	while (TRUE)
 	{
 		AfxExtractSubString(strAsm, strHint, i++);
-		if(strAsm.IsEmpty()) break;
+		if (strAsm.IsEmpty()) break;
 
-		if(strAsm.CompareNoCase(strSrc)==0)
+		if (strAsm.CompareNoCase(strSrc) == 0)
 		{
 			m_strAsmDesc = _T("OK");
 			char Asm[8];
 			::CharToOem(strAsm, Asm);
 			i = 0;
-			while(g_AsmDesc[i].lpAsm)
+			while (g_AsmDesc[i].lpAsm)
 			{
-				if( _mbsicmp((const unsigned char*)g_AsmDesc[i].lpAsm,
-					(const unsigned char*)Asm) == 0 )
+				if (_mbsicmp((const unsigned char*)g_AsmDesc[i].lpAsm,
+					(const unsigned char*)Asm) == 0)
 				{
 					::OemToChar(g_AsmDesc[i].lpDesc, m_strAsmDesc.GetBuffer(_MAX_PATH));
 					m_strAsmDesc.ReleaseBuffer();
