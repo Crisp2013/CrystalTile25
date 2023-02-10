@@ -1,4 +1,4 @@
-// CrystalTile2.cpp : ¶¨ÒåÓ¦ÓÃ³ÌÐòµÄÀàÐÐÎª¡£
+// CrystalTile2.cpp : å®šä¹‰åº”ç”¨ç¨‹åºçš„ç±»è¡Œä¸ºã€‚
 //
 
 #include "stdafx.h"
@@ -33,7 +33,7 @@ HIMAGELIST g_hSysImageList;
 
 BEGIN_MESSAGE_MAP(CT2App, CWinApp)
 	ON_COMMAND(ID_APP_ABOUT, OnAppAbout)
-	// »ùÓÚÎÄ¼þµÄ±ê×¼ÎÄµµÃüÁî
+	// åŸºäºŽæ–‡ä»¶çš„æ ‡å‡†æ–‡æ¡£å‘½ä»¤
 	// ON_COMMAND(ID_FILE_OPEN, CWinApp::OnFileOpen)
 	ON_COMMAND_RANGE(ID_FILE_MRU_FIRST, ID_FILE_MRU_LAST, OnOpenRecentFile)
 	ON_COMMAND(ID_FILE_OPEN, OnFileOpen)
@@ -42,7 +42,7 @@ BEGIN_MESSAGE_MAP(CT2App, CWinApp)
 	ON_COMMAND(ID_TOOLS_TBL2CMAP, OnToolsTbl2cmap)
 END_MESSAGE_MAP()
 
-// CT2App ¹¹Ôì
+// CT2App æž„é€ 
 
 CT2App::CT2App()
 //: m_hSJisTbl(NULL)
@@ -108,11 +108,11 @@ CT2App::~CT2App()
 		ImageList_Destroy(g_hCTImageList);
 }
 
-// Î¨Ò»µÄÒ»¸ö CT2App ¶ÔÏó
+// å”¯ä¸€çš„ä¸€ä¸ª CT2App å¯¹è±¡
 
 CT2App theApp;
 
-// CT2App ³õÊ¼»¯
+// CT2App åˆå§‹åŒ–
 
 BOOL CT2App::InitInstance()
 {
@@ -123,7 +123,7 @@ BOOL CT2App::InitInstance()
 	DWORD dwLen = GetModuleFileName(NULL, (LPTSTR)m_pszProfileName, _MAX_PATH);
 	lstrcpy((LPTSTR)(m_pszProfileName+(dwLen-3)), _T("ini"));
 
-	// ·ÀÖ¹²»Í¬°æ±¾µÄCrystalTileÅäÖÃÎÄ¼þ³åÍ»
+	// é˜²æ­¢ä¸åŒç‰ˆæœ¬çš„CrystalTileé…ç½®æ–‡ä»¶å†²çª
 	CVerInfo ver;
 	CString PrivateBuild = GetProfileString(CT2Settings, CT2PrivateBuild);
 	if(PrivateBuild.Compare(ver.PrivateBuild)!=0)
@@ -134,12 +134,12 @@ BOOL CT2App::InitInstance()
 
 	if(IsRunning()) return FALSE;
 
-	// ×¢²áÓ¦ÓÃ³ÌÐòµÄÎÄµµÄ£°å¡£ÎÄµµÄ£°å
-	// ½«ÓÃ×÷ÎÄµµ¡¢¿ò¼Ü´°¿ÚºÍÊÓÍ¼Ö®¼äµÄÁ¬½Ó
+	// æ³¨å†Œåº”ç”¨ç¨‹åºçš„æ–‡æ¡£æ¨¡æ¿ã€‚æ–‡æ¡£æ¨¡æ¿
+	// å°†ç”¨ä½œæ–‡æ¡£ã€æ¡†æž¶çª—å£å’Œè§†å›¾ä¹‹é—´çš„è¿žæŽ¥
 	CMultiDocTemplate* pDocTemplate;
 	pDocTemplate = new CMultiDocTemplate(IDR_CrystalTile2TYPE,
 		RUNTIME_CLASS(CT2Doc),
-		RUNTIME_CLASS(CT2ChildFrm), // ×Ô¶¨Òå MDI ×Ó¿ò¼Ü
+		RUNTIME_CLASS(CT2ChildFrm), // è‡ªå®šä¹‰ MDI å­æ¡†æž¶
 		RUNTIME_CLASS(CT2TileView));
 	if (!pDocTemplate)
 		return FALSE;
@@ -148,7 +148,7 @@ BOOL CT2App::InitInstance()
 	m_hTileMenu = pDocTemplate->m_hMenuShared;
 	m_hTileAccelTable = pDocTemplate->m_hAccelTable;
 
-	// ´´½¨Ö÷ MDI ¿ò¼Ü´°¿Ú
+	// åˆ›å»ºä¸» MDI æ¡†æž¶çª—å£
 	CT2MainFrm* pMainFrame = new CT2MainFrm;
 	if (!pMainFrame || !pMainFrame->LoadFrame(IDR_MAINFRAME))
 		return FALSE;
@@ -156,9 +156,9 @@ BOOL CT2App::InitInstance()
 
 	LoadStdProfileSettings2(9);
 
-	// ½öµ±¾ßÓÐºó×ºÊ±²Åµ÷ÓÃ DragAcceptFiles
-	//  ÔÚ MDI Ó¦ÓÃ³ÌÐòÖÐ£¬ÕâÓ¦ÔÚÉèÖÃ m_pMainWnd Ö®ºóÁ¢¼´·¢Éú
-	// ·ÖÎö±ê×¼Íâ¿ÇÃüÁî¡¢DDE¡¢´ò¿ªÎÄ¼þ²Ù×÷µÄÃüÁîÐÐ
+	// ä»…å½“å…·æœ‰åŽç¼€æ—¶æ‰è°ƒç”¨ DragAcceptFiles
+	//  åœ¨ MDI åº”ç”¨ç¨‹åºä¸­ï¼Œè¿™åº”åœ¨è®¾ç½® m_pMainWnd ä¹‹åŽç«‹å³å‘ç”Ÿ
+	// åˆ†æžæ ‡å‡†å¤–å£³å‘½ä»¤ã€DDEã€æ‰“å¼€æ–‡ä»¶æ“ä½œçš„å‘½ä»¤è¡Œ
 	CCommandLineInfo cmdInfo;
 	ParseCommandLine(cmdInfo);
 	if(cmdInfo.m_nShellCommand!=CCommandLineInfo::FileNew)
@@ -171,20 +171,20 @@ BOOL CT2App::InitInstance()
 }
 
 
-// ÓÃÓÚÓ¦ÓÃ³ÌÐò¡°¹ØÓÚ¡±²Ëµ¥ÏîµÄ CAboutDlg ¶Ô»°¿ò
+// ç”¨äºŽåº”ç”¨ç¨‹åºâ€œå…³äºŽâ€èœå•é¡¹çš„ CAboutDlg å¯¹è¯æ¡†
 
 class CAboutDlg : public CDialog
 {
 public:
 	CAboutDlg();
 
-// ¶Ô»°¿òÊý¾Ý
+// å¯¹è¯æ¡†æ•°æ®
 	enum { IDD = IDD_ABOUTBOX };
 
 protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV Ö§³Ö
+	virtual void DoDataExchange(CDataExchange* pDX);    // DDX/DDV æ”¯æŒ
 
-// ÊµÏÖ
+// å®žçŽ°
 protected:
 	DECLARE_MESSAGE_MAP()
 public:
@@ -219,17 +219,17 @@ BOOL CAboutDlg::OnInitDialog()
 	m_HomePage.SubclassDlgItem(IDC_HOMEPAGE, this);
 
 	return TRUE;  // return TRUE unless you set the focus to a control
-	// Òì³£: OCX ÊôÐÔÒ³Ó¦·µ»Ø FALSE
+	// å¼‚å¸¸: OCX å±žæ€§é¡µåº”è¿”å›ž FALSE
 }
 
-// ÓÃÓÚÔËÐÐ¶Ô»°¿òµÄÓ¦ÓÃ³ÌÐòÃüÁî
+// ç”¨äºŽè¿è¡Œå¯¹è¯æ¡†çš„åº”ç”¨ç¨‹åºå‘½ä»¤
 void CT2App::OnAppAbout()
 {
 	CAboutDlg aboutDlg;
 	aboutDlg.DoModal();
 }
 
-// ³ÌÐòÊÇ·ñÒÑÔËÐÐ
+// ç¨‹åºæ˜¯å¦å·²è¿è¡Œ
 BOOL CT2App::IsRunning(void)
 {
 	CString strClass;
@@ -326,7 +326,7 @@ void CT2App::LoadStdProfileSettings2(UINT nMaxMRU)
 
 int CT2App::ExitInstance()
 {
-	// TODO: ÔÚ´ËÌí¼Ó×¨ÓÃ´úÂëºÍ/»òµ÷ÓÃ»ùÀà
+	// TODO: åœ¨æ­¤æ·»åŠ ä¸“ç”¨ä»£ç å’Œ/æˆ–è°ƒç”¨åŸºç±»
 	int nRET = CWinApp::ExitInstance();
 	if(m_pRecentStatList)
 		m_pRecentStatList->WriteList();
@@ -335,7 +335,7 @@ int CT2App::ExitInstance()
 
 void CT2App::AddToRecentFileList(LPCTSTR lpszPathName)
 {
-	// TODO: ÔÚ´ËÌí¼Ó×¨ÓÃ´úÂëºÍ/»òµ÷ÓÃ»ùÀà
+	// TODO: åœ¨æ­¤æ·»åŠ ä¸“ç”¨ä»£ç å’Œ/æˆ–è°ƒç”¨åŸºç±»
 	// m_pRecentStatList->Add(lpszPathName);
 
 	// if (m_pRecentFileList != NULL) m_pRecentFileList->Add(lpszPathName);
@@ -738,7 +738,7 @@ void CT2App::SetCT2Tree(WORD nID)
 	CT2MainFrm *pMF=(CT2MainFrm*)GetMainWnd();
 	CCrystalTreeCtrl &tc = pMF->m_TreeBar.m_Tree;
 
-	// ±ê×¼
+	// æ ‡å‡†
 	HRSRC hRsrc;
 	HANDLE hHandle=NULL;
 	if(nID!=IDR_TD_SCRIPTVIEW)
@@ -791,3 +791,4 @@ void CT2App::SetCT2Tree(WORD nID)
 		}
 	}
 }
+
