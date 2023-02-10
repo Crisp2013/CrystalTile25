@@ -263,7 +263,7 @@ void CT2StatusBar::GetItemRect(int nItem, CRect& rcItem)
 	ReleaseDC(pDC);
 }
 
-void CT2StatusBar::OnTimer(UINT nIDEvent)
+void CT2StatusBar::OnTimer(UINT_PTR nIDEvent)
 {
 	// TODO: 在此添加消息处理程序代码和/或调用默认值
 	Invalidate(FALSE);

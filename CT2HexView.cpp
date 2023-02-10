@@ -1325,7 +1325,7 @@ void CT2HexView::DoFindReplace(BOOL bReplace)
 		delete m_pFrd;
 }
 
-LONG CT2HexView::OnFindReplace(UINT wParam, LONG lParam)
+LRESULT CT2HexView::OnFindReplace(WPARAM wParam, LPARAM lParam)
 {
 	FINDREPLACE &fr = *((FINDREPLACE*)(UINT_PTR)lParam);
 	if(m_pFrd->IsTerminating())

@@ -444,7 +444,7 @@ void CT2CheatsSearch::OnLvnItemActivateCheatsLocklist(NMHDR *pNMHDR, LRESULT *pR
 	*pResult = 0;
 }
 
-void CT2CheatsSearch::OnTimer(UINT nIDEvent)
+void CT2CheatsSearch::OnTimer(UINT_PTR nIDEvent)
 {
 	HANDLE hProcess = ((CT2Doc*)m_pDoc)->m_Memory.m_hProcess;
 	UINT nOffset = ((CT2Doc*)m_pDoc)->m_Memory.m_nOffset;

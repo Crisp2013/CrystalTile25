@@ -89,7 +89,7 @@ public:
 	afx_msg void OnSwpCode();
 	afx_msg void OnUpdateViewSwpCode(CCmdUI *pCmdUI);
 	void DoFindReplace(BOOL bReplace=FALSE);
-	LONG OnFindReplace(UINT wParam, LONG lParam);
+	LRESULT OnFindReplace(WPARAM wParam, LPARAM lParam);
 	afx_msg void OnSearchFind();
 	afx_msg void OnSearchReplace();
 	void OnFind();

@@ -52,7 +52,7 @@ public:
 	afx_msg void OnLvnItemActivateCheatsList(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnLvnEndlabeleditCheatsLocklist(NMHDR *pNMHDR, LRESULT *pResult);
 	afx_msg void OnLvnItemActivateCheatsLocklist(NMHDR *pNMHDR, LRESULT *pResult);
-	afx_msg void OnTimer(UINT nIDEvent);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 	void OnUpdateDataType();
 	afx_msg void OnDestroy();
 	afx_msg void OnLvnGetdispinfoCheatsLocklist(NMHDR *pNMHDR, LRESULT *pResult);

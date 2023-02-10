@@ -26,7 +26,7 @@ public:
 	afx_msg void OnNMDblclk(NMHDR *pNMHDR, LRESULT *pResult);
 	int HitTest(CPoint pt);
 	void GetItemRect(int nItem, CRect& rcItem);
-	afx_msg void OnTimer(UINT nIDEvent);
+	afx_msg void OnTimer(UINT_PTR nIDEvent);
 };
 
 #endif // CT2_STATUSBAR_H
