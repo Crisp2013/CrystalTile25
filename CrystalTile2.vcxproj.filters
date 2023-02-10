@@ -361,13 +361,13 @@
     </Manifest>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="CrystalTile2.rc">
-      <Filter>资源文件</Filter>
-    </ResourceCompile>
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="BBSInfo.txt" />
     <Text Include="ReadMe.txt" />
     <Text Include="WhatsNew.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrystalTile2.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
   </ItemGroup>
 </Project>

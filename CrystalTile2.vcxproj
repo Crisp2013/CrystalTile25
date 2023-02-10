@@ -294,12 +294,12 @@
     <Manifest Include="res\CrystalTile2.manifest" />
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="CrystalTile2.rc" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="BBSInfo.txt" />
     <Text Include="ReadMe.txt" />
     <Text Include="WhatsNew.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="CrystalTile2.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
