@@ -664,7 +664,8 @@ CString GetCodePageDescription(UINT nCodePage, CString *lpstrFontName)
 		&hKey)==ERROR_SUCCESS)
 	{
 		DWORD dwSize, dwType;
-		strSubKey = _T("Description");
+		//strSubKey = _T("Description");
+		strSubKey = _T("BodyCharset");
 		if(RegQueryValueEx(hKey, strSubKey,
 			NULL, &dwType, NULL, &dwSize)==ERROR_SUCCESS)
 		{

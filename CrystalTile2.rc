@@ -13,12 +13,12 @@
 #undef APSTUDIO_READONLY_SYMBOLS
 
 /////////////////////////////////////////////////////////////////////////////
-// 中文(中华人民共和国) resources
+// 耖冼(耖?煅谂挽?) resources
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
 #ifdef _WIN32
-LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
-#pragma code_page(936)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
 #endif //_WIN32
 
 #ifdef APSTUDIO_INVOKED
@@ -47,9 +47,9 @@ BEGIN
     "\r\n"
     "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
     "LANGUAGE 4, 2\r\n"
-    "#pragma code_page(936)\r\n"
-    "#include ""res\\CrystalTile2.rc2""  // 非 Microsoft Visual C++ 编辑资源\r\n"
-    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#pragma code_page(949)\r\n"
+    "#include ""res\\CrystalTile2.rc2""  // 蕺 Microsoft Visual C++ ??府家胶\r\n"
+    "#include ""afxres.rc""         // ?褡?遂\r\n"
     "#endif\r\n"
     "\0"
 END
@@ -120,371 +120,371 @@ END
 
 IDR_MAINFRAME MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
-        POPUP "乱入&DS模拟器"
+        MENUITEM "凯扁...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS 俊鼓饭捞磐 饶农(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "弥辟 颇老甸",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "退出(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "辆丰(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "视图(&V)"
+    POPUP "焊扁(&V)"
     BEGIN
-        MENUITEM "标准工具栏(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "属性窗口(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "外部工具栏(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "扁夯 档备葛澜(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "漂己芒(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "寇何 砒官(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "惑怕官(&S)",                  ID_VIEW_STATUS_BAR
     END
-    POPUP "工具(&T)"
+    POPUP "档备(&T)"
     BEGIN
-        MENUITEM "LZ77数据压缩(&C)...",         ID_TOOLS_LZ77COMP
-        MENUITEM "文件比较(&O)...",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 单捞磐 拘绵...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "颇老 厚背...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "&DS固件用户设置...",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS 七傀绢 汲沥...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "文本编码转换(&S)...",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "码表转换到CMA&P...",          ID_TOOLS_TBL2CMAP
+        MENUITEM "咆胶飘 内靛 函券...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "内靛 抛捞喉阑 CMAP栏肺 函券...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "外部工具(&E)...",             ID_TOOLS_TOOLS
+        MENUITEM "寇何 档备...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "收藏(&A)"
+    POPUP "氓哎乔(&A)"
     BEGIN
-        MENUITEM "添加/整理<收藏夹>(&A)...\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<氓哎乔> 眠啊/沥府...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
-    POPUP "帮助(&H)"
+    POPUP "档框富(&H)"
     BEGIN
-        MENUITEM "关于 CrystalTile2(&A)...",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5 沥焊...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_CrystalTile2TYPE MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
-        POPUP "乱入&DS模拟器"
+        MENUITEM "凯扁...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS 俊鼓饭捞磐 饶农(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
-        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM "摧扁(&C)",                    ID_FILE_CLOSE
+        MENUITEM "历厘(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "促弗 捞抚栏肺 历厘...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "弥辟 颇老甸",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "退出(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "辆丰(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "编辑(&E)"
+    POPUP "祈笼(&E)"
     BEGIN
-        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "恢复(&R)",                    ID_EDIT_RESET
+        MENUITEM "角青 秒家(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "促矫 角青(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "剪切(&T)\tCtrl+X",            ID_EDIT_CUT
-        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
-        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "肋扼郴扁(&T)\tCtrl+X",            ID_EDIT_CUT
+        MENUITEM "汗荤(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "嘿咯持扁(&P)\tCtrl+V",            ID_EDIT_PASTE
         MENUITEM SEPARATOR
-        MENUITEM "全选(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
+        MENUITEM "葛滴 急琶(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
         MENUITEM SEPARATOR
-        MENUITEM "定位(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "捞悼(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
         MENUITEM SEPARATOR
-        MENUITEM "导出(&E)...\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "导入(&I)...\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "捞固瘤肺 郴焊郴扁...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "捞固瘤甫 郴焊郴扁...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "导入码表(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
-        MENUITEM "设置字体(&F)...",             ID_TILEEDITOR_FONT
+        MENUITEM "内靛 抛捞喉 啊廉坷扁(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
+        MENUITEM "臂裁 汲沥...(&F)",             ID_TILEEDITOR_FONT
         MENUITEM SEPARATOR
-        MENUITEM "刷新内存快照(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "皋葛府 胶忱鸡 货肺 绊魔(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "视图(&V)"
+    POPUP "焊扁(&V)"
     BEGIN
-        MENUITEM "标准工具栏(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "属性窗口(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "外部工具栏(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "扁夯 档备葛澜(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "漂己芒(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "寇何 砒官(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "惑怕官(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "T&ile视图\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "十六进制编辑器(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "&Asm视图\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Ti&le编辑器\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "文本搜索(&F)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "鸥老 焊扁(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16柳荐 祈笼扁(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM 焊扁(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "鸥老 祈笼扁(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "巩磊凯 茫扁(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        MENUITEM "网格(&G)\tShift+G",           ID_VIEW_GRID
-        MENUITEM "自适应Tile行列数(&C)",        ID_VIEW_AUTOFITCOL
+        MENUITEM "拜磊(&G)\tShift+G",           ID_VIEW_GRID
+        MENUITEM "鸥老 青 磊悼嘎勉(&C)",        ID_VIEW_AUTOFITCOL
         MENUITEM SEPARATOR
-        POPUP "底纹(&B)"
+        POPUP "硅版 公刺"
         BEGIN
-            MENUITEM "威猫",                        ID_VIEW_BK1
-            MENUITEM "白底",                        ID_VIEW_BK2
-            MENUITEM "大理石",                      ID_VIEW_BK3
-            MENUITEM "水纹",                        ID_VIEW_BK4
-            MENUITEM "黑底",                        ID_VIEW_BK5
-            MENUITEM "其他",                        ID_VIEW_BK6
-            MENUITEM "方格",                        ID_VIEW_BK7
+            MENUITEM "绊剧捞",                        ID_VIEW_BK1
+            MENUITEM "闰 官帕",                        ID_VIEW_BK2
+            MENUITEM "措府籍",                      ID_VIEW_BK3
+            MENUITEM "拱搬",                        ID_VIEW_BK4
+            MENUITEM "八篮 官帕",                        ID_VIEW_BK5
+            MENUITEM "扁鸥",                        ID_VIEW_BK6
+            MENUITEM "拜磊",                        ID_VIEW_BK7
         END
     END
-    POPUP "工具(&T)"
+    POPUP "档备(&T)"
     BEGIN
-        MENUITEM "LZ77数据压缩(&C)...",         ID_TOOLS_LZ77COMP
-        MENUITEM "文件比较(&O)...",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 单捞磐 拘绵...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "颇老 厚背...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        POPUP "Tile扩展处理(&E)"
+        POPUP "Tile(&E)"
         BEGIN
-            MENUITEM "<<无可扩展的文档>>",          ID_TOOLS_ZOOMEXFIRST
+            MENUITEM "<<匍师?铟钴冼?>>",          ID_TOOLS_ZOOMEXFIRST
         END
-        MENUITEM "NDS文件系统信息(&I)...\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS 颇老 矫胶袍 沥焊...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "&DS固件用户设置...",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS 七傀绢 汲沥...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "文本编码转换(&S)...",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "码表转换到CMA&P...",          ID_TOOLS_TBL2CMAP
+        MENUITEM "咆胶飘 内靛 函券...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "内靛 抛捞喉阑 CMAP栏肺 函券...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "外部工具(&E)...",             ID_TOOLS_TOOLS
+        MENUITEM "寇何 档备...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "收藏(&A)"
+    POPUP "氓哎乔(&A)"
     BEGIN
-        MENUITEM "添加/整理<收藏夹>(&A)...\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<氓哎乔> 眠啊/沥府...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
-    POPUP "窗口(&W)"
+    POPUP "芒(&W)"
     BEGIN
-        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
-        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "货 芒(&N)",                ID_WINDOW_NEW
+        MENUITEM "拌窜侥(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "鸥老侥(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "鉴瞒(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "属性\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "调色板(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "默认选项设置(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "加己\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "迫饭飘(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "扁夯 汲沥栏肺(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "帮助(&H)"
+    POPUP "档框富(&H)"
     BEGIN
-        MENUITEM "关于 CrystalTile2(&A)...",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5俊 措窍咯...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_VIEW_HEXVIEW MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
-        POPUP "乱入&DS模拟器"
+        MENUITEM "凯扁...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS 俊鼓饭捞磐 饶农(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
         END
-        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
-        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM "摧扁(&C)",                    ID_FILE_CLOSE
+        MENUITEM "历厘(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "促弗 捞抚栏肺 历厘...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "弥辟 颇老甸",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "退出(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "辆丰(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "编辑(&E)"
+    POPUP "祈笼(&E)"
     BEGIN
-        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "恢复(&R)",                    ID_EDIT_RESET
+        MENUITEM "角青 秒家(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "促矫 角青(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
-        MENUITEM "粘贴(&P)\tCtrl+V",            ID_EDIT_PASTE
+        MENUITEM "汗荤(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "嘿咯持扁(&P)\tCtrl+V",            ID_EDIT_PASTE
         MENUITEM SEPARATOR
-        MENUITEM "导出(&E)...\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "导入(&I)...\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "捞固瘤肺 郴焊郴扁...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "捞固瘤甫 郴焊郴扁...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "数据转换为调色板(P)",         ID_EDIT_DATA2PAL
-        MENUITEM "调色板转换为数据(&D)",        ID_EDIT_PAL2DATA
+        MENUITEM "单捞磐甫 迫饭飘肺 函券(P)",         ID_EDIT_DATA2PAL
+        MENUITEM "迫饭飘甫 单捞磐肺 函券(&D)",        ID_EDIT_PAL2DATA
         MENUITEM SEPARATOR
-        MENUITEM "刷新内存快照(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "皋葛府 胶忱鸡 货肺 绊魔(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "搜索(&S)"
+    POPUP "茫扁(&S)"
     BEGIN
-        MENUITEM "查找(&F)...\tCtrl+F",         ID_SEARCH_FIND
-        MENUITEM "查找下一个(&N)\tF3",          ID_SEARCH_FINDNEXT
-        MENUITEM "替换(&R)...\tCtrl+R",         ID_SEARCH_REPLACE
+        MENUITEM "茫扁...(&F)\tCtrl+F",         ID_SEARCH_FIND
+        MENUITEM "促澜 茫扁(&N)\tF3",          ID_SEARCH_FINDNEXT
+        MENUITEM "官操扁...(&R)\tCtrl+R",         ID_SEARCH_REPLACE
         MENUITEM SEPARATOR
-        MENUITEM "定位(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
-        MENUITEM "ARM&9入口执行点",             ID_FSI_GOARM9
-        MENUITEM "ARM&7入口执行点",             ID_FSI_GOARM7
+        MENUITEM "捞悼(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "ARM&9 器牢磐",             ID_FSI_GOARM9
+        MENUITEM "ARM&7 器牢磐",             ID_FSI_GOARM7
         MENUITEM SEPARATOR
-        MENUITEM "相对搜索(&E)...",             ID_SEARCH_RELATIVE
-        MENUITEM "&LZ77数据搜索...",            ID_SEARCH_LZ77
+        MENUITEM "楷包八祸...(&E)",             ID_SEARCH_RELATIVE
+        MENUITEM "LZ77 拘绵 八祸...(&L)",            ID_SEARCH_LZ77
     END
-    POPUP "码表(&C)"
+    POPUP "内靛(&C)"
     BEGIN
-        MENUITEM "选择码表(&S)...",             ID_TBL_SELTBL
-        MENUITEM "启用码表(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
-        MENUITEM "启用自定义控制符(&C)",        IDC_HEXVIEW_TBLCTRL
-        MENUITEM "翻转编码(&S)",                ID_HEXVIEW_SWPCODE
+        MENUITEM "绊蜡锅龋钎 急琶...(&S)",             ID_TBL_SELTBL
+        MENUITEM "绊蜡锅龋钎 荤侩(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
+        MENUITEM "荤侩磊 沥狼 力绢钎 荤侩(&C)",        IDC_HEXVIEW_TBLCTRL
+        MENUITEM "内靛 函券(&S)",                ID_HEXVIEW_SWPCODE
         MENUITEM SEPARATOR
-        POPUP "编码(&E)"
+        POPUP "牢内爹(&E)"
         BEGIN
-            MENUITEM "系统默认(&D)",                ID_CODEPAGE_ACP
+            MENUITEM "矫胶袍 牢内爹 荤侩(&D)",                ID_CODEPAGE_ACP
         END
-        MENUITEM "编码对应字体(&F)...",         ID_FONT_LIST
+        MENUITEM "牢内爹 臂裁 汲沥...(&F)",         ID_FONT_LIST
     END
-    POPUP "视图(&V)"
+    POPUP "焊扁(&V)"
     BEGIN
-        MENUITEM "标准工具栏(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "属性窗口(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "外部工具栏(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "扁夯 档备葛澜(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "漂己芒(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "寇何 砒官(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "惑怕官(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "T&ile视图\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "十六进制编辑器(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "&Asm视图\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Ti&le编辑器\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "文本搜索(&F)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "鸥老 焊扁(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16柳荐 祈笼扁(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM 轰绢(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "鸥老 祈笼扁(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "巩磊凯 茫扁(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        MENUITEM "&2字节对齐",                  ID_VIEW_2BYTEALIGN
-        MENUITEM "&4字节对齐",                  ID_VIEW_4BYTEALIGN
+        MENUITEM "2官捞飘究 沥纺(&2)",                  ID_VIEW_2BYTEALIGN
+        MENUITEM "4官捞飘究 沥纺(&4)",                  ID_VIEW_4BYTEALIGN
         MENUITEM SEPARATOR
-        MENUITEM "彩色显示(&C)",                ID_VIEW_COLORTEXT
+        MENUITEM "祸惑 巩磊(&C)",                ID_VIEW_COLORTEXT
         MENUITEM SEPARATOR
-        POPUP "底纹(&B)"
+        POPUP "硅版 公刺"
         BEGIN
-            MENUITEM "威猫",                        ID_VIEW_BK1
-            MENUITEM "白底",                        ID_VIEW_BK2
-            MENUITEM "大理石",                      ID_VIEW_BK3
-            MENUITEM "水纹",                        ID_VIEW_BK4
-            MENUITEM "黑底",                        ID_VIEW_BK5
-            MENUITEM "其他",                        ID_VIEW_BK6
-            MENUITEM "方格",                        ID_VIEW_BK7
+            MENUITEM "绊剧捞",                        ID_VIEW_BK1
+            MENUITEM "闰 官帕",                        ID_VIEW_BK2
+            MENUITEM "措府籍",                      ID_VIEW_BK3
+            MENUITEM "拱搬",                        ID_VIEW_BK4
+            MENUITEM "八篮 官帕",                        ID_VIEW_BK5
+            MENUITEM "扁鸥",                        ID_VIEW_BK6
+            MENUITEM "拜磊",                        ID_VIEW_BK7
         END
     END
-    POPUP "工具(&T)"
+    POPUP "档备(&T)"
     BEGIN
-        MENUITEM "相对搜索(&R)...",             ID_SEARCH_RELATIVE
-        MENUITEM "文件比较(&O)...",             ID_TOOLS_FILECOMP
+        MENUITEM "楷包八祸...(&R)",             ID_SEARCH_RELATIVE
+        MENUITEM "颇老 厚背...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "&LZ77数据搜索...",            ID_SEARCH_LZ77
-        MENUITEM "LZ77数据解压(&U)...",         ID_TOOLS_LZ77UNCOMP
-        MENUITEM "LZ77数据压缩(&C)...",         ID_TOOLS_LZ77COMP
+        MENUITEM "LZ77 拘绵 八祸...(&L)",            ID_SEARCH_LZ77
+        MENUITEM "LZ77 拘绵 秦力...(&U)",         ID_TOOLS_LZ77UNCOMP
+        MENUITEM "LZ77 单捞磐 拘绵...(&C)",         ID_TOOLS_LZ77COMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS文件系统信息(&I)...\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS 颇老 矫胶袍 沥焊...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "&DS固件用户设置...",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS 七傀绢 汲沥...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "文本编码转换(&S)...",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "码表转换到CMA&P...",          ID_TOOLS_TBL2CMAP
-        MENUITEM "搜索金手指(&F)...",           ID_TOOLS_CHEATSSERACH
+        MENUITEM "咆胶飘 内靛 函券...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "内靛 抛捞喉阑 CMAP栏肺 函券...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "摹飘 八祸...(&F)",           ID_TOOLS_CHEATSSERACH
         MENUITEM SEPARATOR
-        MENUITEM "计算选区CRC&16值",            ID_TOOLS_GETCRC16
+        MENUITEM "CRC16 眉农级 拌魂(&1)",            ID_TOOLS_GETCRC16
         MENUITEM SEPARATOR
-        MENUITEM "外部工具(&E)...",             ID_TOOLS_TOOLS
+        MENUITEM "寇何 档备...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "收藏(&A)"
+    POPUP "氓哎乔(&A)"
     BEGIN
-        MENUITEM "添加/整理<收藏夹>(&A)...\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<氓哎乔> 眠啊/沥府...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
-    POPUP "窗口(&W)"
+    POPUP "芒(&W)"
     BEGIN
-        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
-        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "货 芒(&N)",                ID_WINDOW_NEW
+        MENUITEM "拌窜侥(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "鸥老侥(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "鉴瞒(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "属性\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "调色板(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "默认选项设置(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "加己\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "迫饭飘(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "扁夯 汲沥栏肺(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "帮助(&H)"
+    POPUP "档框富(&H)"
     BEGIN
-        MENUITEM "关于 CrystalTile2(&A)...",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5俊 措窍咯...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_VIEW_TILEEDITORVIEW MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
-        POPUP "乱入&DS模拟器"
+        MENUITEM "凯扁...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS 俊鼓饭捞磐 饶农(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
-        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM "摧扁(&C)",                    ID_FILE_CLOSE
+        MENUITEM "历厘(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "促弗 捞抚栏肺 历厘...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "弥辟 颇老甸",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "退出(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "辆丰(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "编辑(&E)"
+    POPUP "祈笼(&E)"
     BEGIN
-        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "恢复(&R)",                    ID_EDIT_RESET
+        MENUITEM "角青 秒家(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "促矫 角青(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "定位(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "捞悼(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
         MENUITEM SEPARATOR
-        MENUITEM "插入文本(&E)\tCtrl+E",        ID_TILEEDITOR_TEXT
-        MENUITEM "导入码表(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
+        MENUITEM "咆胶飘 火涝(&E)\tCtrl+E",        ID_TILEEDITOR_TEXT
+        MENUITEM "内靛 抛捞喉 啊廉坷扁(&T)\tCtrl+T",        ID_TILEEDITOR_TBL
         MENUITEM SEPARATOR
-        MENUITEM "刷新内存快照(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "皋葛府 胶忱鸡 货肺 绊魔(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "视图(&V)"
+    POPUP "焊扁(&V)"
     BEGIN
-        MENUITEM "标准工具栏(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "属性窗口(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "外部工具栏(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "扁夯 档备葛澜(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "漂己芒(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "寇何 砒官(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "惑怕官(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "T&ile视图\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "十六进制编辑器(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "&Asm视图\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Ti&le编辑器\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "文本搜索(&F)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "鸥老 焊扁(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16柳荐 祈笼扁(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM 轰绢(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "鸥老 祈笼扁(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "巩磊凯 茫扁(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        MENUITEM "网格(&G)\tShift+G",           ID_VIEW_GRID
+        MENUITEM "拜磊(&G)\tShift+G",           ID_VIEW_GRID
         MENUITEM SEPARATOR
-        POPUP "底纹(&B)"
+        POPUP "硅版 公刺"
         BEGIN
-            MENUITEM "威猫",                        ID_VIEW_BK1
-            MENUITEM "白底",                        ID_VIEW_BK2
-            MENUITEM "大理石",                      ID_VIEW_BK3
-            MENUITEM "水纹",                        ID_VIEW_BK4
-            MENUITEM "黑底",                        ID_VIEW_BK5
-            MENUITEM "其他",                        ID_VIEW_BK6
-            MENUITEM "方格",                        ID_VIEW_BK7
+            MENUITEM "绊剧捞",                        ID_VIEW_BK1
+            MENUITEM "闰 官帕",                        ID_VIEW_BK2
+            MENUITEM "措府籍",                      ID_VIEW_BK3
+            MENUITEM "拱搬",                        ID_VIEW_BK4
+            MENUITEM "八篮 官帕",                        ID_VIEW_BK5
+            MENUITEM "扁鸥",                        ID_VIEW_BK6
+            MENUITEM "拜磊",                        ID_VIEW_BK7
         END
     END
-    POPUP "工具(&T)"
+    POPUP "档备(&T)"
     BEGIN
-        MENUITEM "LZ77数据压缩(&C)...",         ID_TOOLS_LZ77COMP
-        MENUITEM "文件比较(&O)...",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 单捞磐 拘绵...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "颇老 厚背...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS文件系统信息(&I)...\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS 颇老 矫胶袍 沥焊...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "&DS固件用户设置...",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS 七傀绢 汲沥...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "文本编码转换(&S)...",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "码表转换到CMA&P...",          ID_TOOLS_TBL2CMAP
+        MENUITEM "咆胶飘 内靛 函券...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "内靛 抛捞喉阑 CMAP栏肺 函券...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "外部工具(&E)...",             ID_TOOLS_TOOLS
+        MENUITEM "寇何 档备...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "收藏(&A)"
+    POPUP "氓哎乔(&A)"
     BEGIN
-        MENUITEM "添加/整理<收藏夹>(&A)...\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<氓哎乔> 眠啊/沥府...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
-    POPUP "窗口(&W)"
+    POPUP "芒(&W)"
     BEGIN
-        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
-        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "货 芒(&N)",                ID_WINDOW_NEW
+        MENUITEM "拌窜侥(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "鸥老侥(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "鉴瞒(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "属性\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "调色板(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "默认选项设置(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "加己\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "迫饭飘(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "扁夯 汲沥栏肺(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "帮助(&H)"
+    POPUP "档框富(&H)"
     BEGIN
-        MENUITEM "关于 CrystalTile2(&A)...",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5俊 措窍咯...(&A)",    ID_APP_ABOUT
     END
 END
 
@@ -492,42 +492,42 @@ IDR_CT2POPMENU MENU
 BEGIN
     POPUP "SETCOLOR"
     BEGIN
-        MENUITEM "文本色(&T)",                  ID_SETCOLOR_TEXTCOLOR
-        MENUITEM "背景色(&B)",                  ID_SETCOLOR_BKCOLOR
-        MENUITEM "阴影/描边色(&S)",             ID_SETCOLOR_SHADOWCOLOR
+        MENUITEM "巩磊祸(&T)",                  ID_SETCOLOR_TEXTCOLOR
+        MENUITEM "硅版祸(&B)",                  ID_SETCOLOR_BKCOLOR
+        MENUITEM "澜康/祸 急琶(&S)",             ID_SETCOLOR_SHADOWCOLOR
     END
     POPUP "PALETTE"
     BEGIN
         MENUITEM "TLP",                         ID_PALETTE_PAL1
-        MENUITEM "色带",                        ID_PALETTE_PAL2
-        MENUITEM "色谱",                        ID_PALETTE_PAL3
-        MENUITEM "黑体",                        ID_PALETTE_PAL4
-        MENUITEM "灰度",                        ID_PALETTE_PAL5
-        MENUITEM "灰度2",                       ID_PALETTE_PAL6
-        MENUITEM "系统(Windows)",               ID_PALETTE_PAL7
+        MENUITEM "炼钦",                        ID_PALETTE_PAL2
+        MENUITEM "公瘤俺",                        ID_PALETTE_PAL3
+        MENUITEM "籍剧",                        ID_PALETTE_PAL4
+        MENUITEM "雀祸拌凯",                        ID_PALETTE_PAL5
+        MENUITEM "雀祸拌凯2",                       ID_PALETTE_PAL6
+        MENUITEM "矫胶袍(Windows)",               ID_PALETTE_PAL7
     END
     POPUP "ARM"
     BEGIN
-        MENUITEM "ARM9:ARM指令",                ID_ARM_ARM9_ARM
-        MENUITEM "ARM9:THUMB指令",              ID_ARM_ARM9_THUMB
-        MENUITEM "ARM7:ARM指令",                ID_ARM_ARM7_ARM
-        MENUITEM "ARM7:THUMB指令",              ID_ARM_ARM7_THUMB
+        MENUITEM "ARM9:ARM 葛靛",                ID_ARM_ARM9_ARM
+        MENUITEM "ARM9:THUMB 葛靛",              ID_ARM_ARM9_THUMB
+        MENUITEM "ARM7:ARM 葛靛",                ID_ARM_ARM7_ARM
+        MENUITEM "ARM7:THUMB 葛靛",              ID_ARM_ARM7_THUMB
     END
     POPUP "FSIPOP"
     BEGIN
-        MENUITEM "导出文件(&E)...",             ID_FSI_EXPORT
-        MENUITEM "导入文件(&I)...",             ID_FSI_IMPORT
+        MENUITEM "郴焊郴扁...(&E)",             ID_FSI_EXPORT
+        MENUITEM "啊廉坷扁...(&I)",             ID_FSI_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "解析&MAP图像",                ID_FSI_SETMAP
+        MENUITEM "MAP 捞固瘤 盒籍(&M)",                ID_FSI_SETMAP
         MENUITEM "?",                           ID_FSI_LOADDATA
         MENUITEM SEPARATOR
-        MENUITEM "应用NTFR字库宽高(&E)",        ID_FSIPOP_LOADNTFRWH
-        MENUITEM "修改&NTFR字库宽高...",        ID_FSIPOP_SETNTFRWH
+        MENUITEM "NTFR 臂裁 呈厚 荤侩(&E)",        ID_FSIPOP_LOADNTFRWH
+        MENUITEM "NTFR 臂裁 呈厚 函版...(&N)",        ID_FSIPOP_SETNTFRWH
         MENUITEM SEPARATOR
-        MENUITEM "显示游戏图标(&G)",            33297
-        MENUITEM "更新图标调色板(&P)",          33299
+        MENUITEM "霸烙 酒捞能 焊扁(&G)",            33297
+        MENUITEM "酒捞能 迫饭飘 荐沥(&P)",          33299
         MENUITEM SEPARATOR
-        MENUITEM "标题信息(&T)...",             ID_FSI_GAMEINFO
+        MENUITEM "力格 沥焊...(&T)",             ID_FSI_GAMEINFO
         MENUITEM " ",                           ID_TOOLS_SFI
     END
 END
@@ -536,340 +536,340 @@ IDR_LZ77SEARCH MENU
 BEGIN
     POPUP "&LZ77"
     BEGIN
-        MENUITEM "全部解压(&A)",                ID_LZ77_UNCOMPALL
-        MENUITEM "解压选择项目(&S)",            ID_LZ77_UNCOMPSEL
-        MENUITEM "中断(&B)",                    ID_LZ77_BREAK
+        MENUITEM "老褒 拘绵 秦力(&A)",                ID_LZ77_UNCOMPALL
+        MENUITEM "急琶 亲格 拘绵 秦力(&S)",            ID_LZ77_UNCOMPSEL
+        MENUITEM "吝瘤(&B)",                    ID_LZ77_BREAK
         MENUITEM SEPARATOR
-        MENUITEM "删除选择项目(&D)\tDel",       ID_LZ77_DELETE
+        MENUITEM "急琶 亲格 昏力(&D)\tDel",       ID_LZ77_DELETE
         MENUITEM SEPARATOR
-        MENUITEM "保存列表(&S)...",             IDC_LZ77SAVEBTN
+        MENUITEM "府胶飘 历厘...(&S)",             IDC_LZ77SAVEBTN
     END
-    MENUITEM "查找(&F)",                    IDC_FINDBTN
-    MENUITEM "下一处(&N)",                  IDC_NEXTBTN
+    MENUITEM "茫扁(&F)",                    IDC_FINDBTN
+    MENUITEM "促澜 茫扁(&N)",                  IDC_NEXTBTN
 END
 
 IDR_NDSFSI MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "导出文件(&E)...",             ID_FSI_EXPORT
-        MENUITEM "导出特定文件(&K)...",         ID_FSI_EXPORTEX
-        MENUITEM "导入文件(&I)...",             ID_FSI_IMPORT
+        MENUITEM "郴焊郴扁...(&E)",             ID_FSI_EXPORT
+        MENUITEM "漂沥颇老 郴焊郴扁...(&K)",         ID_FSI_EXPORTEX
+        MENUITEM "啊廉坷扁...(&I)",             ID_FSI_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "解析&MAP图像",                ID_FSI_SETMAP
+        MENUITEM "MAP 捞固瘤 盒籍(&M)",                ID_FSI_SETMAP
         MENUITEM "?",                           ID_FSI_LOADDATA
         MENUITEM SEPARATOR
-        MENUITEM "分解ROM(&S)...",              ID_FSI_SPLITROM
-        MENUITEM "创建ROM(&B)...",              ID_FSI_CREATEROM
-        MENUITEM "瘦身(&F)",                    ID_FSI_FIX
+        MENUITEM "ROM 盒秦...(&S)",              ID_FSI_SPLITROM
+        MENUITEM "ROM 父甸扁...(&B)",              ID_FSI_CREATEROM
+        MENUITEM "侩樊 临捞扁(&F)",                    ID_FSI_FIX
         MENUITEM SEPARATOR
-        MENUITEM "刷新(&R)",                    ID_FSI_REFALSH
+        MENUITEM "货肺绊魔(&R)",                    ID_FSI_REFALSH
     END
-    POPUP "编辑(&E)"
+    POPUP "祈笼(&E)"
     BEGIN
-        MENUITEM "检查效验码(&R)...",           ID_FSI_CHECKCRC16
-        MENUITEM "标题信息(&T)...",             ID_FSI_GAMEINFO
+        MENUITEM "CRC 八荤...(&R)",           ID_FSI_CHECKCRC16
+        MENUITEM "力格 沥焊...(&T)",             ID_FSI_GAMEINFO
         MENUITEM " ",                           ID_TOOLS_SFI
         MENUITEM SEPARATOR
-        MENUITEM "复制文本到剪贴板(&C)",        ID_FSI_COPYTOCLIPBOARD
+        MENUITEM "努赋焊靛肺 汗荤(&C)",        ID_FSI_COPYTOCLIPBOARD
         MENUITEM SEPARATOR
-        POPUP "修改文件结构大小(&S)"
+        POPUP "颇老 备炼 农扁 函版(&S)"
         BEGIN
-            MENUITEM "<<结构扩容>>",                ID_FSI_SETFILESIZE
+            MENUITEM "<农扁 犬厘>>",                ID_FSI_SETFILESIZE
         END
         MENUITEM SEPARATOR
-        MENUITEM "应用NTFR字库宽高(&E)",        ID_FSIPOP_LOADNTFRWH
-        MENUITEM "修改&NTFR字库宽高...",        ID_FSIPOP_SETNTFRWH
-        MENUITEM "导出N&TFR字库码表...",        ID_FSIPOP_EXPORTTBL
+        MENUITEM "NTFR 臂裁 呈厚 荤侩(&E)",        ID_FSIPOP_LOADNTFRWH
+        MENUITEM "NTFR 臂裁 呈厚 函版...(&N)",        ID_FSIPOP_SETNTFRWH
+        MENUITEM "NTFR 绊蜡锅龋钎 郴焊郴扁...(&T)",        ID_FSIPOP_EXPORTTBL
         MENUITEM SEPARATOR
-        MENUITEM "显示游戏图标(&G)",            ID_FSIPOP_SHOWICON
-        MENUITEM "更新图标调色板(&P)",          ID_FSIPOP_UPDATEICONPAL
+        MENUITEM "霸烙 酒捞能 焊扁(&G)",            ID_FSIPOP_SHOWICON
+        MENUITEM "酒捞能 迫饭飘 荐沥(&P)",          ID_FSIPOP_UPDATEICONPAL
     END
-    POPUP "定位(&G)"
+    POPUP "秦歹(&G)"
     BEGIN
-        MENUITEM "转到地址(&O)",                ID_FSI_GO
-        MENUITEM "转到文件(&F)",                ID_FSI_GOFILE
-        POPUP "文件头(&G)"
+        MENUITEM "林家 捞悼(&O)",                ID_FSI_GO
+        MENUITEM "颇老 捞悼(&F)",                ID_FSI_GOFILE
+        POPUP "捞悼(&G)"
         BEGIN
-            MENUITEM "<<定位文件头>>",              ID_FSI_GOTOHEADER
+            MENUITEM "<<秦歹 捞悼>>",              ID_FSI_GOTOHEADER
         END
         MENUITEM SEPARATOR
-        MENUITEM "ARM&9入口执行点",             ID_FSI_GOARM9
-        MENUITEM "ARM&7入口执行点",             ID_FSI_GOARM7
+        MENUITEM "ARM&9 器牢磐",             ID_FSI_GOARM9
+        MENUITEM "ARM&7 器牢磐",             ID_FSI_GOARM7
         MENUITEM SEPARATOR
-        MENUITEM "查找文件(&R)...",             ID_FSI_FIND
-        MENUITEM "查找下一个(&N)\tF3",          ID_FSI_NEXT
-        MENUITEM "下一个可疑文件(&!)\tF2",      ID_FSI_GOHAN
+        MENUITEM "颇老 茫扁...(&R)",             ID_FSI_FIND
+        MENUITEM "促澜 茫扁(&N)\tF3",          ID_FSI_NEXT
+        MENUITEM "促澜 狼缴 颇老(&!)\tF2",      ID_FSI_GOHAN
     END
 END
 
 IDR_VIEW_SCRIPTVIEW MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
-        POPUP "乱入&DS模拟器"
+        MENUITEM "凯扁...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS 俊鼓饭捞磐 饶农(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
-        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM "摧扁(&C)",                    ID_FILE_CLOSE
+        MENUITEM "历厘(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "促弗 捞抚栏肺 历厘...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "弥辟 颇老甸",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "退出(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "辆丰(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "编辑(&E)"
+    POPUP "祈笼(&E)"
     BEGIN
-        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
-        MENUITEM "删除选择项目(&D)\tDel",       ID_EDIT_DELETE
-        MENUITEM "删除无效项目(&V)",            ID_SCRIPTVIEW_INVALIDATEDELETE
+        MENUITEM "汗荤(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "急琶 亲格 昏力(&D)\tDel",       ID_EDIT_DELETE
+        MENUITEM "急琶 亲格 力寇 昏力(&V)",            ID_SCRIPTVIEW_INVALIDATEDELETE
 
         MENUITEM SEPARATOR
-        MENUITEM "全选(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
+        MENUITEM "葛滴 急琶(&A)\tCtrl+A",            ID_EDIT_SELECT_ALL
         MENUITEM SEPARATOR
-        MENUITEM "新格式导出(&X)...",           ID_EDIT_EXPORT_EX
-        MENUITEM "导出(&E)...\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "导入(&I)...\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "促弗 屈怕肺 郴焊郴扁...(&X)",           ID_EDIT_EXPORT_EX
+        MENUITEM "捞固瘤肺 郴焊郴扁...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "捞固瘤甫 郴焊郴扁...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "打开文本(&O)...\tAlt+O",      ID_SCRIPTVIEW_OPENSCRIPT
+        MENUITEM "巩辑 凯扁...(&O)\tAlt+O",      ID_SCRIPTVIEW_OPENSCRIPT
     END
-    POPUP "筛选(&I)"
+    POPUP "??(&I)"
     BEGIN
-        MENUITEM "无效指针(&P)",                ID_SCRIPTVIEW_FILTERPOINT
-        MENUITEM "文本长度为奇数(&S)",          ID_SCRIPTVIEW_FILTERSITEM
-        MENUITEM "文本长度为偶数(&D)",          ID_SCRIPTVIEW_FILTERDITEM
-        MENUITEM "文本长度小于最小长度(&L)",    ID_SCRIPTVIEW_FILTERMIN
-        MENUITEM "文本长度大于最大长度(&H)",    ID_SCRIPTVIEW_FILTERMAX
-        MENUITEM "文本地址为奇数(&A)",          ID_SCRIPTVIEW_FILTERSADDRESS
-        MENUITEM "文本地址为偶数(&O)",          ID_SCRIPTVIEW_FILTERDADDRESS
-        MENUITEM "简单语法检查(&T)",            ID_SCRIPTVIEW_FILTERCHECKWORD
+        MENUITEM "肋给等 器牢磐(&P)",                ID_SCRIPTVIEW_FILTERPOINT
+        MENUITEM "娄荐 辨捞狼 巩厘(&S)",          ID_SCRIPTVIEW_FILTERSITEM
+        MENUITEM "圈荐 辨捞狼 巩磊(&D)",          ID_SCRIPTVIEW_FILTERDITEM
+        MENUITEM "弥家 辨捞焊促 陋篮 巩厘(&L)",    ID_SCRIPTVIEW_FILTERMIN
+        MENUITEM "弥措 辨捞焊促 变 巩厘(&H)",    ID_SCRIPTVIEW_FILTERMAX
+        MENUITEM "林家啊 圈荐牢 巩厘(&A)",          ID_SCRIPTVIEW_FILTERSADDRESS
+        MENUITEM "林家啊 娄荐牢 巩厘(&O)",          ID_SCRIPTVIEW_FILTERDADDRESS
+        MENUITEM "埃窜茄 巩过 八荤(&T)",            ID_SCRIPTVIEW_FILTERCHECKWORD
 
-        MENUITEM "包含特定文字(&W)",            ID_SCRIPTVIEW_FILTERSPECWORD
-        MENUITEM "反选(&U)",                    ID_SCRIPTVIEW_FILTERACHECK
-        MENUITEM "检查项目(&C)",                ID_SCRIPTVIEW_CHECKALL
-        MENUITEM "取消检查(&N)",                ID_SCRIPTVIEW_FILTERUNCHECK
-        MENUITEM "删除检查项目(&R)",            ID_SCRIPTVIEW_DELCHECKITEM
-        MENUITEM "导出检查项目(&E)",            ID_SCRIPTVIEW_EXPORTCHECKITEM
+        MENUITEM "漂沥 巩厘 器窃(&W)",            ID_SCRIPTVIEW_FILTERSPECWORD
+        MENUITEM "馆傈急琶(&U)",                    ID_SCRIPTVIEW_FILTERACHECK
+        MENUITEM "八祸 亲格(&C)",                ID_SCRIPTVIEW_CHECKALL
+        MENUITEM "八祸 秒家(&N)",                ID_SCRIPTVIEW_FILTERUNCHECK
+        MENUITEM "八祸等 橇肺璃飘甫 昏力(&R)",            ID_SCRIPTVIEW_DELCHECKITEM
+        MENUITEM "八祸等 橇肺璃飘甫 郴焊郴扁(&E)",            ID_SCRIPTVIEW_EXPORTCHECKITEM
 
     END
-    POPUP "搜索(&S)"
+    POPUP "茫扁(&S)"
     BEGIN
-        MENUITEM "搜索脚本(&S)",                ID_SEARCH_TEXT
-        MENUITEM "目录批量搜索(&F)...",         ID_SEARCH_TEXTEX
-        MENUITEM "双字节对齐搜索(&A)",          ID_SEARCH_ALIGN2
-        MENUITEM "剔除纯单字节文本(&W)",        ID_SEARCH_NOWORD
-        MENUITEM "控制符结束(&E)",              ID_SEARCH_CTRLENDONLY
-        MENUITEM "寻找指针(&P)",                ID_SCRIPTVIEW_FINDPOINT
+        MENUITEM "猡咩逝茆(&S)",                ID_SEARCH_TEXT
+        MENUITEM "偻?蓦蔗猡咩...(&F)",         ID_SEARCH_TEXTEX
+        MENUITEM "?懋???猡咩(&A)",          ID_SEARCH_ALIGN2
+        MENUITEM "舁鸲??懋?巩磊(&W)",        ID_SEARCH_NOWORD
+        MENUITEM "腕黏莠?嶂(&E)",              ID_SEARCH_CTRLENDONLY
+        MENUITEM "??颚?(&P)",                ID_SCRIPTVIEW_FINDPOINT
         MENUITEM SEPARATOR
-        MENUITEM "查找项目(&F)\tCtrl+F",        IDC_EDIT_FINDTEXT
-        MENUITEM "查找下一个(&N)\tF3",          ID_EDIT_FIND
+        MENUITEM "茫扁?偻(&F)\tCtrl+F",        IDC_EDIT_FINDTEXT
+        MENUITEM "促澜 茫扁(&N)\tF3",          ID_EDIT_FIND
     END
-    POPUP "码表(&C)"
+    POPUP "内靛(&C)"
     BEGIN
-        MENUITEM "选择码表(&S)...",             ID_TBL_SELTBL
-        MENUITEM "启用码表(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
-        MENUITEM "启用自定义控制符(&C)",        IDC_HEXVIEW_TBLCTRL
-        MENUITEM "翻转编码(&S)",                ID_HEXVIEW_SWPCODE
+        MENUITEM "绊蜡锅龋钎 急琶...(&S)",             ID_TBL_SELTBL
+        MENUITEM "绊蜡锅龋钎 荤侩(&T)\tCtrl+T",        IDC_HEXVIEW_TBL
+        MENUITEM "荤侩磊 沥狼 力绢钎 荤侩(&C)",        IDC_HEXVIEW_TBLCTRL
+        MENUITEM "内靛 函券(&S)",                ID_HEXVIEW_SWPCODE
         MENUITEM SEPARATOR
-        POPUP "编码(&E)"
+        POPUP "牢内爹(&E)"
         BEGIN
-            MENUITEM "系统默认(&D)",                ID_CODEPAGE_ACP
+            MENUITEM "矫胶袍 牢内爹 荤侩(&D)",                ID_CODEPAGE_ACP
         END
         MENUITEM SEPARATOR
-        MENUITEM "统计(&O)...",                 ID_TBL_TOTALWORD
+        MENUITEM "??...(&O)",                 ID_TBL_TOTALWORD
     END
-    POPUP "视图(&V)"
+    POPUP "焊扁(&V)"
     BEGIN
-        MENUITEM "标准工具栏(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "属性窗口(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "外部工具栏(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "扁夯 档备葛澜(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "漂己芒(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "寇何 砒官(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "惑怕官(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "T&ile视图\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "十六进制编辑器(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "&Asm视图\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Ti&le编辑器\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "文本搜索(&F)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "鸥老 焊扁(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16柳荐 祈笼扁(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM 轰绢(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "鸥老 祈笼扁(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "巩磊凯 茫扁(&S)\tF9",            ID_VIEW_SCRIPTVIEW
     END
-    POPUP "工具(&T)"
+    POPUP "档备(&T)"
     BEGIN
-        MENUITEM "LZ77数据压缩(&C)...",         ID_TOOLS_LZ77COMP
-        MENUITEM "文件比较(&O)...",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 单捞磐 拘绵...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "颇老 厚背...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS文件系统信息(&I)...\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS 颇老 矫胶袍 沥焊...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "&DS固件用户设置...",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS 七傀绢 汲沥...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "文本编码转换(&S)...",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "码表转换到CMA&P...",          ID_TOOLS_TBL2CMAP
+        MENUITEM "咆胶飘 内靛 函券...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "内靛 抛捞喉阑 CMAP栏肺 函券...(&P)",          ID_TOOLS_TBL2CMAP
         MENUITEM SEPARATOR
-        MENUITEM "外部工具(&E)...",             ID_TOOLS_TOOLS
+        MENUITEM "寇何 档备...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "窗口(&W)"
+    POPUP "芒(&W)"
     BEGIN
-        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
-        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "货 芒(&N)",                ID_WINDOW_NEW
+        MENUITEM "拌窜侥(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "鸥老侥(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "鉴瞒(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "属性\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "调色板(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "默认选项设置(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "加己\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "迫饭飘(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "扁夯 汲沥栏肺(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "帮助(&H)"
+    POPUP "档框富(&H)"
     BEGIN
-        MENUITEM "关于 CrystalTile2(&A)...",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5俊 措窍咯...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_VIEW_ASMVIEW MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "打开(&O)...\tCtrl+O",         ID_FILE_OPEN
-        POPUP "乱入&DS模拟器"
+        MENUITEM "凯扁...(&O)\tCtrl+O",         ID_FILE_OPEN
+        POPUP "DS 俊鼓饭捞磐 饶农(&D)"
         BEGIN
             MENUITEM "<<NODS>>",                    ID_FILE_FIRSTDSEMUTASK
             , GRAYED
         END
-        MENUITEM "关闭(&C)",                    ID_FILE_CLOSE
-        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
-        MENUITEM "另存为(&A)...",               ID_FILE_SAVE_AS
+        MENUITEM "摧扁(&C)",                    ID_FILE_CLOSE
+        MENUITEM "历厘(&S)\tCtrl+S",            ID_FILE_SAVE
+        MENUITEM "促弗 捞抚栏肺 历厘...(&A)",               ID_FILE_SAVE_AS
         MENUITEM SEPARATOR
-        MENUITEM "最近的文件",                  ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM "弥辟 颇老甸",                  ID_FILE_MRU_FILE1, GRAYED
         MENUITEM SEPARATOR
-        MENUITEM "退出(&X)\tAlt+F4",            ID_APP_EXIT
+        MENUITEM "辆丰(&X)\tAlt+F4",            ID_APP_EXIT
     END
-    POPUP "编辑(&E)"
+    POPUP "祈笼(&E)"
     BEGIN
-        MENUITEM "撤消(&U)\tCtrl+Z",            ID_EDIT_UNDO
-        MENUITEM "恢复(&R)",                    ID_EDIT_RESET
+        MENUITEM "角青 秒家(&U)\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM "促矫 角青(&R)",                    ID_EDIT_RESET
         MENUITEM SEPARATOR
-        MENUITEM "导出(&E)...\tCtrl+E",         ID_EDIT_EXPORT
-        MENUITEM "导入(&I)...\tCtrl+I",         ID_EDIT_IMPORT
+        MENUITEM "捞固瘤肺 郴焊郴扁...(&E)\tCtrl+E",         ID_EDIT_EXPORT
+        MENUITEM "捞固瘤甫 郴焊郴扁...(&I)\tCtrl+I",         ID_EDIT_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "刷新内存快照(&N)",            ID_EDIT_MEMREFALSH
+        MENUITEM "皋葛府 胶忱鸡 货肺 绊魔(&N)",            ID_EDIT_MEMREFALSH
     END
-    POPUP "搜索(&S)"
+    POPUP "茫扁(&S)"
     BEGIN
-        MENUITEM "定位(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
-        MENUITEM "ARM&9入口执行点",             ID_FSI_GOARM9
-        MENUITEM "ARM&7入口执行点",             ID_FSI_GOARM7
+        MENUITEM "捞悼(&G)\tCtrl+G",            IDC_CT2VIEW_OFFSET
+        MENUITEM "ARM&9 器牢磐",             ID_FSI_GOARM9
+        MENUITEM "ARM&7 器牢磐",             ID_FSI_GOARM7
         MENUITEM SEPARATOR
-        MENUITEM "跟随(&F)\tAlt+右",            ID_ASM_FOLLOW
-        MENUITEM "撤销跟随(&U)\tAlt+左",        ID_ASM_UNFOLLOW
+        MENUITEM "眠利(&F)\tAlt+橛",            ID_ASM_FOLLOW
+        MENUITEM "眠利 秒家(&U)\tAlt+瘰",        ID_ASM_UNFOLLOW
     END
-    POPUP "视图(&V)"
+    POPUP "焊扁(&V)"
     BEGIN
-        MENUITEM "标准工具栏(&T)",              ID_VIEW_TOOLBAR
-        MENUITEM "属性窗口(&O)",                ID_VIEW_OPTIONBAR
-        MENUITEM "外部工具栏(&E)",              ID_VIEW_TOOLEX
-        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+        MENUITEM "扁夯 档备葛澜(&T)",              ID_VIEW_TOOLBAR
+        MENUITEM "漂己芒(&O)",                ID_VIEW_OPTIONBAR
+        MENUITEM "寇何 砒官(&E)",              ID_VIEW_TOOLEX
+        MENUITEM "惑怕官(&S)",                  ID_VIEW_STATUS_BAR
         MENUITEM SEPARATOR
-        MENUITEM "T&ile视图\tF5",               ID_VIEW_TILEVIEW
-        MENUITEM "十六进制编辑器(&H)\tF6",      ID_VIEW_HEXVIEW
-        MENUITEM "&Asm视图\tF7",                ID_VIEW_ASMVIEW
-        MENUITEM "Ti&le编辑器\tF8",             ID_VIEW_TILEEDITORVIEW
-        MENUITEM "文本搜索(&F)\tF9",            ID_VIEW_SCRIPTVIEW
+        MENUITEM "鸥老 焊扁(&I)\tF5",               ID_VIEW_TILEVIEW
+        MENUITEM "16柳荐 祈笼扁(&H)\tF6",      ID_VIEW_HEXVIEW
+        MENUITEM "ASM 轰绢(&A)\tF7",                ID_VIEW_ASMVIEW
+        MENUITEM "鸥老 祈笼扁(&L)\tF8",             ID_VIEW_TILEEDITORVIEW
+        MENUITEM "巩磊凯 茫扁(&S)\tF9",            ID_VIEW_SCRIPTVIEW
         MENUITEM SEPARATOR
-        POPUP "底纹(&B)"
+        POPUP "硅版 公刺"
         BEGIN
-            MENUITEM "威猫",                        ID_VIEW_BK1
-            MENUITEM "白底",                        ID_VIEW_BK2
-            MENUITEM "大理石",                      ID_VIEW_BK3
-            MENUITEM "水纹",                        ID_VIEW_BK4
-            MENUITEM "黑底",                        ID_VIEW_BK5
-            MENUITEM "其他",                        ID_VIEW_BK6
-            MENUITEM "方格",                        ID_VIEW_BK7
+            MENUITEM "绊剧捞",                        ID_VIEW_BK1
+            MENUITEM "闰 官帕",                        ID_VIEW_BK2
+            MENUITEM "措府籍",                      ID_VIEW_BK3
+            MENUITEM "拱搬",                        ID_VIEW_BK4
+            MENUITEM "八篮 官帕",                        ID_VIEW_BK5
+            MENUITEM "扁鸥",                        ID_VIEW_BK6
+            MENUITEM "拜磊",                        ID_VIEW_BK7
         END
     END
-    POPUP "工具(&T)"
+    POPUP "档备(&T)"
     BEGIN
-        MENUITEM "LZ77数据压缩(&C)...",         ID_TOOLS_LZ77COMP
-        MENUITEM "文件比较(&O)...",             ID_TOOLS_FILECOMP
+        MENUITEM "LZ77 单捞磐 拘绵...(&C)",         ID_TOOLS_LZ77COMP
+        MENUITEM "颇老 厚背...(&O)",             ID_TOOLS_FILECOMP
         MENUITEM SEPARATOR
-        MENUITEM "NDS文件系统信息(&I)...\tCtrl+N", ID_TOOLS_NDSFSI
+        MENUITEM "NDS 颇老 矫胶袍 沥焊...(&I)\tCtrl+N", ID_TOOLS_NDSFSI
         MENUITEM " ",                           ID_TOOLS_SFI
-        MENUITEM "&DS固件用户设置...",          ID_TOOLS_NDS_FIRMWARE
+        MENUITEM "DS 七傀绢 汲沥...(&D)",          ID_TOOLS_NDS_FIRMWARE
         MENUITEM SEPARATOR
-        MENUITEM "文本编码转换(&S)...",         ID_TOOLS_TEXTCPCHANGE
-        MENUITEM "码表转换到CMA&P...",          ID_TOOLS_TBL2CMAP
-        MENUITEM "搜索金手指(&F)...",           ID_TOOLS_CHEATSSERACH
+        MENUITEM "咆胶飘 内靛 函券...(&S)",         ID_TOOLS_TEXTCPCHANGE
+        MENUITEM "内靛 抛捞喉阑 CMAP栏肺 函券...(&P)",          ID_TOOLS_TBL2CMAP
+        MENUITEM "摹飘 八祸...(&F)",           ID_TOOLS_CHEATSSERACH
         MENUITEM SEPARATOR
-        MENUITEM "外部工具(&E)...",             ID_TOOLS_TOOLS
+        MENUITEM "寇何 档备...(&E)",             ID_TOOLS_TOOLS
     END
-    POPUP "收藏(&A)"
+    POPUP "氓哎乔(&A)"
     BEGIN
-        MENUITEM "添加/整理<收藏夹>(&A)...\tCtrl+Q", ID_FAVORITES_ADD
+        MENUITEM "<氓哎乔> 眠啊/沥府...(&A)\tCtrl+Q", ID_FAVORITES_ADD
     END
-    POPUP "窗口(&W)"
+    POPUP "芒(&W)"
     BEGIN
-        MENUITEM "新建窗口(&N)",                ID_WINDOW_NEW
-        MENUITEM "层叠(&C)",                    ID_WINDOW_CASCADE
-        MENUITEM "平铺(&T)",                    ID_WINDOW_TILE_HORZ
-        MENUITEM "排列图标(&A)",                ID_WINDOW_ARRANGE
+        MENUITEM "货 芒(&N)",                ID_WINDOW_NEW
+        MENUITEM "拌窜侥(&C)",                    ID_WINDOW_CASCADE
+        MENUITEM "鸥老侥(&T)",                    ID_WINDOW_TILE_HORZ
+        MENUITEM "鉴瞒(&A)",                ID_WINDOW_ARRANGE
         MENUITEM SEPARATOR
-        MENUITEM "属性\tAlt+Enter",             ID_WINDOW_OPTIONTREE
-        MENUITEM "调色板(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
-        MENUITEM "默认选项设置(&D)\tF1",        ID_WINDOW_DEFOPTION
+        MENUITEM "加己\tAlt+Enter",             ID_WINDOW_OPTIONTREE
+        MENUITEM "迫饭飘(&P)\tCtrl+P",          ID_WINDOW_PALOPTION
+        MENUITEM "扁夯 汲沥栏肺(&D)\tF1",        ID_WINDOW_DEFOPTION
     END
-    POPUP "帮助(&H)"
+    POPUP "档框富(&H)"
     BEGIN
-        MENUITEM "关于 CrystalTile2(&A)...",    ID_APP_ABOUT
+        MENUITEM "CrystalTile2.5俊 措窍咯...(&A)",    ID_APP_ABOUT
     END
 END
 
 IDR_CRYSTALPLAYER MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "导出(&E)...",                 ID_SFI_EXPORT
-        MENUITEM "导入(&I)...",                 ID_SFI_IMPORT
+        MENUITEM "郴焊郴扁...(&E)",                 ID_SFI_EXPORT
+        MENUITEM "啊廉坷扁...(&I)",                 ID_SFI_IMPORT
         MENUITEM SEPARATOR
-        MENUITEM "刷新(&R)",                    ID_SFI_REFLASH
+        MENUITEM "货肺绊魔(&R)",                    ID_SFI_REFLASH
     END
-    POPUP "声音(&S)"
+    POPUP "家府(&S)"
     BEGIN
-        POPUP "立体声(&S)"
+        POPUP "胶抛饭坷(&S)"
         BEGIN
-            MENUITEM "单声道(&M)",                  ID_PLAYER_MONO
-            MENUITEM "立体声(&S)",                  ID_PLAYER_STEREO
+            MENUITEM "葛畴(&M)",                  ID_PLAYER_MONO
+            MENUITEM "胶抛饭坷(&S)",                  ID_PLAYER_STEREO
         END
-        POPUP "比特率(&B)"
+        POPUP "蒿麇徙(&B)"
         BEGIN
             MENUITEM " 4-bit",                      ID_PLAYER_4BIT
             MENUITEM " 8-bit",                      ID_PLAYER_8BIT
             MENUITEM "16-bit",                      ID_PLAYER_16BIT
         END
-        POPUP "采样率(&R)"
+        POPUP "篾?徙(&R)"
         BEGIN
             MENUITEM "&11.025 kHz",                 ID_PLAYER_11KHZ
             MENUITEM "&22.05  kHz",                 ID_PLAYER_22KHZ
             MENUITEM "&44.1   kHz",                 ID_PLAYER_44KHZ
             MENUITEM "4&8     kHz",                 ID_PLAYER_48KHZ
             MENUITEM "&96     kHz",                 ID_PLAYER_96KHZ
-            MENUITEM "自定义(&C)...",               ID_PLAYER_NKHZ
+            MENUITEM "砘镆?...(&C)",               ID_PLAYER_NKHZ
         END
     END
-    MENUITEM "播放(&P)",                    ID_PLAYER_PLAY
-    MENUITEM "停止(&S)",                    ID_PLAYER_STOP
+    MENUITEM "麟郫(&P)",                    ID_PLAYER_PLAY
+    MENUITEM "镂颦(&S)",                    ID_PLAYER_STOP
 END
 
 IDR_SFI MENU 
 BEGIN
-    POPUP "文件(&F)"
+    POPUP "颇老(&F)"
     BEGIN
-        MENUITEM "导出(&E)...",                 ID_SFI_EXPORT
-        MENUITEM "导入(&I)...",                 ID_SFI_IMPORT
+        MENUITEM "郴焊郴扁...(&E)",                 ID_SFI_EXPORT
+        MENUITEM "啊廉坷扁...(&I)",                 ID_SFI_IMPORT
         MENUITEM SEPARATOR
         MENUITEM "?",                           ID_FSI_LOADDATA
         MENUITEM SEPARATOR
-        MENUITEM "刷新(&R)",                    ID_SFI_REFLASH
+        MENUITEM "货肺绊魔(&R)",                    ID_SFI_REFLASH
     END
-    MENUITEM "编辑(&E)",                    ID_33306
+    MENUITEM "祈笼(&E)",                    ID_33306
 END
 
 
@@ -1021,16 +1021,16 @@ END
 IDD_ABOUTBOX DIALOGEX 0, 0, 131, 66
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "关于 CrystalTile2"
+CAPTION "CrystalTile2.5 沥焊"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
     ICON            IDR_MAINFRAME,IDC_STATIC,2,2,20,20
     LTEXT           "",IDC_VERINFO,26,2,98,24
-    LTEXT           "与我联系\nmailto:CrystalTile@163.COM",IDC_MAILTO,51,44,
+    LTEXT           "皋老林家\nmailto:test@test.com",IDC_MAILTO,51,44,
                     28,8
-    LTEXT           "访问天使汉化论坛\nhttp://www.angeleden.net",
+    LTEXT           "权其捞瘤",
                     IDC_HOMEPAGE,37,54,56,8
-    LTEXT           "软件的主要用途是用于生成、查看以及编辑点阵字库",
+    LTEXT           "捞 橇肺弊伐篮 鸥老棺 档飘沥焊甫 荐沥/楷备窍扁 困茄 砒涝聪促.",
                     IDC_STATIC,26,26,89,16
 END
 
@@ -1041,13 +1041,13 @@ EXSTYLE WS_EX_ACCEPTFILES
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     GROUPBOX        "",1119,0,0,379,32,NOT WS_VISIBLE
-    CONTROL         "快速打开(&F)(即时保存修改，但可无级撤销)",IDC_MAPFILE,
+    CONTROL         "狞 葛靛(&F)(荐沥 矫 官肺历厘，累诀 秒家 阂啊瓷)",IDC_MAPFILE,
                     "Button",BS_AUTOCHECKBOX | BS_FLAT | WS_TABSTOP,130,32,
                     162,10
     LISTBOX         IDC_MFILELIST,0,42,378,28,LBS_NOINTEGRALHEIGHT | 
                     WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "多文件(&M)",IDC_MFILE_OPEN,318,32,46,10
-    LTEXT           "拖放添加文件，双击删除下列文件",IDC_STATIC,2,32,121,8
+    PUSHBUTTON      "咯矾 颇老(&M)",IDC_MFILE_OPEN,318,32,46,10
+    LTEXT           "靛贰弊 靛酚栏肺 颇老 眠啊，歹喉努腐栏肺 力芭 啊瓷",IDC_STATIC,2,32,121,8
 END
 
 IDD_PALETTEDLG DIALOGEX 0, 0, 116, 82
@@ -1056,46 +1056,46 @@ EXSTYLE WS_EX_ACCEPTFILES
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     GROUPBOX        "",IDC_SETPALPANEL,86,0,28,81
-    CONTROL         "文本",IDC_SETCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "巩磊",IDC_SETCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE | WS_GROUP,90,6,20,10
-    CONTROL         "背景",IDC_SETBKCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "硅版",IDC_SETBKCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,90,16,20,10
-    CONTROL         "阴影",IDC_SETSHADOWCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "澜康",IDC_SETSHADOWCOLORBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,90,26,20,10
-    PUSHBUTTON      "色板",IDC_DEFPALBTN,90,36,20,10
-    PUSHBUTTON      "导入",IDC_LOADPALBTN,90,46,20,10
-    PUSHBUTTON      "导出",IDC_SAVEPALBTN,90,56,20,10
-    LTEXT           "文本",IDC_STATIC,92,68,18,10
+    PUSHBUTTON      "迫饭飘",IDC_DEFPALBTN,90,36,20,10
+    PUSHBUTTON      "啊廉坷扁",IDC_LOADPALBTN,90,46,20,10
+    PUSHBUTTON      "郴焊郴扁",IDC_SAVEPALBTN,90,56,20,10
+    LTEXT           "抛胶飘",IDC_STATIC,92,68,18,10
 END
 
 IDD_LZ77SEARCH DIALOGEX 0, 0, 172, 130
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CLIPSIBLINGS | 
     WS_CAPTION | WS_SYSMENU
-CAPTION "LZ77数据搜索 - "
+CAPTION "LZ77?诉猡咩 - "
 MENU IDR_LZ77SEARCH
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "起始标志(&H):",IDC_STATIC,2,4,46,8
+    LTEXT           "衙惴?颏(&H):",IDC_STATIC,2,4,46,8
     EDITTEXT        IDC_FALGEDIT,48,2,14,12,ES_UPPERCASE
-    LTEXT           "数据大小(&R):",IDC_STATIC,66,4,46,8
+    LTEXT           "?诉愚岢(&R):",IDC_STATIC,66,4,46,8
     EDITTEXT        IDC_SIZELOW,110,2,26,12,ES_UPPERCASE
     LTEXT           "-",IDC_STATIC,139,4,8,8
     EDITTEXT        IDC_SIZEHI,144,2,26,12,ES_UPPERCASE
-    LTEXT           "搜索步长(&T):",IDC_STATIC,2,16,45,8
+    LTEXT           "猡咩芷?(&T):",IDC_STATIC,2,16,45,8
     EDITTEXT        IDC_STEPEDIT,48,14,14,12,ES_UPPERCASE | ES_NUMBER
-    CONTROL         "向下搜索(&D)",IDC_DOWNCHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "猡咩(&D)",IDC_DOWNCHECK,"Button",BS_AUTOCHECKBOX | 
                     BS_FLAT | WS_TABSTOP,66,16,54,10
     CONTROL         "",IDC_RETLIST,"SysListView32",LVS_REPORT | 
                     LVS_SHOWSELALWAYS | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
                     WS_TABSTOP,2,29,168,99
-    CONTROL         "&LZ77标志",IDC_LZ77CHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "&LZ77?颏",IDC_LZ77CHECK,"Button",BS_AUTOCHECKBOX | 
                     BS_FLAT | WS_TABSTOP,126,16,44,10
 END
 
 IDD_NDSFSI DIALOGEX 0, 0, 166, 172
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "NDS 文件系统信息 - "
+CAPTION "NDS 颇老 沥焊 - "
 MENU IDR_NDSFSI
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
@@ -1107,26 +1107,26 @@ END
 IDD_NDSINFO DIALOGEX 0, 0, 228, 98
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "标题信息（显示时使用BIOS字库）"
+CAPTION "鸥捞撇 沥焊 (BIOS俊辑 焊捞绰 沥焊)"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    CONTROL         "日语",IDC_JPNBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "老夯绢",IDC_JPNBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE | WS_GROUP,2,2,36,12
-    CONTROL         "英语",IDC_USBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "康绢",IDC_USBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,40,2,36,12
-    CONTROL         "法语",IDC_FREBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "橇尔胶绢",IDC_FREBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,78,2,36,12
-    CONTROL         "德语",IDC_GEBTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "刀老绢",IDC_GEBTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,116,2,36,12
-    CONTROL         "意大利语",IDC_ITABTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "捞呕府酒绢",IDC_ITABTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,153,2,36,12
-    CONTROL         "西班牙语",IDC_SPABTN,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "胶其牢绢",IDC_SPABTN,"Button",BS_AUTORADIOBUTTON | 
                     BS_PUSHLIKE,190,2,36,12
     EDITTEXT        IDC_NDSINFOEDIT,2,16,224,32,ES_MULTILINE | 
                     ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | NOT 
                     WS_BORDER | WS_GROUP
-    DEFPUSHBUTTON   "更新(&U)",IDOK,190,70,36,12,WS_DISABLED
-    PUSHBUTTON      "取消(&C)",IDCANCEL,190,84,36,12
+    DEFPUSHBUTTON   "荐沥(&U)",IDOK,190,70,36,12,WS_DISABLED
+    PUSHBUTTON      "秒家(&C)",IDCANCEL,190,84,36,12
     EDITTEXT        IDC_ENTRYINFO,2,52,186,44,ES_MULTILINE | ES_AUTOHSCROLL | 
                     ES_READONLY | NOT WS_BORDER
 END
@@ -1136,11 +1136,11 @@ STYLE DS_SETFONT | DS_3DLOOK | DS_FIXEDSYS | DS_CONTROL | WS_CHILD |
     WS_CLIPSIBLINGS
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "预览(&P)：",IDC_STATIC,2,12,34,8
+    LTEXT           "固府 焊扁(&P)：",IDC_STATIC,2,12,34,8
     EDITTEXT        IDC_OPENTEXTEDIT,0,24,162,48,ES_MULTILINE | 
                     ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | 
                     WS_VSCROLL
-    LTEXT           "编码(&E):",IDC_STATIC,68,12,29,8
+    LTEXT           "牢内爹(&E):",IDC_STATIC,68,12,29,8
     COMBOBOX        IDC_CODEPAGELIST,130,10,32,30,CBS_DROPDOWNLIST | 
                     WS_VSCROLL | WS_TABSTOP
     GROUPBOX        "",1119,0,0,161,10,NOT WS_VISIBLE
@@ -1149,42 +1149,42 @@ END
 IDD_RELATIVEDLG DIALOGEX 0, 0, 186, 191
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "相对搜索 - "
+CAPTION "楷包八祸 - "
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "值(&V):",IDC_STATIC,4,84,20,8
+    LTEXT           "?(&V):",IDC_STATIC,4,84,20,8
     EDITTEXT        IDC_VALEDIT,26,82,104,12,ES_AUTOHSCROLL
     LISTBOX         IDC_FINDLIST,2,2,128,66,LBS_SORT | LBS_USETABSTOPS | 
                     LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
                     WS_TABSTOP
-    GROUPBOX        "搜索选项",IDC_STATIC,132,2,52,78
-    CONTROL         "四字节",IDC_4BITRADIO,"Button",BS_AUTORADIOBUTTON | 
+    GROUPBOX        "猡咩??",IDC_STATIC,132,2,52,78
+    CONTROL         "尢懋?",IDC_4BITRADIO,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,134,12,40,8
-    CONTROL         "单字节",IDC_1BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
+    CONTROL         "?懋?",IDC_1BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
                     20,40,8
-    CONTROL         "双字节",IDC_2BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
+    CONTROL         "?懋?",IDC_2BITRADIO,"Button",BS_AUTORADIOBUTTON,134,
                     28,40,8
-    CONTROL         "高低置换",IDC_SWPCHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "驮罡銮?",IDC_SWPCHECK,"Button",BS_AUTOCHECKBOX | 
                     WS_GROUP | WS_TABSTOP,134,36,46,8
-    CONTROL         "十进制",IDC_DECRADIO,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "洙?黏",IDC_DECRADIO,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,134,46,40,8
-    CONTROL         "十六进制",IDC_HEXRADIO,"Button",BS_AUTORADIOBUTTON,134,
+    CONTROL         "洙卓?黏",IDC_HEXRADIO,"Button",BS_AUTORADIOBUTTON,134,
                     54,46,8
-    CONTROL         "字符串",IDC_STRRADIO,"Button",BS_AUTORADIOBUTTON,134,62,
+    CONTROL         "懋莠旺",IDC_STRRADIO,"Button",BS_AUTORADIOBUTTON,134,62,
                     36,8
-    CONTROL         "向下搜索",IDC_OFFCHECK,"Button",BS_AUTOCHECKBOX | 
+    CONTROL         "猡咩",IDC_OFFCHECK,"Button",BS_AUTOCHECKBOX | 
                     WS_GROUP | WS_TABSTOP,134,70,46,8
-    PUSHBUTTON      "保存结果(&S)",IDC_SAVEBTN,134,82,44,12
-    DEFPUSHBUTTON   "增加(&A)",IDC_ADDBTN,2,96,36,12
-    PUSHBUTTON      "删除(&D)",IDC_DELBTN,50,96,36,12
-    PUSHBUTTON      "搜索(&F)",IDC_FINDBTN,98,96,36,12
-    PUSHBUTTON      "清除(&C)",IDC_CLRBTN,146,96,36,12
+    PUSHBUTTON      "芰痦?妄(&S)",IDC_SAVEBTN,134,82,44,12
+    DEFPUSHBUTTON   "耱圣(&A)",IDC_ADDBTN,2,96,36,12
+    PUSHBUTTON      "?鸲(&D)",IDC_DELBTN,50,96,36,12
+    PUSHBUTTON      "猡咩(&F)",IDC_FINDBTN,98,96,36,12
+    PUSHBUTTON      "?鸲(&C)",IDC_CLRBTN,146,96,36,12
     LISTBOX         IDC_RESULTLIST,2,111,182,78,LBS_SORT | LBS_USETABSTOPS | 
                     LBS_NOINTEGRALHEIGHT | NOT WS_BORDER | WS_VSCROLL | 
                     WS_TABSTOP
     EDITTEXT        IDC_STARTEDIT,49,68,36,12
     EDITTEXT        IDC_ENDEDIT,94,68,36,12
-    LTEXT           "搜索范围(&R):",IDC_STATIC,2,70,46,8
+    LTEXT           "猡咩埘?(&R):",IDC_STATIC,2,70,46,8
     LTEXT           "--",IDC_STATIC,86,70,8,8
 END
 
@@ -1192,16 +1192,16 @@ IDD_FILECOMP DIALOGEX 0, 0, 164, 180
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
 EXSTYLE WS_EX_TOOLWINDOW
-CAPTION "文件比较（只比较前99999处）"
+CAPTION "冼遂蒿?（颃蒿?铖99999?）"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "文件&1：",IDC_STATIC,2,6,28,8
+    LTEXT           "冼遂&1：",IDC_STATIC,2,6,28,8
     EDITTEXT        IDC_COMP_FILEONE,30,4,104,12,ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_COMP_FILEONEBTN,136,4,14,12
-    LTEXT           "文件&2：",IDC_STATIC,2,24,28,8
+    LTEXT           "冼遂&2：",IDC_STATIC,2,24,28,8
     EDITTEXT        IDC_COMP_FILETWO,30,22,104,12,ES_AUTOHSCROLL
     PUSHBUTTON      "...",IDC_COMP_FILETWOBTN,136,22,14,12
-    DEFPUSHBUTTON   "比较",IDC_COMP_COMFILE,150,4,12,30,BS_MULTILINE
+    DEFPUSHBUTTON   "蒿?",IDC_COMP_COMFILE,150,4,12,30,BS_MULTILINE
     CONTROL         "",IDC_COMPLIST,"SysListView32",LVS_REPORT | 
                     LVS_ALIGNLEFT | LVS_NOSORTHEADER | WS_TABSTOP,2,36,160,
                     142
@@ -1209,41 +1209,41 @@ END
 
 IDD_OPTIONBAR DIALOGEX 0, 0, 128, 94
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "宋体", 0, 0, 0x0
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
-    LTEXT           "默认编码(&C)",IDC_STATIC,2,0,44,8
+    LTEXT           "蠃???(&C)",IDC_STATIC,2,0,44,8
     COMBOBOX        IDC_OPTION_CPLIST,2,8,125,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "地址同步(&A)",IDC_STATIC,2,22,44,8
+    LTEXT           "颌颍砸芷(&A)",IDC_STATIC,2,22,44,8
     COMBOBOX        IDC_OPTION_OFFSETLIST,2,30,125,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "默认背景(&B)",IDC_STATIC,2,46,44,8
+    LTEXT           "蠃?硅版(&B)",IDC_STATIC,2,46,44,8
     COMBOBOX        IDC_OPTION_BKLIST,2,54,56,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "默认调色板(&P)",IDC_STATIC,59,46,52,8
+    LTEXT           "蠃??迫饭飘(&P)",IDC_STATIC,59,46,52,8
     COMBOBOX        IDC_OPTION_PALLIST,59,54,68,430,CBS_DROPDOWNLIST | 
                     CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
-    LTEXT           "资源目录(&R)",IDC_STATIC,2,70,44,8
+    LTEXT           "府家胶偻?(&R)",IDC_STATIC,2,70,44,8
     EDITTEXT        IDC_DEF_RESPATH,2,80,112,12,ES_AUTOHSCROLL | ES_READONLY
     PUSHBUTTON      "..",IDC_BUTTON_RESPATH,115,80,12,12
 END
 
 IDD_BARPANE DIALOGEX 0, 0, 60, 60
 STYLE DS_SETFONT | WS_CHILD
-FONT 9, "宋体", 0, 0, 0x0
+FONT 9, "MS Shell Dlg", 0, 0, 0x0
 BEGIN
 END
 
 IDD_ASMDLG DIALOGEX 0, 0, 200, 98
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "修改指令"
+CAPTION "狍饲颚值"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     COMBOBOX        IDC_ASMCB,2,2,162,200,CBS_DROPDOWN | CBS_SORT | 
                     WS_VSCROLL | WS_TABSTOP
-    DEFPUSHBUTTON   "确定",IDOK,166,2,32,12
-    PUSHBUTTON      "取消",IDCANCEL,166,14,32,12
+    DEFPUSHBUTTON   "?镆",IDOK,166,2,32,12
+    PUSHBUTTON      "觫峒",IDCANCEL,166,14,32,12
     LTEXT           "HINT",IDC_ASMHINT,4,18,158,26,0,WS_EX_TRANSPARENT
     CONTROL         "DESC",IDC_ASMDESC,"Static",SS_LEFTNOWORDWRAP | 
                     SS_SUNKEN | WS_GROUP,2,44,196,52,WS_EX_TRANSPARENT
@@ -1253,10 +1253,10 @@ IDD_FAVORITESBAR DIALOGEX 0, 0, 124, 128
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "名称(&N)",IDC_STATIC,2,2,26,8
+    LTEXT           "伲?(&N)",IDC_STATIC,2,2,26,8
     EDITTEXT        IDC_FAVORITES_DESC,30,0,70,12,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "添加",IDC_FAVORITES_ADDBTN,101,0,23,12
-    PUSHBUTTON      "删除",IDC_FAVORITES_DELBTN,101,14,23,12
+    DEFPUSHBUTTON   "粽圣",IDC_FAVORITES_ADDBTN,101,0,23,12
+    PUSHBUTTON      "?鸲",IDC_FAVORITES_DELBTN,101,14,23,12
     CONTROL         "",IDC_FAVORITES_LIST,"SysListView32",LVS_REPORT | 
                     LVS_SHOWSELALWAYS | LVS_EDITLABELS | LVS_ALIGNLEFT | 
                     LVS_NOCOLUMNHEADER | LVS_NOSORTHEADER | WS_TABSTOP,2,15,
@@ -1266,19 +1266,19 @@ END
 IDD_INPUTDLG DIALOGEX 0, 0, 198, 46
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "CrystalTile2"
+CAPTION "CrystalTile2.5"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "请输入值(&V)：",IDC_INPUTDLG_HINT,2,2,160,24
+    LTEXT           "??忑?(&V)：",IDC_INPUTDLG_HINT,2,2,160,24
     EDITTEXT        IDC_INPUTDLG_EDIT,2,32,160,12,ES_AUTOHSCROLL
-    DEFPUSHBUTTON   "确定",IDOK,164,20,32,12
-    PUSHBUTTON      "取消",IDCANCEL,164,32,32,12
+    DEFPUSHBUTTON   "?镆",IDOK,164,20,32,12
+    PUSHBUTTON      "觫峒",IDCANCEL,164,32,32,12
 END
 
 IDD_SFI DIALOGEX 0, 0, 200, 172
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "%s - 文件信息（解读文件数：%d，实际文件数：%d）"
+CAPTION "%s - 冼遂汜阌（?冼遂?：%d，??冼遂?：%d）"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     CONTROL         "",IDC_SFI_FILELIST,"SysListView32",LVS_REPORT | 
@@ -1289,37 +1289,37 @@ END
 IDD_TOOLSDLG DIALOGEX 0, 0, 210, 154
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "外部工具"
+CAPTION "桠莼惋锡"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    DEFPUSHBUTTON   "确定",IDOK,134,138,36,14
-    PUSHBUTTON      "取消",IDCANCEL,172,138,36,14
-    LTEXT           "菜单内容：",IDC_STATIC,2,2,41,8
+    DEFPUSHBUTTON   "?镆",IDOK,134,138,36,14
+    PUSHBUTTON      "觫峒",IDCANCEL,172,138,36,14
+    LTEXT           "篪??榛：",IDC_STATIC,2,2,41,8
     LISTBOX         IDC_TOOLS_LIST,2,10,169,76,LBS_NOINTEGRALHEIGHT | 
                     WS_VSCROLL | WS_TABSTOP
-    PUSHBUTTON      "添加(&A)",IDC_TOOLS_ADDBTN,172,10,36,14
-    PUSHBUTTON      "删除(&D)",IDC_TOOLS_DELBTN,172,24,36,14
-    PUSHBUTTON      "上移(&U)",IDC_TOOLS_UPBTN,172,58,36,14
-    PUSHBUTTON      "下移(&W)",IDC_TOOLS_DOWNBTN,172,72,36,14
-    LTEXT           "标题(&T)：",IDC_STATIC,2,90,34,8
+    PUSHBUTTON      "粽圣(&A)",IDC_TOOLS_ADDBTN,172,10,36,14
+    PUSHBUTTON      "?鸲(&D)",IDC_TOOLS_DELBTN,172,24,36,14
+    PUSHBUTTON      "呔旃(&U)",IDC_TOOLS_UPBTN,172,58,36,14
+    PUSHBUTTON      "旃(&W)",IDC_TOOLS_DOWNBTN,172,72,36,14
+    LTEXT           "??(&T)：",IDC_STATIC,2,90,34,8
     EDITTEXT        IDC_TOOLS_TITLEEDIT,36,88,134,14,ES_AUTOHSCROLL
-    LTEXT           "命令(&C)：",IDC_STATIC,2,106,34,8
+    LTEXT           "伽值(&C)：",IDC_STATIC,2,106,34,8
     EDITTEXT        IDC_TOOLS_COMMANDEDIT,36,104,134,14,ES_AUTOHSCROLL
     PUSHBUTTON      "&...",IDC_TOOLS_PATHBTN,172,104,36,14
-    LTEXT           "参数(&R)：",IDC_STATIC,2,122,34,8
+    LTEXT           "??(&R)：",IDC_STATIC,2,122,34,8
     EDITTEXT        IDC_TOOLS_REDIT,36,120,134,14,ES_AUTOHSCROLL
 END
 
 IDD_NET_DIALOG DIALOGEX 0, 0, 260, 108
 STYLE DS_SETFONT | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
     WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
-CAPTION "交流窗"
+CAPTION "芜椎?"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     EDITTEXT        IDC_SENDMSGEDIT,0,62,192,46,ES_MULTILINE | 
                     ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN | 
                     WS_VSCROLL
-    PUSHBUTTON      "发送(&S)",IDC_NET_SENDMSG,192,96,32,12
+    PUSHBUTTON      "?彡(&S)",IDC_NET_SENDMSG,192,96,32,12
     EDITTEXT        IDC_MSGLIST,0,0,222,60,ES_MULTILINE | ES_AUTOVSCROLL | 
                     ES_AUTOHSCROLL | ES_READONLY | WS_VSCROLL
     LISTBOX         IDC_USERLIST,224,0,36,108,LBS_NOINTEGRALHEIGHT | 
@@ -1329,63 +1329,63 @@ END
 IDD_CHEATS DIALOGEX 0, 0, 236, 146
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "金手指搜索器"
+CAPTION "蜒猗颚猡咩酗"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    LTEXT           "值(&V)：",IDC_STATIC,2,6,26,8
+    LTEXT           "?(&V)：",IDC_STATIC,2,6,26,8
     COMBOBOX        IDC_CHEATS_SEARCHDATA,26,4,52,68,CBS_DROPDOWN | 
                     WS_VSCROLL | WS_TABSTOP
-    DEFPUSHBUTTON   "搜索(&F)",IDC_CHEATS_SEARCH,82,4,32,12
-    PUSHBUTTON      "复位(&R)",IDC_CHEATS_SEARCH2,140,4,32,12
-    PUSHBUTTON      "保存(&S)",IDC_CHEATS_SAVE,140,16,32,12
+    DEFPUSHBUTTON   "猡咩(&F)",IDC_CHEATS_SEARCH,82,4,32,12
+    PUSHBUTTON      "?耆(&R)",IDC_CHEATS_SEARCH2,140,4,32,12
+    PUSHBUTTON      "芰痦(&S)",IDC_CHEATS_SAVE,140,16,32,12
     CONTROL         "",IDC_CHEATS_LIST,"SysListView32",LVS_REPORT | 
                     LVS_SINGLESEL | LVS_ALIGNLEFT | LVS_NOSORTHEADER | 
                     WS_BORDER | WS_TABSTOP,2,18,132,126
-    GROUPBOX        "数据类型(&T):",IDC_STATIC,176,2,58,42
-    CONTROL         "8位",IDC_CHEATS_DATATYPE8,"Button",BS_AUTORADIOBUTTON | 
+    GROUPBOX        "?诉?(&T):",IDC_STATIC,176,2,58,42
+    CONTROL         "8耆",IDC_CHEATS_DATATYPE8,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,180,12,28,10
-    CONTROL         "16位",IDC_CHEATS_DATATYPE16,"Button",BS_AUTORADIOBUTTON,
+    CONTROL         "16耆",IDC_CHEATS_DATATYPE16,"Button",BS_AUTORADIOBUTTON,
                     180,22,32,10
-    CONTROL         "32位",IDC_CHEATS_DATATYPE32,"Button",BS_AUTORADIOBUTTON,
+    CONTROL         "32耆",IDC_CHEATS_DATATYPE32,"Button",BS_AUTORADIOBUTTON,
                     180,31,32,10
     GROUPBOX        "",IDC_STATIC,176,39,58,28
-    CONTROL         "十进制",IDC_CHEATS_DEC,"Button",BS_AUTORADIOBUTTON | 
+    CONTROL         "洙?黏",IDC_CHEATS_DEC,"Button",BS_AUTORADIOBUTTON | 
                     WS_GROUP,180,44,40,10
-    CONTROL         "十六进制",IDC_CHEATS_HEX,"Button",BS_AUTORADIOBUTTON,
+    CONTROL         "洙卓?黏",IDC_CHEATS_HEX,"Button",BS_AUTORADIOBUTTON,
                     180,55,48,10
     CONTROL         "",IDC_CHEATS_LOCKLIST,"SysListView32",LVS_REPORT | 
                     LVS_SINGLESEL | LVS_EDITLABELS | LVS_ALIGNLEFT | 
                     LVS_NOSORTHEADER | WS_BORDER | WS_TABSTOP,136,68,98,76
-    PUSHBUTTON      "删除(&D)",IDC_CHEATS_DEL,140,54,32,12
-    PUSHBUTTON      "添加(&A)",IDC_CHEATS_ADD,140,42,32,12
+    PUSHBUTTON      "?鸲(&D)",IDC_CHEATS_DEL,140,54,32,12
+    PUSHBUTTON      "粽圣(&A)",IDC_CHEATS_ADD,140,42,32,12
 END
 
 IDD_DS_FIRMWARE DIALOGEX 0, 0, 234, 78
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | 
     WS_SYSMENU
-CAPTION "DS固件用户设置(文字必须在BIOS字库中存在)"
+CAPTION "DS统遂槟?汲沥(冼懋?瞍BIOS懋?耖痦瞍)"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
-    PUSHBUTTON      "打开固件(&O)...",IDC_BUTTON_OPENFIRMWARE,168,3,64,12
-    LTEXT           "昵称(&N 10):",IDC_STATIC,2,4,40,8
+    PUSHBUTTON      "鲨?统遂...(&O)",IDC_BUTTON_OPENFIRMWARE,168,3,64,12
+    LTEXT           "??(&N 10):",IDC_STATIC,2,4,40,8
     EDITTEXT        IDC_DSFIRMWARE_NICKNAME,48,2,116,12,ES_AUTOHSCROLL
-    LTEXT           "信息(&M 26):",IDC_STATIC,2,18,40,8
+    LTEXT           "汜阌(&M 26):",IDC_STATIC,2,18,40,8
     EDITTEXT        IDC_DSFIRMWARE_MESSAGE,48,17,116,12,ES_AUTOHSCROLL
-    LTEXT           "生日(&B m:d):",IDC_STATIC,2,34,43,8
+    LTEXT           "哝祉(&B m:d):",IDC_STATIC,2,34,43,8
     EDITTEXT        IDC_DSFIRMWARE_BIRTHDAY,48,33,116,12,ES_AUTOHSCROLL | 
                     ES_NUMBER
-    LTEXT           "颜色(&C 0-15):",IDC_STATIC,2,50,46,8
+    LTEXT           "?咪(&C 0-15):",IDC_STATIC,2,50,46,8
     EDITTEXT        IDC_DSFIRMWARE_COLOR,48,48,116,12,ES_AUTOHSCROLL | 
                     ES_NUMBER
-    LTEXT           "语言(&L):",IDC_STATIC,2,64,28,8
+    LTEXT           "?咫(&L):",IDC_STATIC,2,64,28,8
     COMBOBOX        IDC_COMBO_DS_FIRMWARE_LANG,48,63,116,78,CBS_DROPDOWNLIST | 
                     WS_VSCROLL | WS_TABSTOP
-    CONTROL         "用户设置一",IDC_RADIO_DSFIRMWARE_1,"Button",
+    CONTROL         "槟?汲沥扉",IDC_RADIO_DSFIRMWARE_1,"Button",
                     BS_AUTORADIOBUTTON | WS_DISABLED | WS_GROUP,168,20,56,10
-    CONTROL         "用户设置二",IDC_RADIO_DSFIRMWARE_2,"Button",
+    CONTROL         "槟?汲沥欤",IDC_RADIO_DSFIRMWARE_2,"Button",
                     BS_AUTORADIOBUTTON | WS_DISABLED,168,32,56,10
-    DEFPUSHBUTTON   "更新(&U)",IDOK,168,48,64,12,WS_DISABLED
-    PUSHBUTTON      "退出(&X)",IDCANCEL,168,64,64,12
+    DEFPUSHBUTTON   "荐沥(&U)",IDOK,168,48,64,12,WS_DISABLED
+    PUSHBUTTON      "鬈躞(&X)",IDCANCEL,168,64,64,12
 END
 
 
@@ -1411,15 +1411,15 @@ BEGIN
     BEGIN
         BLOCK "080404b0"
         BEGIN
-            VALUE "Comments", "http://www.angeleden.net"
-            VALUE "CompanyName", "天使汉化组"
-            VALUE "FileDescription", "字库编辑器；主要用于生成、查看、以及编辑点阵字库"
-            VALUE "FileVersion", "2007.09.12"
-            VALUE "InternalName", "CrystalTile2.exe"
-            VALUE "LegalCopyright", "Crystal 版权所有 (C) 2004-2007"
-            VALUE "OriginalFilename", "CrystalTile2.exe"
-            VALUE "PrivateBuild", "修订号:10"
-            VALUE "ProductName", "CrystalTile2"
+            VALUE "Comments", "github.com"
+            VALUE "CompanyName", "舾夼??"
+            VALUE "FileDescription", "懋???酗；瘾椹槟橥哝圜、?首、欷朽??锩?懋?"
+            VALUE "FileVersion", "2022.02.10"
+            VALUE "InternalName", "CrystalTile2.5.exe"
+            VALUE "LegalCopyright", "Crystal (C) 2004-2007"
+            VALUE "OriginalFilename", "CrystalTile2.5.exe"
+            VALUE "PrivateBuild", "rev 2022.1"
+            VALUE "ProductName", "CrystalTile2.5"
             VALUE "ProductVersion", "2007.09.12"
         END
     END
@@ -1666,391 +1666,391 @@ END
 
 STRINGTABLE 
 BEGIN
-    IDR_MAINFRAME           "CrystalTile2"
-    IDR_CrystalTile2TYPE    "\nCrystalTile2\nCrystalTile2\n\n\nCrystalTile2.Document\nCrystalTile2.Document"
-    IDS_TOOLBAR             "标准工具栏"
+    IDR_MAINFRAME           "CrystalTile2.5"
+    IDR_CrystalTile2TYPE    "\nCrystalTile25\nCrystalTile25\n\n\nCrystalTile25.Document\nCrystalTile25.Document"
+    IDS_TOOLBAR             "扁夯 档备葛澜"
     ID_PROGRESSBAR          " "
-    IDS_OPENFILE            "正在载入文件..."
-    IDS_SAVEFILE            "正在保存文件..."
-    IDS_OPENROMFILTER       "所有支持文件 \000*.gb;*.gbc;*.gba;*.nds;*.ids;*.ds;*.srl;*.z64;*.n64;*.v64;*.fc;*.nes;*sfc;*.smc;*.sms;*.sdat;*.bin;*.nscr;*.pac;*.sdat;utility.bin;*.narc\000GBA Roms(*.gba)\000*.gba\000Nds Roms(*.nds;*.ids;*.ds;*.srl)\000*.nds;*.ids;*.ds;*.srl\000Nintendo 64 Roms(*.z64;*.n64;*.v64)\000*.z64;*.n64;*.v64\000文件系统档案(*.pac;*.sdat;utility.bin;*.narc)\000*.pac;*.sdat;utility.bin;*.narc\000所有文件 (*.*)\000*.*"
+    IDS_OPENFILE            "颇老阑 咯绰 吝..."
+    IDS_SAVEFILE            "颇老阑 静绰 吝..."
+    IDS_OPENROMFILTER       "瘤盔窍绰 颇老 \000*.gb;*.gbc;*.gba;*.nds;*.ids;*.ds;*.srl;*.z64;*.n64;*.v64;*.fc;*.nes;*sfc;*.smc;*.sms;*.sdat;*.bin;*.nscr;*.pac;*.sdat;utility.bin;*.narc\000GBA Roms(*.gba)\000*.gba\000Nds Roms(*.nds;*.ids;*.ds;*.srl)\000*.nds;*.ids;*.ds;*.srl\000Nintendo 64 Roms(*.z64;*.n64;*.v64)\000*.z64;*.n64;*.v64\000拘绵 颇老 (*.pac;*.sdat;utility.bin;*.narc)\000*.pac;*.sdat;utility.bin;*.narc\000葛电 颇老 (*.*)\000*.*"
     ID_ROMINFO              " "
-    IDS_OPTIONTREE          "属性"
-    IDS_TREETAB             "属性\n调色板\n收藏夹\n设置\n资源"
-    IDS_LOADPAL             "加载此调色板(&P)"
+    IDS_OPTIONTREE          "加己"
+    IDS_TREETAB             "加己\n迫饭飘\n合付农\n汲沥\n府家胶"
+    IDS_LOADPAL             "迫饭飘 阂矾坷扁(&P)"
     IDS_SCALELIST           "25\n50\n75\n100\n125\n150\n175\n200\n400\n800\n1000\n2000"
-    IDS_LOADMAP             "加载此M&ap地址"
-    IDS_LOADTITLE           "加载此&Tile地址"
-    IDS_TILEFORMATLSIT      "单色 1bpp\nNDS  1bpp\nGB   2bpp\n4色  2bpp\nVB   2bpp\nNGP  2bpp\nGBA  4bpp\nN64/MD 4bpp\nGBA2 4bpp\nGBA  8bpp\nSNES 4bpp\nNES  2bpp\nSMS  4bpp\nGBA3 Xbpp\nCT0  Xbpp\n16位 RGBa\n24位 RGB\n32位 RGBa\n旋律天国"
+    IDS_LOADMAP             "Map林家 阂矾坷扁(&A)"
+    IDS_LOADTITLE           "Tile林家 阂矾坷扁(&T)"
+    IDS_TILEFORMATLSIT      "1bpp 钎霖\n1bpp NDS\n2bpp 钎霖\n2bpp GB\n2bpp NES\n2bpp VB\n2bpp NGP\n4bpp N64/MD\n4bpp GBA\n4bpp GBA2\n4bpp SMS\n4bpp SNES\n4bpp SMS\n8bpp GBA\nXbpp GBA\nXbpp CT0\n16bpp RGBa\n24bpp RGB\n32bpp RGBa\n1bpp 府惦玫惫 傈侩"//绊磨鞘夸 乐澜
 END
 
 STRINGTABLE 
 BEGIN
-    AFX_IDS_APP_TITLE       "CrystalTile2"
-    AFX_IDS_IDLEMESSAGE     "http://www.angeleden.net [系统可用内存：%dKb]"
+    AFX_IDS_APP_TITLE       "CrystalTile2.5"
+    AFX_IDS_IDLEMESSAGE     "https://github.com/Wintiger0222/CrystalTile25 [荤侩 啊瓷 皋葛府：%dMb]"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_FILE_OPEN            "打开现有文档\n打开"
-    ID_FILE_CLOSE           "关闭活动文档\n关闭"
-    ID_FILE_SAVE            "保存活动文档\n保存"
-    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+    ID_FILE_OPEN            "鲨??牦冼?\n鲨?"
+    ID_FILE_CLOSE           "???冼?\n??"
+    ID_FILE_SAVE            "芰痦?冼?\n芰痦"
+    ID_FILE_SAVE_AS         "槟沔伲?芰痦?冼?\n?痦?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
-    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+    ID_APP_ABOUT            "?闫镲唔汜阌、鼹茆?鼹?\n?橥"
+    ID_APP_EXIT             "鬈躞?槟镲唔；皤闫芰痦冼?\n鬈躞"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_FILE_MRU_FILE1       "打开此文档"
-    ID_FILE_MRU_FILE2       "打开此文档"
-    ID_FILE_MRU_FILE3       "打开此文档"
-    ID_FILE_MRU_FILE4       "打开此文档"
-    ID_FILE_MRU_FILE5       "打开此文档"
-    ID_FILE_MRU_FILE6       "打开此文档"
-    ID_FILE_MRU_FILE7       "打开此文档"
-    ID_FILE_MRU_FILE8       "打开此文档"
-    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE1       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE2       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE3       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE4       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE5       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE6       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE7       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE8       "捞 巩辑甫 勘聪促."
+    ID_FILE_MRU_FILE9       "捞 巩辑甫 勘聪促."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
-    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+    ID_NEXT_PANE            "锓?羽扉??太\n扉?太"
+    ID_PREV_PANE            "锓?呔扉??太\n呔扉?太"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
-    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
-    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
-    ID_WINDOW_TILE_HORZ     "以非重叠的平铺方式排列窗口\n平铺窗口"
-    ID_WINDOW_TILE_VERT     "以非重叠的平铺方式排列窗口\n平铺窗口"
-    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+    ID_WINDOW_NEW           "??冼?鲨??扉??息\n沔孙?息"
+    ID_WINDOW_ARRANGE       "瞍?息罴莼凵知??\n凵知??"
+    ID_WINDOW_CASCADE       "欷耢?郯阋凵知?息\n???息"
+    ID_WINDOW_TILE_HORZ     "欷蕺耢?钴?郯阋凵知?息\n??息"
+    ID_WINDOW_TILE_VERT     "欷蕺耢?钴?郯阋凵知?息\n??息"
+    ID_WINDOW_SPLIT         "???息?萋?引??太\n?萋"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_CLEAR           "清除选定内容\n清除"
-    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
-    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
-    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
-    ID_EDIT_FIND            "在搜索到的脚本列表中查找指定的文本\n查找"
-    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
-    ID_EDIT_REPEAT          "重复上一操作\n重复"
-    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
-    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
-    ID_EDIT_UNDO            "撤消上一操作\n撤消"
-    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+    ID_EDIT_CLEAR           "?鸲?镆?榛\n?鸲"
+    ID_EDIT_CLEAR_ALL       "?鸲铒莼?榛\n铒莼?鸲"
+    ID_EDIT_COPY            "?黏?镆?榛??徐郫羽铗?鼯呔\n?黏"
+    ID_EDIT_CUT             "铗锓?镆?榛??徐郫羽铗?鼯呔\n铗锓"
+    ID_EDIT_FIND            "瞍猡咩羽钴逝茆知耖茫扁颚镆钴巩磊\n茫扁"
+    ID_EDIT_PASTE           "?忑铗?鼯?榛\n锬?"
+    ID_EDIT_REPEAT          "耢?呔扉鹈砺\n耢?"
+    ID_EDIT_REPLACE         "槟扁鸥巩磊官操扁麇镆钴巩磊\n官操扁"
+    ID_EDIT_SELECT_ALL      "?镆镖?冼?\n铒?"
+    ID_EDIT_UNDO            "籼峒呔扉鹈砺\n籼峒"
+    ID_EDIT_REDO            "?呔蟓籼峒钴鹈砺\n耢癞"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_TOOLBAR         "显示或隐藏标准工具栏\n切换标准工具栏"
-    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+    ID_VIEW_TOOLBAR         "扁夯 档备葛澜甫 钎矫窍芭唱 见遍聪促\n寇何 砒官 撇 肋扼郴扁"
+    ID_VIEW_STATUS_BAR      "加己 芒阑 钎矫窍芭唱 见辫聪促.\n加己 芒 肋扼郴扁"
 END
 
 STRINGTABLE 
 BEGIN
-    AFX_IDS_SCSIZE          "更改窗口大小"
-    AFX_IDS_SCMOVE          "更改窗口位置"
-    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
-    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
-    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
-    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
-    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+    AFX_IDS_SCSIZE          "腾饲?息愚岢"
+    AFX_IDS_SCMOVE          "腾饲?息耆銮"
+    AFX_IDS_SCMINIMIZE      "??息?岢???"
+    AFX_IDS_SCMAXIMIZE      "夼?息跆愚?闫"
+    AFX_IDS_SCNEXTWINDOW    "锓?羽扉?冼??息"
+    AFX_IDS_SCPREVWINDOW    "锓?羽铖扉?冼??息"
+    AFX_IDS_SCCLOSE         "????息?皤闫芰痦冼?"
 END
 
 STRINGTABLE 
 BEGIN
-    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
-    AFX_IDS_SCTASKLIST      "激活任务列表"
-    AFX_IDS_MDICHILD        "激活此窗口"
+    AFX_IDS_SCRESTORE       "??息?羽镝呷愚岢"
+    AFX_IDS_SCTASKLIST      "汰祢?知"
+    AFX_IDS_MDICHILD        "汰螽?息"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_TILEVIEW        "Ctrl+Shift+W: 上一视图 Ctrl+W: 下一视图; Tab/双击: Tile编辑器\nTile视图"
-    ID_VIEW_HEXVIEW         "Ctrl+Shift+W: 上一视图 Ctrl+W: 下一视图; Ctrl+H\n十六进制编辑器"
-    ID_VIEW_ASMVIEW         "Ctrl+Shift+W: 上一视图 Ctrl+W: 下一视图\nAsm视图"
-    ID_VIEW_TILEEDITORVIEW  "Ctrl+Shift+W: 上一视图 Ctrl+W: 下一视图 Tab/Esc: Tile视图\nTile编辑器"
-    ID_VIEW_SCRIPTVIEW      "Ctrl+Shift+W: 上一视图 Ctrl+W: 下一视图\n脚本视图"
-    ID_VIEW_GRID            "是否显示网格; Shift+G\n网格"
-    ID_TTB_PAL              "配色、导入导出调色板、选择颜色\n调色板"
+    ID_VIEW_TILEVIEW        "Ctrl+Shift+W: 惑困 皋春 Ctrl+W: 窍困 皋春; Tab/歹喉 努腐: Tile 祈笼扁\nTile 焊扁"
+    ID_VIEW_HEXVIEW         "Ctrl+Shift+W: 惑困 皋春 Ctrl+W: 窍困 皋春; Ctrl+H\n16柳荐 祈笼扁"
+    ID_VIEW_ASMVIEW         "Ctrl+Shift+W: 惑困 皋春 Ctrl+W: 窍困 皋春\nAsm 焊扁"
+    ID_VIEW_TILEEDITORVIEW  "Ctrl+Shift+W: 惑困 皋春 Ctrl+W: 窍困 皋春 Tab/Esc: Tile 焊扁\nTile 祈笼扁"
+    ID_VIEW_SCRIPTVIEW      "Ctrl+Shift+W: 惑困 皋春 Ctrl+W: 窍困 皋春\n胶农赋飘 焊扁"
+    ID_VIEW_GRID            "拜磊 钎矫 蜡孤 汲沥; Shift+G\n拜磊"
+    ID_TTB_PAL              "祸 嘎眠扁, 迫饭飘 颇老阑 阂矾坷芭唱 郴焊忱聪促. 祸 急琶\n迫饭飘"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_DIBFILTER           "图形文件(*.bmp;*.jpeg;*.gif)\000*.bmp;*.jpg;*.jpe;*.jpeg;*.gif"
+    IDS_DIBFILTER           "弊贰侨 颇老(*.bmp;*.jpeg;*.gif)\000*.bmp;*.jpg;*.jpe;*.jpeg;*.gif"
     ID_TILEEDITOR_OFFSET    " "
-    IDS_ARM9_FOOTER         "原文件尾部为0xDEC00621\n而导入文件尾部不等于0xDEC00621\n是否修正为0xDEC00621？"
-    IDS_SAVEAS              "已被修改且已保存！\n是否关闭文档？（可以通过撤销恢复）"
-    IDS_PALFILTER           "支持的调色板\000*.bmp;*.pal;*.act;*.nclr\000所以文件(*.*)\000*.*"
-    IDS_PAL_EXPORTPAL       "Windows调色板(*.pal)\000*.pal\000Act(*.act)\000*.act\000位图调色板(*.bmp)\000*.bmp\000二进制数据(*.bin)\000*.bin"
+    IDS_ARM9_FOOTER         "盔夯 颇老狼 场何盒篮 0xDEC00621涝聪促.\n啊廉坷绰 颇老狼 场何盒阑 0xDEC00621肺 嘎眠摆嚼聪促.\n0xDEC00621肺 荐沥窍矫摆嚼聪鳖?"
+    IDS_SAVEAS              "颇老捞 荐沥登菌嚼聪促!\n沥富肺 辆丰窍矫摆嚼聪鳖? (秒家甫 喘矾 历厘窍角 荐 乐嚼聪促.)"
+    IDS_PALFILTER           "瘤盔窍绰 迫饭飘\000*.bmp;*.pal;*.act;*.nclr\000岫欷冼遂(*.*)\000*.*"
+    IDS_PAL_EXPORTPAL       "Windows侩 迫饭飘(*.pal)\000*.pal\000Adobe Color Table(*.act)\000*.act\000厚飘甘 迫饭飘(*.bmp)\000*.bmp\000捞柳 颇老(*.bin)\000*.bin"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_EXPORT          "导出\n导出"
+    ID_EDIT_EXPORT          "郴焊郴扁\n郴焊郴扁"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_IMPORT          "导入（若发现导入无效请按住Ctrl键试试）\n导入"
+    ID_EDIT_IMPORT          "啊廉坷扁 (父距 肋给 涝仿登搁 Ctrl虐甫 喘矾林技夸)\n啊廉坷扁"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_AUTOFITCOL      "是否自动调整Tile视图的行列数; 列:Shift+左右 行:Shift+上下"
-    ID_TILEEDITOR_TBL       "写入码表(自动识别Ansi/Unicode格式的文本); Ctrl+T\n导入码表"
+    ID_VIEW_AUTOFITCOL      "Tile 农扁甫 磊悼栏肺 拳搁俊 嘎娩聪促.; 青:Shift+¤￠ 凯:Shift+＄℃"
+    ID_TILEEDITOR_TBL       "绊蜡锅龋钎 (Ansi/Unicode 屈侥 巩磊 磊悼 牢侥); Ctrl+T\n绊蜡锅龋钎 啊廉坷扁"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_TBLFILTER           "码表文件(*.txt;*.tbl)\000*.txt;*.tbl\000所有文件(*.*)\000*.*"
-    IDS_IMPROTTBL           "正在写入码表..."
-    IDS_OPENMODE            "\n只读模式\n映射模式\n只读映射"
-    IDS_LINECOL             "行列:%dX%d=%d 大小:%d/%Xh"
+    IDS_TBLFILTER           "绊蜡锅龋钎 颇老(*.txt;*.tbl)\000*.txt;*.tbl\000葛电 颇老(*.*)\000*.*"
+    IDS_IMPROTTBL           "扁废 吝 涝聪促..."
+    IDS_OPENMODE            "\n佬扁 葛靛\n概俏 葛靛\n佬扁 概俏 葛靛"
+    IDS_LINECOL             "青纺:%dX%d=%d 农扁:%d/%Xh"
     IDC_HEXVIEW_BITS        " "
-    IDS_NOTFIND             "没有查找到匹配数据！"
-    IDS_REPLACECOUNT        "替换了%d项！"
-    IDS_LZ77HEADTEXT        "编号 地址        大小（十进制）"
-    IDS_LZ77SEARCHSTOP      "搜索项目大于9999，强行中断！"
-    IDS_LZ77SEARCHCOUNT     "搜索到%d条项目"
-    IDS_LZ77UNCOMP          "是否立即打开？"
-    IDS_AGBCOMP             "没有找到AGBCOMP外壳文件！\n是否由您指定位置\n不指定的话将解压本软件\n自带的Agbcomp到软件所在目录"
-    IDS_ALLFILE             "所有文件(*.*)\000*.*"
+    IDS_NOTFIND             "老摹窍绰 单捞磐甫 茫瘤 给沁嚼聪促!"
+    IDS_REPLACECOUNT        "%d亲阑 措眉 窍看嚼聪促!"
+    IDS_LZ77HEADTEXT        "锅龋 林家        农扁（10柳过）"
+    IDS_LZ77SEARCHSTOP      "八祸 搬苞啊 9999俺啊 逞嚼聪促. 碍力辆丰 钦聪促!"
+    IDS_LZ77SEARCHCOUNT     "%d俺狼 八祸搬苞啊 乐嚼聪促."
+    IDS_LZ77UNCOMP          "官肺 咯矫摆嚼聪鳖?"
+    IDS_AGBCOMP             "AGBCOMP 夹 颇老阑 茫阑 荐 绝嚼聪促!\n困摹甫 瘤沥窍瘤 臼栏搁\n家橇飘傀绢啊 乐绰 叼发配府俊\nAgbcomp狼 拘绵阑 秦力钦聪促"
+    IDS_ALLFILE             "葛电 颇老(*.*)\000*.*"
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_SETCOLORBTN         "选择文本色"
-    IDC_SETBKCOLORBTN       "选择背景色"
+    IDC_SETCOLORBTN         "巩磊祸阑 急琶窍技夸."
+    IDC_SETBKCOLORBTN       "硅版祸阑 急琶窍技夸."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TBL_SELTBL           "控制符格式:>控制符,控制符长度 当长度为0时是结束控制符"
-    ID_VIEW_2BYTEALIGN      "2字节对齐\n2字节对齐"
-    ID_VIEW_4BYTEALIGN      "4字节对齐\n4字节对齐"
-    ID_VIEW_COLORTEXT       "将数据转换成颜色\n彩色显示"
-    IDC_HEXVIEW_SETBITS     "二进制位设置\n二进制位设置"
+    ID_TBL_SELTBL           "腕黏莠太阋:>腕黏莠,腕黏莠?峪 ??峪?0?憷?嶂腕黏莠"
+    ID_VIEW_2BYTEALIGN      "2懋???\n2懋???"
+    ID_VIEW_4BYTEALIGN      "4懋???\n4懋???"
+    ID_VIEW_COLORTEXT       "??诉??圜?咪\n篝咪?闫"
+    IDC_HEXVIEW_SETBITS     "欤?黏耆汲沥\n欤?黏耆汲沥"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_HEXVIEW_SWPCODE      "编码的高字节和低字节对调\n翻转编码"
+    ID_HEXVIEW_SWPCODE      "??钴驮懋?罡懋???\n????"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_DATA2PAL        "光标所在的数据转换为调色板（颜色位数以对齐方式为准）\n数据转换为调色板"
-    ID_EDIT_PAL2DATA        "当前调色板转换为数据并插入到光标所在位（颜色位数以对齐方式为准，双击光标也可以修改颜色数据）\n调色板转换为数据"
-    ID_HEXVIEW_IMPORT       "导入文本框的文本到当前光标处"
+    ID_EDIT_DATA2PAL        "蚊?岫瞍钴?诉????迫饭飘（?咪耆?欷??郯阋?褡）\n?诉????迫饭飘"
+    ID_EDIT_PAL2DATA        "?铖?迫饭飘????诉??忑羽蚊?岫瞍耆（?咪耆?欷??郯阋?褡，??蚊?濂师欷狍饲?咪?诉）\n?迫饭飘????诉"
+    ID_HEXVIEW_IMPORT       "啊廉坷扁巩磊?钴巩磊羽?铖蚊??"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_COMP                "压缩完成！\n压缩文件保存在原数据文件同一目录下\n并在名字后追加了“_LZ”的BIN文件。\n是否立即打开？"
-    IDS_NDSFSIHEADER        "文件名\n文件号\n偏移地址\n\n子文件头信息\n文件描述"
-    IDS_CRCOK               "效验码无误"
-    IDS_CRCERROR            "效验码错误！\n是否修正？\n\t旧值:\t正确:\n保护区:\t%04X\t%04X\n　商标:\t%04X\t%04X\n文件头:\t%04X\t%04X\n　图标:\t%04X\t%04X"
-    IDS_SCRIPTVIEW_HEADER   "指针\n地址\n长度\n文本"
-    IDS_SCRIPTIVEW_SEARCHING "正在搜索文本..."
-    IDS_SCRIPTFILE          "文本文件(*.txt)\000*.txt"
-    IDS_SCRIPTIVEW_FINDPOINT "正在搜寻指针..."
-    IDS_LZ77SEARCH_SEARCHING "正在搜索LZ77..."
+    IDS_COMP                "??枨圜！\n??冼遂芰痦瞍戢?诉冼遂砸扉偻?\n?瞍伲懋踮圣瞩“_LZ”钴BIN冼遂。\n官肺 咯矫摆嚼聪鳖?"
+    IDS_NDSFSIHEADER        "冼遂伲\n冼遂?\n旃颌颍\n\n憝捞悼汜阌\n冼遂仝恹"
+    IDS_CRCOK               "??匍?"
+    IDS_CRCERROR            "????！\n憷茭狍镝？\n\t??:\t镝?:\n芰??:\t%04X\t%04X\n　呗?:\t%04X\t%04X\n捞悼:\t%04X\t%04X\n　??:\t%04X\t%04X"
+    IDS_SCRIPTVIEW_HEADER   "颚?\n颌颍\n?峪\n巩磊"
+    IDS_SCRIPTIVEW_SEARCHING "镝瞍猡咩巩磊..."
+    IDS_SCRIPTFILE          "巩磊冼遂(*.txt)\000*.txt"
+    IDS_SCRIPTIVEW_FINDPOINT "镝瞍猡?颚?..."
+    IDS_LZ77SEARCH_SEARCHING "镝瞍猡咩LZ77..."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SCRIPTVIEW_FINDPOINT "寻找指针（如果ROM很大而且项目很多的话穷举的速度将很慢）\n寻找指针"
-    ID_SCRIPTVIEW_INVALIDATEDELETE "删除指针地址无效的项目"
+    ID_SCRIPTVIEW_FINDPOINT "??颚?（妪妄ROM?愚旎螃?偻?引钴???钴彳峪??胤）\n??颚?"
+    ID_SCRIPTVIEW_INVALIDATEDELETE "?鸲颚?颌颍匍钴?偻"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_NDSFSI         "查看NDS文件信息\nNDS文件"
-    ID_SEARCH_TEXT          "搜索ROM中的脚本数据\n搜索脚本"
-    ID_SEARCH_TEXTEX        "在指定目录进行批量搜索，并且保存存在指针的文本到Script目录"
+    ID_TOOLS_NDSFSI         "?首NDS冼遂汜阌\nNDS冼遂"
+    ID_SEARCH_TEXT          "猡咩ROM耖钴逝茆?诉\n猡咩逝茆"
+    ID_SEARCH_TEXTEX        "瞍颚镆偻??蓦蔗猡咩，?螃芰痦痦瞍颚?钴巩磊羽Script偻?"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_NODEFHINT           "发现未定义的字符！以后再次发现是否提示？"
-    IDS_DEFNEWCODE          "发现未定义的字符时\n是否在码表自动定义？"
-    IDS_SWPEXTBL            "请选择导出码表后再执行！"
-    IDS_SWPIMTBL            "请选择导入码表后再执行！"
-    IDS_IMPORTSCRIPT        "此操作不提供撤销！\n是否导入？"
-    IDS_NEWCODE             "生成了新的编码，是否追加到码表末尾？"
-    IDS_CODEPAGEHINT        "\t - 代码页 %d"
-    IDS_DEFCODEPAGE         "系统默认"
-    IDS_INVALIDCHAR         "该文件中的某些Unicode字符将不被保存\n要保存所有信息请使用Unicode编码\n或使用对应于该文本的编码！"
-    IDS_IMBMPERROR          "导入图片失败！"
-    IDS_FILETOOBIG          "文件过大！请输入新位置(&V)：\n旧位置可以考虑放其他文件\n或重新构建ROM来除去无用的空间碎片"
-    IDS_FILEOFFERROR        "新的文件位置在已有文件\n%s中\n已经存在（交错）！\n是否重新输入一个新值？"
+    IDS_NODEFHINT           "??诒镆?钴懋莠！欷睥蟓??憷茭皤闫？"
+    IDS_DEFNEWCODE          "??诒镆?钴懋莠?\n憷茭瞍?砘?镆?？"
+    IDS_SWPEXTBL            "???郴焊郴扁?睥?！"
+    IDS_SWPIMTBL            "???啊廉坷扁?睥?！"
+    IDS_IMPORTSCRIPT        "螽鹈砺荇皤完籼?！\n憷茭啊廉坷扁？"
+    IDS_NEWCODE             "哝圜瞩沔钴??，憷茭踮圣羽?厍诃？"
+    IDS_CODEPAGEHINT        "\t - 内靛其捞瘤 %d"
+    IDS_DEFCODEPAGE         "矫胶袍蠃?"
+    IDS_INVALIDCHAR         "?冼遂耖钴倩蘖Unicode懋莠?荇芰痦\n椹芰痦岫牦汜阌?夼槟Unicode??\n夼槟??橥?巩磊钴??！"
+    IDS_IMBMPERROR          "啊廉坷扁?泖?！"
+    IDS_FILETOOBIG          "冼遂?愚！??忑沔耆銮(&V)：\n?耆銮师欷团?郫扁鸥冼遂\n耢沔?孙ROM?鸲僳匍槟钴亡?犸"
+    IDS_FILEOFFERROR        "沔钴冼遂耆銮瞍飓牦冼遂\n%s耖\n飓?痦瞍（芜?）！\n憷茭耢沔?忑扉?沔?？"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SCRIPTVIEW_OPENSCRIPT "打开之前保存的脚本文件（请选择合适的编码格式）"
-    ID_SCRIPTVIEW_FILTERPOINT "检查指针地址为?的项目"
-    ID_SCRIPTVIEW_FILTERSITEM "检查文本长度为奇数的项目"
-    ID_SCRIPTVIEW_FILTERDITEM "检查文本长度为偶数的项目"
-    ID_SCRIPTVIEW_FILTERMIN "检查文本长度小于最小长度的项目"
-    ID_SCRIPTVIEW_FILTERMAX "检查文本长度大于最大长度的项目"
-    ID_SCRIPTVIEW_FILTERSADDRESS "检查文本地址为奇数的项目"
-    ID_SCRIPTVIEW_FILTERDADDRESS "检查文本地址为偶数的项目"
+    ID_SCRIPTVIEW_OPENSCRIPT "鲨?颀铖芰痦钴逝茆冼遂（???瘟钴??太阋）"
+    ID_SCRIPTVIEW_FILTERPOINT "??颚?颌颍??钴?偻"
+    ID_SCRIPTVIEW_FILTERSITEM "??娄荐 辨捞狼 巩厘钴?偻"
+    ID_SCRIPTVIEW_FILTERDITEM "??圈荐 辨捞狼 巩磊钴?偻"
+    ID_SCRIPTVIEW_FILTERMIN "??弥家 辨捞焊促 陋篮 巩厘钴?偻"
+    ID_SCRIPTVIEW_FILTERMAX "??弥措 辨捞焊促 变 巩厘钴?偻"
+    ID_SCRIPTVIEW_FILTERSADDRESS "??林家啊 圈荐牢 巩厘钴?偻"
+    ID_SCRIPTVIEW_FILTERDADDRESS "??林家啊 娄荐牢 巩厘钴?偻"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SCRIPTVIEW_FILTERCHECKWORD "对某些乱码文本进行检查（有点弱智）"
+    ID_SCRIPTVIEW_FILTERCHECKWORD "?倩蘖??巩磊???（牦锩灏颡）"
     ID_SCRIPTVIEW_FILTERSPECWORD 
-                            "检查文本中包含特定文字的项目（文字在查找框中输入）"
+                            "??巩磊耖漂沥 巩厘 器窃钴?偻（冼懋瞍茫扁?耖?忑）"
     ID_SCRIPTVIEW_FILTERACHECK 
-                            "选择项目变为为选择状态；为选择项目变为选择状态"
-    ID_SCRIPTVIEW_CHECKALL  "检查所有项目；如果存在高亮的项目则检查高亮项目"
+                            "???偻???????；????偻??????"
+    ID_SCRIPTVIEW_CHECKALL  "??岫牦?偻；妪妄痦瞍驮照钴?偻???驮照?偻"
     ID_SCRIPTVIEW_FILTERUNCHECK 
-                            "取消所有项目的检查状态；如果存在高亮的项目则取消高亮项目的检查状态"
+                            "觫峒岫牦?偻钴????；妪妄痦瞍驮照钴?偻?觫峒驮照?偻钴????"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_ZOOMEXFIRST    "须处于Tile模式，将目标文档光标的可见Tile扩展到当前文档"
+    ID_TOOLS_ZOOMEXFIRST    "??橥Tile偌阋，?偻?冼?蚊?钴师?Tile?铟羽?铖冼?"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_RELATIVE_FINDCOUNT  "找到%d个符合条件的项目"
-    IDS_RELATIVE_COUNTOUT   "搜索到大于9999条符合条件的项目！\n强行中断！"
-    IDS_SIZETOOLONG         "文档数据过大\n无法导入全部数据到光标处\n将被强制截断！"
-    IDS_FILEISMODIFTED      "文档可能在外部被修改是否重新载入？"
-    IDS_COMPHEADER          "地址\n长度\n值（文件1）\n值（文件2）"
-    IDS_SIZERROR            "文件大小不同！\n是否按最小文件进行比较？"
-    IDS_FILEXIANGTONG       "同一个文件！！！\n无意义！！！"
-    IDS_COMPING             "正在比较文件..."
-    IDS_NDSHEADER           "文件头"
-    IDS_HEXVIEW_HEADER      "偏移地址\n用户码表"
-    IDS_CRYSTALBAR_HIDE     "自动隐藏\n自动隐藏"
-    IDS_OTHERBAR            "杂项设置(^1)"
+    IDS_RELATIVE_FINDCOUNT  "?羽%d?莠?遂钴?偻"
+    IDS_RELATIVE_COUNTOUT   "猡咩羽愚橥9999?莠?遂钴?偻！\n谁吝瘤！"
+    IDS_SIZETOOLONG         "冼??诉?愚\n匍埚啊廉坷扁铒莼?诉羽蚊??\n?谁黏锔?！"
+    IDS_FILEISMODIFTED      "冼?师姻瞍桠莼狍饲憷茭耢沔?忑？"
+    IDS_COMPHEADER          "颌颍\n?峪\n?（冼遂1）\n?（冼遂2）"
+    IDS_SIZERROR            "冼遂愚岢荇砸！\n憷茭湮跆岢冼遂?蒿?？"
+    IDS_FILEXIANGTONG       "砸扉?冼遂！！！\n匍腧?！！！"
+    IDS_COMPING             "镝瞍蒿?冼遂..."
+    IDS_NDSHEADER           "捞悼"
+    IDS_HEXVIEW_HEADER      "旃颌颍\n槟??"
+    IDS_CRYSTALBAR_HIDE     "砘??睑\n砘??睑"
+    IDS_OTHERBAR            "??汲沥(^1)"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_FILECOMP       "二进制比较两个文件之间的差别"
+    ID_TOOLS_FILECOMP       "欤?黏蒿???冼遂颀?钴蟋?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_SEARCH_CTRLENDONLY   "只搜索按结束控制符正常结束的文本（只在使用码表时有效；定义：>Ctrl,0）\n控制符结束"
-    ID_TBL_TOTALWORD        "统计文本中所出现过的字符并生成文档"
-    ID_TOOLS_TEXTCPCHANGE   "转换文本的编码"
+    ID_SEARCH_CTRLENDONLY   "颃猡咩湮?嶂腕黏莠镝呷?嶂钴巩磊（颃瞍夼槟??牦；镆?：>Ctrl,0）\n腕黏莠?嶂"
+    ID_TBL_TOTALWORD        "??巩磊耖岫躞??钴懋莠?哝圜冼?"
+    ID_TOOLS_TEXTCPCHANGE   "??巩磊钴??"
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_ENTRYINFO           "CPU:  入口代码  RAM入口  RAM副本 大小\r\nARM9:%08X %08X %08X %08X\r\nARM7:%08X %08X %08X %08X\r\n加载过程:复制""大小""字节的""入口代码""到""RAM副本""\r\nPC=RAM入口"
+    IDC_ENTRYINFO           "CPU:  忑息盂?  RAM忑息  RAM荠茆 愚岢\r\nARM9:%08X %08X %08X %08X\r\nARM7:%08X %08X %08X %08X\r\n圣??镲:?黏""愚岢""懋?钴""忑息盂?""羽""RAM荠茆""\r\nPC=RAM忑息"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_ASMVIEW_HEADER      "代码字节\nARM9:ARM指令\nARM9:THUMB指令\nARM7:ARM指令\nARM7:THUMB指令"
-    IDC_ARM_BASEADDRESS     "基址"
-    IDS_ASMERROR            "无效指令！"
-    IDS_FAVORITESBAR        "收藏夹(^6)"
-    IDS_IMPORTSPECFILE_ERROR "NDS文件头文件过大，无法导入！"
-    IDS_SDATINFOHEADER      "声音文件\n绝对偏移\n相对偏移\n大小\n曲目信息"
-    IDS_FSI_FIND            "请输入要查找的关键字（不支持通配符）："
-    IDS_SEARCHTEXT_COUNT    "搜索到%d项文本\n共%d字"
-    IDS_ASMEXPORT           "您要导出几行汇编代码？"
-    IDS_FSI_SETHEADER       "修改结构 "
-    IDS_FSI_SETSTRUCTSIZE   "请输入新的结构大小\n如果文件放不下可能要移动文件"
-    IDS_FSI_GOTOHEADER      "定位到 "
+    IDS_ASMVIEW_HEADER      "盂?懋?\nARM9:ARM 葛靛\nARM9:THUMB 葛靛\nARM7:ARM 葛靛\nARM7:THUMB 葛靛"
+    IDC_ARM_BASEADDRESS     "旭颍"
+    IDS_ASMERROR            "匍颚值！"
+    IDS_FAVORITESBAR        "合付农(^6)"
+    IDS_IMPORTSPECFILE_ERROR "NDS捞悼冼遂?愚，匍埚啊廉坷扁！"
+    IDS_SDATINFOHEADER      "家府冼遂\n??旃\n哂?旃\n愚岢\n拓偻汜阌"
+    IDS_FSI_FIND            "??忑椹茫扁钴??懋（荇颞颔髯壅莠）："
+    IDS_SEARCHTEXT_COUNT    "猡咩羽%d?巩磊\n挽%d懋"
+    IDS_ASMEXPORT           "?椹郴焊郴扁???盂?？"
+    IDS_FSI_SETHEADER       "狍饲?? "
+    IDS_FSI_SETSTRUCTSIZE   "??忑沔钴??愚岢\n妪妄冼遂郫荇师姻椹旃?冼遂"
+    IDS_FSI_GOTOHEADER      "秦歹羽 "
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_SETSHADOWCOLORBTN   "选择阴影/描边色"
+    IDC_SETSHADOWCOLORBTN   "澜康/祸 急琶"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_RESET           "撤销所有修改\n恢复"
+    ID_EDIT_RESET           "角青 秒家茄 疙飞阑 促矫 角青钦聪促.\n汗备"
 END
 
 STRINGTABLE 
 BEGIN
-    IDC_VALEDIT             "同时输入多个项目时用“,”号分隔开"
+    IDC_VALEDIT             "悼矫俊 咯矾亲格阑 涝仿矫 “,”肺 备盒钦聪促."
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_SFI            "查看文件内的子文件信息"
+    ID_TOOLS_SFI            "颇老 郴何狼 窍困 颇老甸阑 八祸钦聪促."
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_FSI_EXPORTFILEEX    "导出包含特定关键字的文件"
-    IDS_PLAYER_NKHZ         "请输入采样率"
-    IDS_NDSHEADERINFO       "NDS文件头\nARM9 CPU指令\nARM7 CPU指令\nARM9 Overlay表\nARM7 Overlay表\n文件目录表\n文件分配表\n游戏信息\n未知文件\nTile文件\n声音文件\n动画文件\n内嵌的NdsRom\n调色板\n文本文件\nMAP模式的拼图数据，与NCGR、NCLR配合使用\n压缩文件(一般是LZ77)\nCT2认为是对汉化有帮助的可疑文件\nOverlay文件\nCrystalTile可识别文件"
-    IDS_NDSCWDH_INFO        "<CWDH 字符数:%d WDH[0]:%02X-%02X-%02X 数据每三字节一组:0x10+Index*3>"
-    IDS_NDSCGLP_INFO        "<CGLP Tile宽高:%dx%d 大小:%d 位数:%d(%d)>"
-    IDS_NEWTOOL             "新工具"
-    IDS_EXEC                "可执行文件(*.exe)\000*.exe\000所有文件(*.*)\000*.*"
-    IDS_MAXTOOL             "最多添加32个外部工具！\n要添加其他工具，请删除列表其中一个。"
-    IDS_BREAKOPEN           "强制中断！\n不完整的载入操作"
-    IDS_BREAKSAVE           "强制中断！\n不完整的保存操作"
-    IDS_TOOLBAREX           "外部工具栏"
-    IDS_SETNFTRWH           "格式:\n8x8\n8,8"
-    IDS_PCMEM_ERROR         "载入内存数据失败，外部程序可能已退出！"
-    IDS_DSMEM               "DS模拟器[02000000]内存区"
+    IDS_FSI_EXPORTFILEEX    "郴焊郴扁麇镆??懋钴冼遂"
+    IDS_PLAYER_NKHZ         "??忑篾?徙"
+    IDS_NDSHEADERINFO       "NDS捞悼\nARM9 CPU颚值\nARM7 CPU颚值\nARM9 Overlay\nARM7 Overlay\n冼遂偻?\n冼遂萋壅\n挲?汜阌\n诒虮冼遂\nTile冼遂\n家府冼遂\n??冼遂\n?暑钴NdsRom\n?迫饭飘\n巩磊冼遂\nMAP偌阋钴???诉，?NCGR、NCLR壅夼槟\n??冼遂(扉邗憷LZ77)\nCT2??憷??牦?鹁钴师膑冼遂\nOverlay冼遂\nCrystalTile师??冼遂"
+    IDS_NDSCWDH_INFO        "<CWDH 懋莠?:%d WDH[0]:%02X-%02X-%02X ?诉剡卟懋?扉?:0x10+Index*3>"
+    IDS_NDSCGLP_INFO        "<CGLP Tile?驮:%dx%d 愚岢:%d 耆?:%d(%d)>"
+    IDS_NEWTOOL             "沔惋锡"
+    IDS_EXEC                "师?冼遂(*.exe)\000*.exe\000葛电 颇老(*.*)\000*.*"
+    IDS_MAXTOOL             "跆引粽圣32?桠莼惋锡！\n椹粽圣扁鸥惋锡，??鸲知徐耖扉?。"
+    IDS_BREAKOPEN           "谁黏吝瘤！\n荇枨镖钴?忑鹈砺"
+    IDS_BREAKSAVE           "谁黏吝瘤！\n荇枨镖钴芰痦鹈砺"
+    IDS_TOOLBAREX           "桠莼惋锡?"
+    IDS_SETNFTRWH           "太阋:\n8x8\n8,8"
+    IDS_PCMEM_ERROR         "?忑?痦?诉泖?，桠莼镲唔师姻飓鬈躞！"
+    IDS_DSMEM               "DS偌?酗[02000000]?痦?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_TOOLEX          "显示或隐藏外部工具栏\n切换外部工具栏"
+    ID_VIEW_TOOLEX          "?闫?睑桠莼惋锡?\n锓?桠莼惋锡?"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_EDIT_MEMREFALSH      "刷新外部程序的内存数据"
+    ID_EDIT_MEMREFALSH      "货肺绊魔桠莼镲唔钴?痦?诉"
 END
 
 STRINGTABLE 
 BEGIN
-    IDS_CHEATSHEADER        "偏移\n十进制\n十六进制"
-    IDS_CHANGECHEATS        "请输入新值:\n默认十进制，添加“0x”前缀则为十六进制"
-    IDS_ADDCHEATS           "添加金手指EC码\n十六进制地址:对其的十六进制值\n000000:11 / 000000:4444 / 000000:88888888"
-    IDS_DSMENU2CHS          "是否对模拟器的菜单进行简体汉化？\n如果汝的机器非简体系统可能出现乱码"
-    IDS_NOPROCESS           "<<先运行模拟器，然后载入ROM后，才能进入模拟器的0200:0000(4MB)内存块>>"
-    IDS_SFI_MENUTEXT        "%s未知子文件格式\n%s文件信息(&S)...\tF2"
-    IDS_SFI_HEADER          "文件名\n绝对偏移\n相对偏移\n大小"
-    IDS_SFI_UTILITY_HEADER  "文件名\n文件号\n绝对偏移\n相对偏移\n大小"
+    IDS_CHEATSHEADER        "摹快魔\n10柳荐\n16柳荐"
+    IDS_CHANGECHEATS        "货肺款 蔼阑 涝仿窍技夸:\n扁夯 10柳荐, 立滴荤“0x”甫 嘿老 矫 16柳荐肺 魄窜"
+    IDS_ADDCHEATS           "摹飘 眠啊 EC 内靛\n16柳荐 林家:16柳荐 蔼\n000000:11 / 000000:4444 / 000000:88888888"
+    IDS_DSMENU2CHS          "俊鼓饭捞磐狼 皋春甫 吝惫绢 埃眉肺 钎矫窍摆嚼聪鳖?\n父距 哪腔磐 矫胶袍捞 吝惫绢 埃眉甫 瘤盔窍瘤 臼栏搁 兤咙捞 惯积且 荐 乐嚼聪促."
+    IDS_NOPROCESS           "<<俊鼓饭捞磐甫 备悼矫挪 饶, ROM阑 肺靛秦具 俊鼓饭捞磐狼 0200:0000(4MB) 皋葛府 备埃阑 杭 荐 乐嚼聪促.>>"
+    IDS_SFI_MENUTEXT        "%s 舅 荐 绝绰 颇老 屈侥\n%s 颇老 沥焊...(&S)\tF2"
+    IDS_SFI_HEADER          "颇老疙\n例措困摹\n惑措困摹\n农扁"
+    IDS_SFI_UTILITY_HEADER  "颇老疙\n锅龋\n例措困摹\n惑措困摹\n农扁"
     IDS_SFI_NORMAL_IMPORTERR 
-                            "未知的文件系统格式\n无法更新分配表\n所以导入文件的大小不能大于原来文件的大小！"
-    IDS_SFI_IMPORTERR       "请单独打开该文件\n然后再继续导入"
+                            "舅 荐 绝绰 颇老屈侥捞骨肺\n抛捞喉俊 扁废且 荐 绝嚼聪促\n啊廉柯 颇老狼 农扁绰 盔夯颇老焊促 努 荐 绝嚼聪促!"
+    IDS_SFI_IMPORTERR       "啊廉坷扁 傈俊\n颇老阑 蝶肺 凯绢林绞矫坷"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_TBL2CMAP       "将码表文件转换到NFTR字库文件的CMAP结构"
+    ID_TOOLS_TBL2CMAP       "绊蜡锅龋钎 颇老阑 NFTR 扼捞宏矾府 颇老肺 函券窍绰 CMAP 备炼"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_VIEW_OPTIONBAR       "显示或隐藏属性窗口\n切换属性窗口"
+    ID_VIEW_OPTIONBAR       "加己芒阑 钎矫窍芭唱 见辫聪促.\n加己芒 肋扼郴扁"
 END
 
 STRINGTABLE 
 BEGIN
-    ID_TOOLS_NDS_FIRMWARE   "设置DS固件中的用户信息"
+    ID_TOOLS_NDS_FIRMWARE   "DS 七傀绢狼 荤侩磊 沥焊甫 汲沥钦聪促."
 END
 
-#endif    // 中文(中华人民共和国) resources
+#endif    // 耖冼(耖?煅谂挽?) resources
 /////////////////////////////////////////////////////////////////////////////
 
 
@@ -2065,11 +2065,11 @@ END
 #define _AFX_NO_TRACKER_RESOURCES
 #define _AFX_NO_PROPERTY_RESOURCES
 
-#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
-LANGUAGE 4, 2
-#pragma code_page(936)
-#include "res\CrystalTile2.rc2"  // 非 Microsoft Visual C++ 编辑资源
-#include "afxres.rc"         // 标准组件
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#include "res\CrystalTile2.rc2"  // 蕺 Microsoft Visual C++ ???旯
+#include "afxres.rc"         // ?褡?遂
 #endif
 
 /////////////////////////////////////////////////////////////////////////////

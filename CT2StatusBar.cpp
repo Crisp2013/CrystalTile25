@@ -85,7 +85,7 @@ void CT2StatusBar::OnPaint()
 			{
 				MEMORYSTATUS ms;
 				GlobalMemoryStatus(&ms);
-				strText.Format(idle, ms.dwAvailPhys/1024);
+				strText.Format(idle, ms.dwAvailPhys/(1024*1024));
 			}
 		}else
 		{
