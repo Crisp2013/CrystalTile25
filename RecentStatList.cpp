@@ -90,8 +90,21 @@ void CRecentStatList::Remove(UINT nIndex)
 
 BOOL CRecentStatList::IsOK(UINT nIndex)
 {
+//to prevent that program not work on 64bit
+//it maybe a little buggy?
+#ifdef _WIN64
+	STATEDATA* pSD;
+	if (nIndex != -1)
+	{
+		pSD = (STATEDATA*)m_pRecentStatList[nIndex];
+		return pSD && (pSD->nSize == sizeof(STATEDATA));
+	}
+	else
+		return 0;
+#else
 	STATEDATA* pSD = (STATEDATA*)m_pRecentStatList[nIndex];
-	return (nIndex!=-1) && pSD && (pSD->nSize==sizeof(STATEDATA));
+	return (nIndex != -1) && pSD && (pSD->nSize == sizeof(STATEDATA));
+#endif
 }
 
 void CRecentStatList::SetOK(UINT nIndex)

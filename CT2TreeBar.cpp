@@ -449,6 +449,8 @@ void CT2TreeBar::DrawHint(CDC &dc)
 	dc.Draw3dRect(&rc, 0, 0);
 	InflateRect(&rc, -2, -2);
 
+//prevent 64bit version not work
+#ifndef _WIN64
 	DWORD dwSize;
 	HANDLE h = LoadRes(IDR_ANGELLOGO, dwSize);
 	LPPICTURE lpPix = LoadPic(h, dwSize, TRUE);
@@ -464,6 +466,7 @@ void CT2TreeBar::DrawHint(CDC &dc)
 		bm.bmWidth, bm.bmHeight, &mdc, 0, 0, SRCCOPY);
 	mdc.DeleteDC();
 	lpPix->Release();
+#endif
 
 	dc.DrawText(m_strHint, &rc, DT_LEFT|DT_EDITCONTROL|DT_WORDBREAK|DT_CALCRECT);
 	dc.DrawText(m_strHint, &rc, DT_LEFT|DT_EDITCONTROL|DT_WORDBREAK);
