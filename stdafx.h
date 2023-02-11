@@ -44,4 +44,8 @@
 #include <afxcmn.h>			// Windows 公共控件的 MFC 支持
 #endif // _AFX_NO_AFXCMN_SUPPORT
 
-#include "afximpl.h"
+#if _MFC_VER < 0x0700  
+#   include <..\src\afximpl.h>  
+#else  
+#   include <..\src\mfc\afximpl.h>  
+#endif
