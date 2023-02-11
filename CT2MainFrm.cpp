@@ -735,7 +735,7 @@ void CT2MainFrm::LoadToolBarEx()
 
 void CT2MainFrm::OnViewToolex()
 {
-	ShowControlBar(&m_wndToolBarEx, !m_wndToolBarEx.IsVisible(), FALSE);
+	ShowControlBar(&m_wndToolBarEx, ~m_wndToolBarEx.IsVisible(), FALSE);
 }
 
 void CT2MainFrm::OnUpdateViewToolex(CCmdUI *pCmdUI)
@@ -745,7 +745,7 @@ void CT2MainFrm::OnUpdateViewToolex(CCmdUI *pCmdUI)
 
 void CT2MainFrm::OnViewOptionbar()
 {
-	ShowControlBar(&m_TreeBar, !m_TreeBar.IsVisible(), FALSE);
+	ShowControlBar(&m_TreeBar, ~m_TreeBar.IsVisible(), FALSE);
 }
 
 void CT2MainFrm::OnUpdateViewOptionbar(CCmdUI *pCmdUI)

@@ -949,7 +949,7 @@ void CT2TileView::OnUpdateData()
 
 void CT2TileView::OnViewGrid()
 {
-	m_nGrid=!m_nGrid;
+	m_nGrid=~m_nGrid;
 	Invalidate(FALSE);
 }
 
@@ -1369,7 +1369,7 @@ void CT2TileView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 		OnUpdateData();
 		SetCurTileOffset();
 	case VK_SPACE:
-		m_bShowFocus=!m_bShowFocus;
+		m_bShowFocus=~m_bShowFocus;
 		Invalidate(FALSE);
 		break;
 	case VK_ESCAPE:
@@ -1950,7 +1950,7 @@ void CT2TileView::OnActivateView(BOOL bActivate, CView* pActivateView, CView* pD
 
 void CT2TileView::OnViewAutofitcol()
 {
-	m_nAutoColFit=!m_nAutoColFit;
+	m_nAutoColFit=~m_nAutoColFit;
 	if(m_nAutoColFit) OnUpdateData();
 }
 

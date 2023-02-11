@@ -538,7 +538,7 @@ void __fastcall OnFsiLoadtile(CT2TileView *pView, UINT nPos, BYTE nType=0)
 	}else
 	{
 		pView->m_nDrawMode=CT2_DM_TILE;
-		if(pView->m_nTileFormat!=TF_GBA8BPP && pView->m_nTileFormat!=TF_GBA8BPP)
+		if(pView->m_nTileFormat!=TF_GBA8BPP)
 			pView->m_nTileFormat=TF_GBA4BPP;
 		if(nType==1)
 		{
@@ -1317,7 +1317,7 @@ void CNdsFileSystemInfo::OnFsiCreaterom()
 
 	m_fNds.Seek(NdsHeader.Fat_Offset, SEEK_SET);
 	m_fNds.Write(pFat, NdsHeader.Fat_Size);
-	delete pFat;
+	delete[] pFat;
 
 	// nMbits
 	UINT nOffset = ((NdsHeader.Application_End_Offset+0x7FFFFF)&~0x7FFFFF) / 0x20000;

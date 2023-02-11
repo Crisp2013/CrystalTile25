@@ -29,9 +29,9 @@ COpenFileDialog::COpenFileDialog(BOOL bOpenFileDialog,
 , m_nMemSize(0)
 {
 	m_pOFN->lpTemplateName = MAKEINTRESOURCE(COpenFileDialog::IDD);
-	MEMORYSTATUS ms;
-	GlobalMemoryStatus(&ms);
-	m_nMemSize = ms.dwAvailPhys;
+	MEMORYSTATUSEX ms;
+	GlobalMemoryStatusEx(&ms);
+	m_nMemSize = ms.ullAvailPhys;
 	m_nMemSize = (m_nMemSize*90)/100;
 }
 
