@@ -139,3 +139,4 @@
 == 프로젝트 저작자 ==
 2004-2007 Crystal (C)
 2010년도 까지 해당 제작자가 프로젝트를 진행하였으나, 지금 가지고 있는건 2007년 사본 밖에 없습니다.
+원본 사본은 해당링크에서 다운로드 가능합니다.[https://filetrip.net/nds-downloads/utilities/download-crystaltile2-source-code-september-2007-f31478.html]
