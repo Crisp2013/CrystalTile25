@@ -449,14 +449,14 @@ void CT2TileView::SetBits()
 					nPixel2=( nPixel2>> (7- (nPixelLeft%8)) )&0x01;
 					nPixel|=nPixel2<<1;
 				break;
-			case TF_16BPP:
+			case TF_RGBA16BPP:
 				nPixel = *(WORD*)pPixel;
 				nPixel = WordToRgbQuad(nPixel);
 				break;
-			case TF_24BPP:
+			case TF_RGB24BPP:
 				nPixel = *(UINT*)pPixel;
 				break;
-			case TF_32BPP:
+			case TF_RGBA32BPP:
 				nPixel = *(UINT*)pPixel;
 				nPixel = ColorToRgbQuad(nPixel);
 				break;
@@ -706,15 +706,15 @@ void CT2TileView::SetPixel(WORD nTilePixelNO, UINT nPixel)
 			*(pPixel+nOffset2)&=~(1<<(7- (nPixelLeft%8)));
 			*(pPixel+nOffset2)|=nPixel2<<(7- (nPixelLeft%8));
 		break;
-	case TF_16BPP:
+	case TF_RGBA16BPP:
 		nPixel = RgbQuadToWord(nPixel);
         *(WORD*)pPixel=nPixel;
 		break;
-	case TF_24BPP:
+	case TF_RGB24BPP:
 		*(WORD*)pPixel = nPixel;
 		*(pPixel+2) = nPixel>>16;
 		break;
-	case TF_32BPP:
+	case TF_RGBA32BPP:
 		nPixel = RgbQuadToColor(nPixel);
         *(UINT*)pPixel=nPixel;
 		break;
@@ -792,13 +792,15 @@ void CT2TileView::OnUpdateData()
 	case TF_CT0XBPP:
 		m_nBitCount = m_n24Check?1:2;
 		break;
-	case TF_16BPP:
-		m_nBitCount = 16;
+	case TF_RGBA16BPP:
+	//case TF_BGRA16BPP:	
+	m_nBitCount = 16;
 		break;
-	case TF_24BPP:
+	case TF_RGB24BPP:
 		m_nBitCount = 24;
 		break;
-	case TF_32BPP:
+	case TF_RGBA32BPP:
+	//case TF_ABGR32BPP:
 		m_nBitCount = 32;
 		break;
 	}

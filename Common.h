@@ -960,9 +960,9 @@ public:
 // #define TF_SMS4BPP	12	// SMS  4bpp
 // #define TF_GBA3XBPP	13	// GBA3 Xbpp 不支持Obj
 // #define TF_CT0XBPP	14	// CT0  Xbpp 不支持Obj
-// #define TF_16BPP	15	// 16位位图
-// #define TF_24BPP	16	// 24位位图
-// #define TF_32BPP	17	// 32位位图
+// #define TF_RGBA16BPP	15	// 16位位图
+// #define TF_RGB24BPP	16	// 24位位图
+// #define TF_RGBA32BPP	17	// 32位位图
 // #define TF_RHYTHM	18	// 旋律天国
 // #define TF_LAST		18
 
@@ -990,9 +990,11 @@ public:
 #define TF_GBA3XBPP	14	// GBA3 Xbpp 不支持Obj
 #define TF_CT0XBPP	15	// CT0  Xbpp 不支持Obj
 
-#define TF_16BPP	16	// 16位位图
-#define TF_24BPP	17	// 24位位图
-#define TF_32BPP	18	// 32位位图
+#define TF_RGBA16BPP	16	// 16位位图
+//#define TF_BGRA16BPP	17	// 16位位图
+#define TF_RGB24BPP	17	// 24位位图
+#define TF_RGBA32BPP	18	// 32位位图
+//#define TF_ABGR32BPP	20	// 32位位图
 #define TF_RHYTHM	19	// 旋律天国
 #define TF_LAST		19
 

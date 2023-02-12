@@ -6,7 +6,7 @@
     name="Microsoft.Windows.CrystalTile2"
     type="win32"
 />
-<description>字库编辑器；主要用于生成、查看、以及编辑点阵字库</description>
+<description>라이브러리 편집기; 주로 도트 저장소 생성, 보기, 편집</description>
 <dependency>
     <dependentAssembly>
         <assemblyIdentity

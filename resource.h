@@ -1,6 +1,6 @@
 //{{NO_DEPENDENCIES}}
-// Microsoft Visual C++ generated include file.
-// Used by CrystalTile2.rc
+// Microsoft Visual C++에서 생성한 포함 파일입니다.
+// CrystalTile2.rc에서 사용되고 있습니다.
 //
 #define IDD_ABOUTBOX                    100
 #define IDR_PALETTE                     121

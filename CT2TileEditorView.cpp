@@ -283,16 +283,16 @@ UINT ImportTbl(LPVOID lParam)
 					*(pPixel+nOffset2)&=~(1<<(7- (nPixelLeft%8)));
 					*(pPixel+nOffset2)|=nPixel2<<(7- (nPixelLeft%8));
 				break;
-			case TF_16BPP:
+			case TF_RGBA16BPP:
 				nPixel = RgbQuadToWord(nPixel|0xFF<<24);
 				*(WORD*)pPixel=nPixel;
 				break;
-			case TF_24BPP:
+			case TF_RGB24BPP:
 				*(WORD*)pPixel=nPixel;
 				*(pPixel+2)=nPixel>>16;
 				//memcpy(pPixel, &nPixel, 3);
 				break;
-			case TF_32BPP:
+			case TF_RGBA32BPP:
 				nPixel = RgbQuadToColor(nPixel) | 0xFF<<24;
 				*(UINT*)pPixel=nPixel;
 				break;
